@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><unload unload_date="2023-10-13 16:43:44">
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Veeam Batch Update Set</description>
+<inserted/>
+<name>Veeam Batch</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value="Veeam Batch">b313076693f131109d0b398efaba109e</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>f392cf2693f131109d0b398efaba10e4</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>b313076693f131109d0b398efaba109e</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+<application_name>Veeam App</application_name>
+<application_scope>x_tesgh_veeam_app</application_scope>
+<application_version>1.0.0</application_version>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Veeam [Scoped]</name>
+<origin_sys_id/>
+<parent display_value="Veeam Batch">b313076693f131109d0b398efaba109e</parent>
+<release_date/>
+<remote_base_update_set display_value="Veeam Batch">b313076693f131109d0b398efaba109e</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>f2eea2ea937131109d0b398efaba1088</remote_sys_id>
+<state>in_hierarchy</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>7b13076693f131109d0b398efaba109f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description>Veeam Batch Update Set</description>
+<inserted/>
+<name>Veeam Batch</name>
+<origin_sys_id/>
+<parent display_value=""/>
+<release_date/>
+<remote_base_update_set display_value="Veeam Batch">b313076693f131109d0b398efaba109e</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>f392cf2693f131109d0b398efaba10e4</remote_sys_id>
+<state>loaded</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>b313076693f131109d0b398efaba109e</sys_id>
+<sys_mod_count>1</sys_mod_count>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_remote_update_set action="INSERT_OR_UPDATE">
+<application display_value="Global">global</application>
+<application_name>Global</application_name>
+<application_scope>global</application_scope>
+<application_version/>
+<collisions/>
+<commit_date/>
+<deleted/>
+<description/>
+<inserted/>
+<name>Veeam [Global]</name>
+<origin_sys_id/>
+<parent display_value="Veeam Batch">b313076693f131109d0b398efaba109e</parent>
+<release_date/>
+<remote_base_update_set display_value="Veeam Batch">b313076693f131109d0b398efaba109e</remote_base_update_set>
+<remote_parent_id/>
+<remote_sys_id>a481b2ee937131109d0b398efaba1008</remote_sys_id>
+<state>in_hierarchy</state>
+<summary/>
+<sys_class_name>sys_remote_update_set</sys_class_name>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>fb13076693f131109d0b398efaba109e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<update_set display_value=""/>
+<update_source display_value=""/>
+<updated/>
+</sys_remote_update_set>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+<category>customer</category>
+<comments/>
+<name>sys_portal_page_5bc13aee937131109d0b398efaba10a8</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2023-10-13 16:13:17"><sys_portal_page action="INSERT_OR_UPDATE"><layout/><order/><read_roles/><roles/><selectable>false</selectable><sys_class_name>sys_portal_page</sys_class_name><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:02</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5bc13aee937131109d0b398efaba10a8</sys_id><sys_mod_count>0</sys_mod_count><sys_name>PA Veeam Homepage - New Tab</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_portal_page_5bc13aee937131109d0b398efaba10a8</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:02</sys_updated_on><title>PA Veeam Homepage - New Tab</title><user/><view>pa_veeam_homepage_-_new_tab</view><related_items_node><sys_portal action="INSERT_OR_UPDATE"><dropzone/><offset/><page display_value="PA Veeam Homepage - New Tab">5bc13aee937131109d0b398efaba10a8</page><summary>Open Incidents</summary><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>21027eee937131109d0b398efaba10df</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><related_items_node><sys_portal_preferences action="INSERT_OR_UPDATE"><name>can_subscribe</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>21027eee937131109d0b398efaba10e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>is_using_database_view</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>2d027eee937131109d0b398efaba10e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>can_real_time</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>6d027eee937131109d0b398efaba10df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>sys_id</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>a1027eee937131109d0b398efaba10df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>5f6159271bd5bd106e76da03b24bcbd0</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>title</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>a5027eee937131109d0b398efaba10e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>Open Incidents</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>help_text_window</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>a9027eee937131109d0b398efaba10df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>report_widget_description</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_title</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>c3a23a2293b131109d0b398efaba10b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>publisher_widget</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>c3a23a2293b131109d0b398efaba10b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_header</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>c7a23a2293b131109d0b398efaba10b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>subscriber_widget</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>c7a23a2293b131109d0b398efaba10b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>title_align</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>cba23a2293b131109d0b398efaba10b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>center</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>filter_indicator</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>cba23a2293b131109d0b398efaba10b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_border</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>cfa23a2293b131109d0b398efaba10b7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>real_time</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:51</sys_created_on><sys_id>cfa23a2293b131109d0b398efaba10b8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:51</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>report_type</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>e1027eee937131109d0b398efaba10e0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>single_score</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>renderer</name><portal_section display_value="Created 2023-10-13 08:29:01">21027eee937131109d0b398efaba10df</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:29:01</sys_created_on><sys_id>e5027eee937131109d0b398efaba10df</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:29:01</sys_updated_on><value>com.glide.ui.portal.RenderReport</value></sys_portal_preferences></related_items_node></sys_portal><sys_portal action="INSERT_OR_UPDATE"><dropzone/><offset/><page display_value="PA Veeam Homepage - New Tab">5bc13aee937131109d0b398efaba10a8</page><summary>VM Backup Status (Last 14 Days)</summary><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>62923a2293b131109d0b398efaba10b2</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><related_items_node><sys_portal_preferences action="INSERT_OR_UPDATE"><name>title</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>26923a2293b131109d0b398efaba10b3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><value>VM Backup Status (Last 14 Days)</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>renderer</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>2a923a2293b131109d0b398efaba10b2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><value>com.glide.ui.portal.RenderReport</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>title_align</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:43</sys_created_on><sys_id>51a2b22293b131109d0b398efaba1032</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:43</sys_updated_on><value>center</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>filter_indicator</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:44</sys_created_on><sys_id>51a2b22293b131109d0b398efaba1033</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:44</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_border</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:43</sys_created_on><sys_id>55a2b22293b131109d0b398efaba1032</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:43</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>real_time</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:44</sys_created_on><sys_id>55a2b22293b131109d0b398efaba1033</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:44</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_title</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:43</sys_created_on><sys_id>59a2b22293b131109d0b398efaba1031</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:43</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>publisher_widget</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:43</sys_created_on><sys_id>59a2b22293b131109d0b398efaba1032</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:43</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_header</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:43</sys_created_on><sys_id>5da2b22293b131109d0b398efaba1031</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:43</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>subscriber_widget</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:43</sys_created_on><sys_id>5da2b22293b131109d0b398efaba1032</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:43</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>report_type</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>62923a2293b131109d0b398efaba10b3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><value>line_bar</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>can_subscribe</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>ae923a2293b131109d0b398efaba10b2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>sys_id</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>e2923a2293b131109d0b398efaba10b2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><value>82f62d871bded5106e76da03b24bcb49</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>help_text_window</name><portal_section display_value="Created 2023-10-13 08:31:32">62923a2293b131109d0b398efaba10b2</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:32</sys_created_on><sys_id>ea923a2293b131109d0b398efaba10b2</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:32</sys_updated_on><value>report_widget_description</value></sys_portal_preferences></related_items_node></sys_portal><sys_portal action="INSERT_OR_UPDATE"><dropzone/><offset/><page display_value="PA Veeam Homepage - New Tab">5bc13aee937131109d0b398efaba10a8</page><summary>VM Backup Status (Last 14 Days)</summary><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>7de1faee937131109d0b398efaba10a4</sys_id><sys_mod_count>1</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><related_items_node><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_border</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>02a23e2293b131109d0b398efaba10a7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>real_time</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>02a23e2293b131109d0b398efaba10a8</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_title</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>06a23e2293b131109d0b398efaba10a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>publisher_widget</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>06a23e2293b131109d0b398efaba10a7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>show_header</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>0aa23e2293b131109d0b398efaba10a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>subscriber_widget</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>0aa23e2293b131109d0b398efaba10a7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>title_align</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>0ea23e2293b131109d0b398efaba10a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>center</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>filter_indicator</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:31:47</sys_created_on><sys_id>0ea23e2293b131109d0b398efaba10a7</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:31:47</sys_updated_on><value>false</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>title</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>39e1faee937131109d0b398efaba10a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><value>VM Backup Status (Last 14 Days)</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>renderer</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>3de1faee937131109d0b398efaba10a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><value>com.glide.ui.portal.RenderReport</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>report_type</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>75e1faee937131109d0b398efaba10a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><value>pie</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>can_subscribe</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>b1e1faee937131109d0b398efaba10a6</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><value>true</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>sys_id</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>f1e1faee937131109d0b398efaba10a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><value>fcfaedeb1b59bd106e76da03b24bcbf3</value></sys_portal_preferences><sys_portal_preferences action="INSERT_OR_UPDATE"><name>help_text_window</name><portal_section display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_section><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-10-13 15:28:30</sys_created_on><sys_id>fde1faee937131109d0b398efaba10a5</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-13 15:28:30</sys_updated_on><value>report_widget_description</value></sys_portal_preferences></related_items_node></sys_portal></related_items_node></sys_portal_page></record_update>]]></payload>
+<payload_hash>1894968887</payload_hash>
+<remote_update_set display_value="Veeam [Scoped]">7b13076693f131109d0b398efaba109f</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>3f13076693f131109d0b398efaba109f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18b29d047760000001</sys_recorded_at>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<table/>
+<target_name>PA Veeam Homepage - New Tab</target_name>
+<type>Portal Page</type>
+<update_domain>global</update_domain>
+<update_guid>8e2c3a6e85b13110e09bae950f253c91</update_guid>
+<update_guid_history>8e2c3a6e85b13110e09bae950f253c91:1894968887,dd2aba6a7fb13110ad645e604660d6d9:2134016130</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_has_role_91f84eb31b299910e06d520b234bcbc0</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_user_has_role"><sys_user_has_role action="INSERT_OR_UPDATE"><granted_by display_value="">not-applicable</granted_by><included_in_role/><included_in_role_instance/><inh_count/><inh_map/><inherited>false</inherited><role display_value="admin" name="admin">2831a114c611228501d4ea6c309d626d</role><state>active</state><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-09-02 07:03:59</sys_created_on><sys_id>91f84eb31b299910e06d520b234bcbc0</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-09-02 07:03:59</sys_updated_on><user display_value="Veeam Integration Account">0577c2331b299910e06d520b234bcb97</user></sys_user_has_role></record_update>]]></payload>
+<payload_hash>-1767672493</payload_hash>
+<remote_update_set display_value="Veeam [Global]">fb13076693f131109d0b398efaba109e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>3713076693f131109d0b398efaba109f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18b29a5b17a0000001</sys_recorded_at>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<table/>
+<target_name>admin.Veeam Integration Account</target_name>
+<type>User Role</type>
+<update_domain>global</update_domain>
+<update_guid>1f67337926f535103091100a3061d5be</update_guid>
+<update_guid_history>1f67337926f535103091100a3061d5be:-1767672493,b6277f39eef53510a83a497c7a65af25:-1356253136</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_da2520661bf3011063fd6243604bcba3</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_user"><sys_user action="INSERT_OR_UPDATE"><accumulated_roles/><active>true</active><avatar/><building/><calendar_integration>1</calendar_integration><city/><company/><cost_center/><country/><date_format/><default_perspective/><department/><edu_status>faculty</edu_status><email/><employee_number/><enable_multifactor_authn>false</enable_multifactor_authn><failed_attempts/><first_name>Veeam</first_name><gender/><hashed_user_id>55fee6331acd336d94647a1e0cfe4fa91f97f834808eac66b9dd91db070e0435</hashed_user_id><home_phone/><internal_integration_user>false</internal_integration_user><introduction/><last_login/><last_login_device/><last_login_time/><last_name>App</last_name><last_password/><ldap_server/><location/><locked_out>false</locked_out><manager/><middle_name/><mobile_phone/><name>Veeam App</name><notification>2</notification><password_needs_reset>false</password_needs_reset><phone/><photo/><preferred_language/><roles/><schedule/><source/><state/><street/><sys_class_name>sys_user</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-06-03 02:46:10</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>da2520661bf3011063fd6243604bcba3</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-06-03 02:46:10</sys_updated_on><time_format/><time_zone/><title/><user_name>veeam.app</user_name><user_password/><vip>false</vip><web_service_access_only>true</web_service_access_only><zip/></sys_user></record_update>]]></payload>
+<payload_hash>1909910190</payload_hash>
+<remote_update_set display_value="Veeam [Global]">fb13076693f131109d0b398efaba109e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>7313076693f131109d0b398efaba109f</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18b29a5b1650000001</sys_recorded_at>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<table/>
+<target_name>Veeam App</target_name>
+<type>User</type>
+<update_domain>global</update_domain>
+<update_guid>3704f4a47eb3e550081cdf0a35921049</update_guid>
+<update_guid_history>3704f4a47eb3e550081cdf0a35921049:1909910190</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+<sys_update_xml action="INSERT_OR_UPDATE">
+<action>INSERT_OR_UPDATE</action>
+<application display_value="Global">global</application>
+<category>customer</category>
+<comments/>
+<name>sys_user_0577c2331b299910e06d520b234bcb97</name>
+<payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_user"><sys_user action="INSERT_OR_UPDATE"><accumulated_roles/><active>true</active><avatar/><building/><calendar_integration>1</calendar_integration><city/><company/><cost_center/><country/><date_format/><default_perspective/><department/><edu_status>faculty</edu_status><email/><employee_number/><enable_multifactor_authn>false</enable_multifactor_authn><failed_attempts>0</failed_attempts><first_name>Veeam</first_name><gender/><hashed_user_id>681c4a33edc4566147fa75a9090e457576fda31553e013a733b04192aa6e7c3c</hashed_user_id><home_phone/><internal_integration_user>true</internal_integration_user><introduction/><last_login/><last_login_device/><last_login_time/><last_name>Integration Account</last_name><last_password/><ldap_server/><location/><locked_out>false</locked_out><manager/><middle_name/><mobile_phone/><name>Veeam Integration Account</name><notification>2</notification><password_needs_reset>false</password_needs_reset><phone/><photo/><preferred_language/><roles/><schedule/><source/><state/><street/><sys_class_name>sys_user</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-09-02 06:57:41</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>0577c2331b299910e06d520b234bcb97</sys_id><sys_mod_count>3</sys_mod_count><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-10-11 12:36:33</sys_updated_on><time_format/><time_zone/><title/><user_name>veeam_server.integration_user</user_name><user_password>$s$lmy15IAnHQxhz5SZbHo/tVJ00pFIti38CXeeaS78p+4=$ng7UlahDzeR2199gkDBG5clDz+kEA4Imu8Ku0Xc0hII=</user_password><vip>false</vip><web_service_access_only>true</web_service_access_only><zip/></sys_user></record_update>]]></payload>
+<payload_hash>-1311926821</payload_hash>
+<remote_update_set display_value="Veeam [Global]">fb13076693f131109d0b398efaba109e</remote_update_set>
+<replace_on_upgrade>false</replace_on_upgrade>
+<sys_created_by>pavel.egorov</sys_created_by>
+<sys_created_on>2023-10-13 16:43:43</sys_created_on>
+<sys_id>bf13076693f131109d0b398efaba109e</sys_id>
+<sys_mod_count>0</sys_mod_count>
+<sys_recorded_at>18b29a5b1720000001</sys_recorded_at>
+<sys_updated_by>pavel.egorov</sys_updated_by>
+<sys_updated_on>2023-10-13 16:43:43</sys_updated_on>
+<table/>
+<target_name>Veeam Integration Account</target_name>
+<type>User</type>
+<update_domain>global</update_domain>
+<update_guid>2067bf3997f535106445c8d95efbe87a</update_guid>
+<update_guid_history>2067bf3997f535106445c8d95efbe87a:-1311926821</update_guid_history>
+<update_set display_value=""/>
+<view/>
+</sys_update_xml>
+</unload>
