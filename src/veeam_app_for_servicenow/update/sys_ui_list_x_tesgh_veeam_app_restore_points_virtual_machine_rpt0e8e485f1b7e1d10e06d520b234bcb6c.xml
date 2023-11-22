@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_tesgh_veeam_app_restore_points_virtual_machine" version="2" view="RPT0e8e485f1b7e1d10e06d520b234bcb6c">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_backup_id</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>c68e409f1b7e1d10e06d520b234bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_backup_job</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>4a8e409f1b7e1d10e06d520b234bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_backup_job_template</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>ca8e409f1b7e1d10e06d520b234bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_creation_time</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>4e8e409f1b7e1d10e06d520b234bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_id</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>ce8e409f1b7e1d10e06d520b234bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_name</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>428e409f1b7e1d10e06d520b234bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_platform_id</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>c28e409f1b7e1d10e06d520b234bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_platform_name</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>468e409f1b7e1d10e06d520b234bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_sys_created_by</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>c68e409f1b7e1d10e06d520b234bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>rp_sys_created_on</element>
+            <list_id display_value="x_tesgh_veeam_app_restore_points_virtual_machine" element="NULL" name="x_tesgh_veeam_app_restore_points_virtual_machine" parent="NULL" relationship="NULL" sys_domain="global" view="4e8e409f1b7e1d10e06d520b234bcbb4">0e8e409f1b7e1d10e06d520b234bcbb5</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_id>4a8e409f1b7e1d10e06d520b234bcbb7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_tesgh_veeam_app_restore_points_virtual_machine</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 12:10:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0e8e409f1b7e1d10e06d520b234bcbb5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tesgh_veeam_app_restore_points_virtual_machine</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_ui_list_x_tesgh_veeam_app_restore_points_virtual_machine_RPT0e8e485f1b7e1d10e06d520b234bcb6c</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 12:10:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt0e8e485f1b7e1d10e06d520b234bcb6c" name="RPT0e8e485f1b7e1d10e06d520b234bcb6c">4e8e409f1b7e1d10e06d520b234bcbb4</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

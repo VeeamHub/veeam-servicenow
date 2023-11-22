@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_tesgh_veeam_app_backup_job_template">keep_yearly_backups=true^EQ<item endquery="false" field="keep_yearly_backups" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <isolate_script>true</isolate_script>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>If Keep yearly full backups is selected</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-23 11:04:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6d5c434a1b30fd106e76da03b24bcb09</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>If Keep yearly full backups is selected</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ui_policy_6d5c434a1b30fd106e76da03b24bcb09</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:04:35</sys_updated_on>
+        <table>x_tesgh_veeam_app_backup_job_template</table>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

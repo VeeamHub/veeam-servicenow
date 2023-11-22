@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="" section_id="f41e31771be59910e06d520b234bcb10" sys_domain="global" table="x_tesgh_veeam_app_veeam_event_logs" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>0</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c91e3d771be59910e06d520b234bcb15</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_site</element>
+            <position>1</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>411e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_timewritten</element>
+            <position>2</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c11e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_category</element>
+            <position>3</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>451e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_eventid</element>
+            <position>4</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c51e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_container</element>
+            <position>5</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>491e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_machinename</element>
+            <position>6</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c91e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_index</element>
+            <position>7</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>4d1e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>8</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>cd1e3d771be59910e06d520b234bcb16</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_source</element>
+            <position>9</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>411e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_entrytype</element>
+            <position>10</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c11e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_message</element>
+            <position>11</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>451e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_username</element>
+            <position>12</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c51e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_categorynumber</element>
+            <position>13</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>491e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_instanceid</element>
+            <position>14</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>c91e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_timegenerated</element>
+            <position>15</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>4d1e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>16</position>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_id>cd1e3d771be59910e06d520b234bcb17</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_tesgh_veeam_app_veeam_event_logs" sys_domain="global" view="Default view">f41e31771be59910e06d520b234bcb10</sys_ui_section>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_tesgh_veeam_app_veeam_event_logs</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-02 06:16:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f41e31771be59910e06d520b234bcb10</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tesgh_veeam_app_veeam_event_logs</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_ui_section_f41e31771be59910e06d520b234bcb10</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-02 06:16:27</sys_updated_on>
+            <sys_user/>
+            <title>true</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

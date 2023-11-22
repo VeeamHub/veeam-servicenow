@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD0fe658b1a9339510ab1aad1d43d5ce87</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>d50434871b9dd91063fd6243604bcb7b</scope_name>
+        <serialized_content>{"FlowDesigner:FD0fe658b1a9339510ab1aad1d43d5ce87":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD0fe658b1a9339510ab1aad1d43d5ce87.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"cff08c12-f0c3-46a9-bb3b-36c17994a012\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD0fe658b1a9339510ab1aad1d43d5ce87\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 13:59:11</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cfe658b11b339510e06d520b234bcb87</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FD0fe658b1a9339510ab1aad1d43d5ce87</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_complex_object_cfe658b11b339510e06d520b234bcb87</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 13:59:11</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+</record_update>

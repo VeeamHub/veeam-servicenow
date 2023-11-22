@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_platformname" label="platformName" language="en" table="x_tesgh_veeam_app_import_job_mappings">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_platformname</element>
+            <help/>
+            <hint/>
+            <label>platformName</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_import_job_mappings</name>
+            <plural>platformNames</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-30 05:37:29</sys_created_on>
+            <sys_id>8fa14af81b1a11106e76da03b24bcb90</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>platformName</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_documentation_x_tesgh_veeam_app_import_job_mappings_u_platformname_en</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-30 05:37:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

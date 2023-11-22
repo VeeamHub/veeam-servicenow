@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="ast_contract" version="2" view="RPTd6dff5ad770230107384c087cc5a991c">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>e7376def1b295910e06d520b234bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>6b376def1b295910e06d520b234bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>eb376def1b295910e06d520b234bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>substate</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>6f376def1b295910e06d520b234bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>vendor</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>ef376def1b295910e06d520b234bcba8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>starts</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>63376def1b295910e06d520b234bcba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ends</element>
+            <list_id display_value="ast_contract" element="NULL" name="ast_contract" parent="NULL" relationship="NULL" sys_domain="global" view="ab376def1b295910e06d520b234bcba6">eb376def1b295910e06d520b234bcba7</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_id>e3376def1b295910e06d520b234bcba9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>ast_contract</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 09:58:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb376def1b295910e06d520b234bcba7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>ast_contract</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_ui_list_ast_contract_RPTd6dff5ad770230107384c087cc5a991c</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 09:58:13</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rptd6dff5ad770230107384c087cc5a991c" name="RPTd6dff5ad770230107384c087cc5a991c">ab376def1b295910e06d520b234bcba6</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

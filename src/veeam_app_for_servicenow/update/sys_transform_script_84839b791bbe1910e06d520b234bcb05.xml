@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="TM Restore Points">2e3966f51b3e1910e06d520b234bcbcd</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+
+    var grJobMapping = new GlideRecord('x_tesgh_veeam_app_job_mapping');
+    if (grJobMapping.get('internal_id', source.u_backupid)) {		
+        target.backup_job = grJobMapping.backup_job;
+        target.backup_job_template = grJobMapping.backup_job.backup_job_template;
+    }
+	
+	var grVirtualMachine = new GlideRecord('x_tesgh_veeam_app_virtual_machine');
+	if (grVirtualMachine.get('virtual_machine.name', source.u_name)) {
+		target.virtual_machine = grVirtualMachine.getUniqueValue();
+	}
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-28 10:45:03</sys_created_on>
+        <sys_id>84839b791bbe1910e06d520b234bcb05</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>onBefore</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_transform_script_84839b791bbe1910e06d520b234bcb05</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-07 08:41:41</sys_updated_on>
+        <when>onBefore</when>
+    </sys_transform_script>
+</record_update>

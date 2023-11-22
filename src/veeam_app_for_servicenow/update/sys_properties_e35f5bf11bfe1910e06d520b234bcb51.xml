@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+    <sys_properties action="INSERT_OR_UPDATE">
+        <choices/>
+        <description>Maximum number of Virtual Machines that a Backup Job can contain</description>
+        <ignore_cache>true</ignore_cache>
+        <is_private>false</is_private>
+        <name>x_tesgh_veeam_app.backup_job_vm_limit</name>
+        <read_roles/>
+        <suffix>backup_job_vm_limit</suffix>
+        <sys_class_name>sys_properties</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-28 11:32:26</sys_created_on>
+        <sys_id>e35f5bf11bfe1910e06d520b234bcb51</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app.backup_job_vm_limit</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_properties_e35f5bf11bfe1910e06d520b234bcb51</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-14 15:07:04</sys_updated_on>
+        <type>string</type>
+        <value>1000</value>
+        <write_roles/>
+    </sys_properties>
+    <sys_translated_text action="delete_multiple" query="documentkey=e35f5bf11bfe1910e06d520b234bcb51"/>
+</record_update>

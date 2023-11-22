@@ -1,0 +1,936 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>session_logs_handler</internal_name>
+        <label_cache>[{"name":"975a8a8f-f341-4ac4-95e4-79ac6855691f.item","label":"2 - For Each➛Session Record","reference":"x_tesgh_veeam_app_session","reference_display":"Session","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"975a8a8f-f341-4ac4-95e4-79ac6855691f.item.id","label":"2 - For Each➛Session Record➛ID","reference":"","reference_display":"ID","type":"string","base_type":"string","parent_table_name":"x_tesgh_veeam_app_session","column_name":"id"},{"name":"975a8a8f-f341-4ac4-95e4-79ac6855691f.item.backup_job_id","label":"2 - For Each➛Session Record➛Backup Job ID","reference":"","reference_display":"Backup Job ID","type":"string","base_type":"string","parent_table_name":"x_tesgh_veeam_app_session","column_name":"backup_job_id"},{"name":"633a79b1-a659-415e-97e3-73199d735357.Records","label":"1 - Look Up Records➛Session Records","reference":"x_tesgh_veeam_app_session","reference_display":"Session","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>07c222131b81b1906e76da03b24bcb88</master_snapshot>
+        <name>Get Session Logs Periodically</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ebc262131b81b1906e76da03b24bcb46</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 08:20:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d083a9da1bc1f190e06d520b234bcbcb</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Get Session Logs Periodically</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_d083a9da1bc1f190e06d520b234bcbcb</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_variable_value action="delete_multiple" query="document_key=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period>1970-01-01 00:15:00</run_period>
+        <run_start/>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebc262131b81b1906e76da03b24bcb46</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:35</sys_updated_on>
+        <time/>
+        <timer_type>1</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:ebc262131b81b1906e76da03b24bcb46^sys_idNOT IN5436761f1bc1b1906e76da03b24bcb0b"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:ebc262131b81b1906e76da03b24bcb46</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Pavel Egorov">3b0530ef1bebe1506e76da03b24bcb79</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period>1970-01-01 00:15:00</run_period>
+        <run_start/>
+        <run_time/>
+        <run_type>periodically</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('ebc262131b81b1906e76da03b24bcb46');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:35</sys_created_on>
+        <sys_id>5436761f1bc1b1906e76da03b24bcb0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">ebc262131b81b1906e76da03b24bcb46</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=d083a9da1bc1f190e06d520b234bcbcb^sys_idNOT IN65c2aedf1b41b1906e76da03b24bcbf1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Session Logs Periodically">d083a9da1bc1f190e06d520b234bcbcb</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:44</sys_created_on>
+        <sys_id>65c2aedf1b41b1906e76da03b24bcbf1</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=65c2aedf1b41b1906e76da03b24bcbf1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>65c2aedf1b41b1906e76da03b24bcbf1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:44</sys_created_on>
+        <sys_id>2dc2aedf1b41b1906e76da03b24bcbf2</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 15:31:07</sys_updated_on>
+        <value>1970-01-01 00:15:00</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=65c2aedf1b41b1906e76da03b24bcbf1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=d083a9da1bc1f190e06d520b234bcbcb^sys_idNOT IN5083a9da1bc1f190e06d520b234bcbcd"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>d083a9da1bc1f190e06d520b234bcbcb</id>
+        <name>Session Logs Handler</name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 08:20:23</sys_created_on>
+        <sys_id>5083a9da1bc1f190e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-05 08:20:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=5083a9da1bc1f190e06d520b234bcbcd"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=d083a9da1bc1f190e06d520b234bcbcb^sys_idNOT INfcb2b91a1b05f190e06d520b234bcb7d"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Session Logs Periodically">d083a9da1bc1f190e06d520b234bcbcb</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:26:46</sys_created_on>
+        <sys_id>fcb2b91a1b05f190e06d520b234bcb7d</sys_id>
+        <sys_mod_count>40</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:19:09</sys_updated_on>
+        <ui_id>633a79b1-a659-415e-97e3-73199d735357</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fcb2b91a1b05f190e06d520b234bcb7d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fcb2b91a1b05f190e06d520b234bcb7d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:36:01</sys_created_on>
+        <sys_id>5cd4b1da1b05f190e06d520b234bcb3e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:31</sys_updated_on>
+        <value>idISNOTEMPTY^backup_job_idISNOTEMPTY^state!=Stopped</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fcb2b91a1b05f190e06d520b234bcb7d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:26:46</sys_created_on>
+        <sys_id>70b2b91a1b05f190e06d520b234bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-05 09:26:46</sys_updated_on>
+        <value>x_tesgh_veeam_app_session</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fcb2b91a1b05f190e06d520b234bcb7d</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:36:01</sys_created_on>
+        <sys_id>94d4b1da1b05f190e06d520b234bcb3e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:31</sys_updated_on>
+        <value>sort_asc</value>
+        <variable display_value="Sort Type">0f400a1587003300663ca1bb36cb0b59</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fcb2b91a1b05f190e06d520b234bcb7d</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:26:46</sys_created_on>
+        <sys_id>bcb2b91a1b05f190e06d520b234bcb80</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:31</sys_updated_on>
+        <value>500</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fcb2b91a1b05f190e06d520b234bcb7d</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:26:46</sys_created_on>
+        <sys_id>f8b2b91a1b05f190e06d520b234bcb80</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:31</sys_updated_on>
+        <value/>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=fcb2b91a1b05f190e06d520b234bcb7d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fcb2b91a1b05f190e06d520b234bcb7d"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fcb2b91a1b05f190e06d520b234bcb7d"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=d083a9da1bc1f190e06d520b234bcbcb^sys_idNOT INa434b65b1bc1b1906e76da03b24bcbdc"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Session Logs Periodically">d083a9da1bc1f190e06d520b234bcbcb</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id>975a8a8f-f341-4ac4-95e4-79ac6855691f</parent_ui_id>
+        <subflow display_value="Get Session Logs">8ad276d71bc1b1906e76da03b24bcb2e</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:46:51</sys_created_on>
+        <sys_id>a434b65b1bc1b1906e76da03b24bcbdc</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <ui_id>4bed7062-de26-4999-a530-36fb6a9a3c8b</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a434b65b1bc1b1906e76da03b24bcbdc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>a434b65b1bc1b1906e76da03b24bcbdc</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:46:51</sys_created_on>
+        <sys_id>6c34b65b1bc1b1906e76da03b24bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:46:51</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">2c34b65b1bc1b1906e76da03b24bcbdd</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>a434b65b1bc1b1906e76da03b24bcbdc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-21 16:04:00</sys_created_on>
+        <sys_id>e307212b1b59bd106e76da03b24bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:00</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Refresh Session">5ea6eda71b59bd106e76da03b24bcb49</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a434b65b1bc1b1906e76da03b24bcbdc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>refresh_session</field>
+        <id>a434b65b1bc1b1906e76da03b24bcbdc</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-21 16:04:00</sys_created_on>
+        <sys_id>6307212b1b59bd106e76da03b24bcb67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:00</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_8ad276d71bc1b1906e76da03b24bcb2e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>session_backup_job_id</field>
+        <id>a434b65b1bc1b1906e76da03b24bcbdc</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:46:51</sys_created_on>
+        <sys_id>a834b65b1bc1b1906e76da03b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:46:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_8ad276d71bc1b1906e76da03b24bcb2e</table>
+        <value>{{975a8a8f-f341-4ac4-95e4-79ac6855691f.item.backup_job_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>session_id</field>
+        <id>a434b65b1bc1b1906e76da03b24bcbdc</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:46:51</sys_created_on>
+        <sys_id>6034b65b1bc1b1906e76da03b24bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:46:51</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_8ad276d71bc1b1906e76da03b24bcb2e</table>
+        <value>{{975a8a8f-f341-4ac4-95e4-79ac6855691f.item.id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>a434b65b1bc1b1906e76da03b24bcbdc</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:46:51</sys_created_on>
+        <sys_id>e834b65b1bc1b1906e76da03b24bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:46:51</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_a434b65b1bc1b1906e76da03b24bcbdc</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_a434b65b1bc1b1906e76da03b24bcbdc^id=a434b65b1bc1b1906e76da03b24bcbdc"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=a434b65b1bc1b1906e76da03b24bcbdc^sys_idNOT IN2c34b65b1bc1b1906e76da03b24bcbdd"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">a434b65b1bc1b1906e76da03b24bcbdc</model>
+        <model_id>a434b65b1bc1b1906e76da03b24bcbdc</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_a434b65b1bc1b1906e76da03b24bcbdc</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:46:51</sys_created_on>
+        <sys_id>2c34b65b1bc1b1906e76da03b24bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:46:51</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a434b65b1bc1b1906e76da03b24bcbdc"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=d083a9da1bc1f190e06d520b234bcbcb^sys_idNOT IN38b2b91a1b05f190e06d520b234bcb82"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f4b2b91a1b05f190e06d520b234bcb81</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Session Logs Periodically">d083a9da1bc1f190e06d520b234bcbcb</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:26:46</sys_created_on>
+        <sys_id>38b2b91a1b05f190e06d520b234bcb82</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <ui_id>975a8a8f-f341-4ac4-95e4-79ac6855691f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=38b2b91a1b05f190e06d520b234bcb82"/>
+    <sys_element_mapping action="delete_multiple" query="id=38b2b91a1b05f190e06d520b234bcb82"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>38b2b91a1b05f190e06d520b234bcb82</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 09:26:46</sys_created_on>
+        <sys_id>b8b2b91a1b05f190e06d520b234bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-05 09:26:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{633a79b1-a659-415e-97e3-73199d735357.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=38b2b91a1b05f190e06d520b234bcb82"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=38b2b91a1b05f190e06d520b234bcb82"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_d083a9da1bc1f190e06d520b234bcbcb"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>session_logs_handler</internal_name>
+        <label_cache>[{"name":"975a8a8f-f341-4ac4-95e4-79ac6855691f.item","label":"2 - For Each➛Session Record","reference":"x_tesgh_veeam_app_session","reference_display":"Session","type":"reference","base_type":"reference","attributes":{"pills_draggable_inside_block":"true","pills_draggable_outside_block":"false"}},{"name":"975a8a8f-f341-4ac4-95e4-79ac6855691f.item.id","label":"2 - For Each➛Session Record➛ID","reference":"","reference_display":"ID","type":"string","base_type":"string","parent_table_name":"x_tesgh_veeam_app_session","column_name":"id"},{"name":"975a8a8f-f341-4ac4-95e4-79ac6855691f.item.backup_job_id","label":"2 - For Each➛Session Record➛Backup Job ID","reference":"","reference_display":"Backup Job ID","type":"string","base_type":"string","parent_table_name":"x_tesgh_veeam_app_session","column_name":"backup_job_id"},{"name":"633a79b1-a659-415e-97e3-73199d735357.Records","label":"1 - Look Up Records➛Session Records","reference":"x_tesgh_veeam_app_session","reference_display":"Session","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Get Session Logs Periodically</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Get Session Logs Periodically">d083a9da1bc1f190e06d520b234bcbcb</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>07c222131b81b1906e76da03b24bcb88</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:02</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_variable_value action="delete_multiple" query="document_key=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=07c222131b81b1906e76da03b24bcb88^sys_idNOT IN17c222131b81b1906e76da03b24bcbd7"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Session Logs Periodically">07c222131b81b1906e76da03b24bcb88</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>17c222131b81b1906e76da03b24bcbd7</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=17c222131b81b1906e76da03b24bcbd7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>17c222131b81b1906e76da03b24bcbd7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>9fc222131b81b1906e76da03b24bcbd7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 15:31:09</sys_updated_on>
+        <value>1970-01-01 00:15:00</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=17c222131b81b1906e76da03b24bcbd7"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=07c222131b81b1906e76da03b24bcb88^sys_idNOT IN03c222131b81b1906e76da03b24bcb89"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>07c222131b81b1906e76da03b24bcb88</id>
+        <name>Session Logs Handler</name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:50</sys_created_on>
+        <sys_id>03c222131b81b1906e76da03b24bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 15:30:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=03c222131b81b1906e76da03b24bcb89"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=07c222131b81b1906e76da03b24bcb88^sys_idNOT IN43c222131b81b1906e76da03b24bcb96"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Session Logs Periodically">07c222131b81b1906e76da03b24bcb88</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>43c222131b81b1906e76da03b24bcb96</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:02</sys_updated_on>
+        <ui_id>633a79b1-a659-415e-97e3-73199d735357</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=43c222131b81b1906e76da03b24bcb96"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43c222131b81b1906e76da03b24bcb96</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>0bc222131b81b1906e76da03b24bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 15:30:51</sys_updated_on>
+        <value>x_tesgh_veeam_app_session</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43c222131b81b1906e76da03b24bcb96</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>0fc222131b81b1906e76da03b24bcb98</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:33</sys_updated_on>
+        <value>sort_asc</value>
+        <variable display_value="Sort Type">0f400a1587003300663ca1bb36cb0b59</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43c222131b81b1906e76da03b24bcb96</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>47c222131b81b1906e76da03b24bcb99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:33</sys_updated_on>
+        <value>idISNOTEMPTY^backup_job_idISNOTEMPTY^state!=Stopped</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43c222131b81b1906e76da03b24bcb96</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>83c222131b81b1906e76da03b24bcb99</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:33</sys_updated_on>
+        <value>500</value>
+        <variable display_value="Max Results">4f400a1587003300663ca1bb36cb0b61</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>43c222131b81b1906e76da03b24bcb96</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:51</sys_created_on>
+        <sys_id>cfc222131b81b1906e76da03b24bcb98</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:33</sys_updated_on>
+        <value/>
+        <variable display_value="Order by">c7400a1587003300663ca1bb36cb0b55</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=43c222131b81b1906e76da03b24bcb96"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=43c222131b81b1906e76da03b24bcb96"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=43c222131b81b1906e76da03b24bcb96"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=07c222131b81b1906e76da03b24bcb88^sys_idNOT IN0c36361f1bc1b1906e76da03b24bcb97"/>
+    <sys_hub_sub_flow_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get Session Logs Periodically">07c222131b81b1906e76da03b24bcb88</flow>
+        <inputs/>
+        <inputs/>
+        <order>3</order>
+        <parent_ui_id>975a8a8f-f341-4ac4-95e4-79ac6855691f</parent_ui_id>
+        <subflow display_value="Get Session Logs">8ad276d71bc1b1906e76da03b24bcb2e</subflow>
+        <subflow_instance_inputs/>
+        <sys_class_name>sys_hub_sub_flow_instance</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:33</sys_created_on>
+        <sys_id>0c36361f1bc1b1906e76da03b24bcb97</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:02</sys_updated_on>
+        <ui_id>4bed7062-de26-4999-a530-36fb6a9a3c8b</ui_id>
+    </sys_hub_sub_flow_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0c36361f1bc1b1906e76da03b24bcb97"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>0c36361f1bc1b1906e76da03b24bcb97</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-21 16:04:02</sys_created_on>
+        <sys_id>4417612b1b59bd106e76da03b24bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:02</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Refresh Session">5ea6eda71b59bd106e76da03b24bcb49</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_sub_flow_instance</document>
+        <document_key>0c36361f1bc1b1906e76da03b24bcb97</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:34</sys_created_on>
+        <sys_id>c036361f1bc1b1906e76da03b24bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:34</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Wait For Completion">c836361f1bc1b1906e76da03b24bcb98</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0c36361f1bc1b1906e76da03b24bcb97"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>refresh_session</field>
+        <id>0c36361f1bc1b1906e76da03b24bcb97</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-21 16:04:02</sys_created_on>
+        <sys_id>c017612b1b59bd106e76da03b24bcb1c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:02</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_8ad276d71bc1b1906e76da03b24bcb2e</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>session_backup_job_id</field>
+        <id>0c36361f1bc1b1906e76da03b24bcb97</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:34</sys_created_on>
+        <sys_id>cc36361f1bc1b1906e76da03b24bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_8ad276d71bc1b1906e76da03b24bcb2e</table>
+        <value>{{975a8a8f-f341-4ac4-95e4-79ac6855691f.item.backup_job_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>session_id</field>
+        <id>0c36361f1bc1b1906e76da03b24bcb97</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:34</sys_created_on>
+        <sys_id>8436361f1bc1b1906e76da03b24bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:34</sys_updated_on>
+        <table>var__m_sys_hub_flow_input_8ad276d71bc1b1906e76da03b24bcb2e</table>
+        <value>{{975a8a8f-f341-4ac4-95e4-79ac6855691f.item.id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>wait_for_completion</field>
+        <id>0c36361f1bc1b1906e76da03b24bcb97</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:34</sys_created_on>
+        <sys_id>4036361f1bc1b1906e76da03b24bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:34</sys_updated_on>
+        <table>var__m_sys_hub_sub_flow_instance_inputs_0c36361f1bc1b1906e76da03b24bcb97</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_sub_flow_instance_inputs_0c36361f1bc1b1906e76da03b24bcb97^id=0c36361f1bc1b1906e76da03b24bcb97"/>
+    <sys_hub_sub_flow_instance_inputs action="delete_multiple" query="model=0c36361f1bc1b1906e76da03b24bcb97^sys_idNOT INc836361f1bc1b1906e76da03b24bcb98"/>
+    <sys_hub_sub_flow_instance_inputs action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,fd_hide_inline_script_widget=true,uiType=boolean,uiTypeLabel=True/False</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>wait_for_completion</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Wait For Completion</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="">0c36361f1bc1b1906e76da03b24bcb97</model>
+        <model_id>0c36361f1bc1b1906e76da03b24bcb97</model_id>
+        <model_table>sys_hub_flow_logic_ext_input</model_table>
+        <name>var__m_sys_hub_sub_flow_instance_inputs_0c36361f1bc1b1906e76da03b24bcb97</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_sub_flow_instance_inputs</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 16:55:33</sys_created_on>
+        <sys_id>c836361f1bc1b1906e76da03b24bcb98</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 16:55:33</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_sub_flow_instance_inputs>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0c36361f1bc1b1906e76da03b24bcb97"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=07c222131b81b1906e76da03b24bcb88^sys_idNOT INc7c222131b81b1906e76da03b24bcb8c"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">f4b2b91a1b05f190e06d520b234bcb81</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get Session Logs Periodically">07c222131b81b1906e76da03b24bcb88</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:50</sys_created_on>
+        <sys_id>c7c222131b81b1906e76da03b24bcb8c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:02</sys_updated_on>
+        <ui_id>975a8a8f-f341-4ac4-95e4-79ac6855691f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=c7c222131b81b1906e76da03b24bcb8c"/>
+    <sys_element_mapping action="delete_multiple" query="id=c7c222131b81b1906e76da03b24bcb8c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>c7c222131b81b1906e76da03b24bcb8c</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:50</sys_created_on>
+        <sys_id>43c222131b81b1906e76da03b24bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 15:30:50</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{633a79b1-a659-415e-97e3-73199d735357.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=c7c222131b81b1906e76da03b24bcb8c"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c7c222131b81b1906e76da03b24bcb8c"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=07c222131b81b1906e76da03b24bcb88"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_07c222131b81b1906e76da03b24bcb88"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_07c222131b81b1906e76da03b24bcb88"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_07c222131b81b1906e76da03b24bcb88"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_07c222131b81b1906e76da03b24bcb88"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>d083a9da1bc1f190e06d520b234bcbcb</sys_id>
+        <latest_snapshot>07c222131b81b1906e76da03b24bcb88</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch5-07-06-2023_07-23-2023_0036.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=d083a9da1bc1f190e06d520b234bcbcb^sys_idNOT IN27c262131b81b1906e76da03b24bcb48"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"27c262131b81b1906e76da03b24bcb48","name":"plan","plan_signature":null}}</plan>
+        <plan_id>d083a9da1bc1f190e06d520b234bcbcb</plan_id>
+        <snapshot>d98ae92f1b59bd106e76da03b24bcb1f</snapshot>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 15:30:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>27c262131b81b1906e76da03b24bcb48</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:04:03</sys_updated_on>
+        <trigger display_value="">ebc262131b81b1906e76da03b24bcb46</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=d083a9da1bc1f190e06d520b234bcbcb"/>
+</record_update>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Complete the following steps to verify connectivity between ServiceNow and active Veeam Backup &amp; Replication servers.</p>
+<p><strong>Note </strong>- The &#34;Enable test/test suite execution&#34; option should be enabled in the Automated Test Framework Properties (Automated Test Framework (ATF) -&gt; Properties).</p>
+<p>1. Click the &#34;<strong>Run Test</strong>&#34; button;<br />2. Wait until the automated test is completed and click the &#34;<strong>Go to Result</strong>&#34; button;<br />3. Check the <strong>Output</strong>, <strong>Status </strong>and <strong>Summary </strong>of the test&#39;s execution:</p>
+<p><strong>Expected results:</strong></p>
+<ul style="list-style-position: inside;"><li>The &#34;<strong>Output</strong>&#34; field should be &#34;<strong>Test passed</strong>&#34;;</li><li>The <strong>Status </strong>should be &#34;<strong>Success</strong>&#34;;</li><li>The <strong>Summary </strong>should contain &#34;<strong>The connection(s) to the Veeam Backup &amp; Replication server(s) successfully passed.</strong>&#34;</li></ul>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents>66d5b2101bee9110e06d520b234bcba5</dependent_on_contents>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>sys_atf_test.do?sys_id=a773407f1b94f1106e76da03b24bcb60</end_point>
+        <end_point_open_mode>2</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on>db9e6ed41bae9110e06d520b234bcb51</implicit_dependent_on>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>300</order>
+        <parent display_value="Veeam Backup &amp; Replication Server Connection Configuration">c27f62581bae9110e06d520b234bcb4f</parent>
+        <parents>c27f62581bae9110e06d520b234bcb4f,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>false</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-10 12:29:53</sys_created_on>
+        <sys_id>4c0c44ca1b28f510e06d520b234bcb16</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Veeam Backup &amp; Replication Server Connections Verification</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_4c0c44ca1b28f510e06d520b234bcb16</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-11-03 07:38:40</sys_updated_on>
+        <table/>
+        <title>Veeam Backup &amp; Replication Server Connections Verification</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=4c0c44ca1b28f510e06d520b234bcb16"/>
+</record_update>

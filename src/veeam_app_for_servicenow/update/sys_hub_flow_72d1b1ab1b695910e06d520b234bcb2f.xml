@@ -1,0 +1,1214 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from>ad0d5ba01bd0911063fd6243604bcbec</copied_from>
+        <copied_from_name>Veeam pull event logs</copied_from_name>
+        <description/>
+        <internal_name>pull_latest_event_logs</internal_name>
+        <label_cache>[{"name":"179fdff5-8364-4bd8-8971-18799403dae7.item.mid_server.name","label":"6 - For Each➛Veeam Connection Record➛MID Server➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"ecc_agent","column_name":"name"},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Record.event_id","label":"2 - Look Up Record➛Veeam Event Log Record➛Event ID","reference":"","reference_display":"Event ID","type":"string","base_type":"string","parent_table_name":"x_tesgh_veeam_veeam_event_logs","column_name":"event_id"},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.__dont_treat_as_error__","label":"2 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.__action_status__","label":"2 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.error_message","label":"2 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Table","label":"2 - Look Up Record➛Veeam Event Log Table","reference":"x_tesgh_veeam_app_veeam_event_log","reference_display":"Veeam Event Log","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Record","label":"2 - Look Up Record➛Veeam Event Log Record","reference":"x_tesgh_veeam_app_veeam_event_log","reference_display":"Veeam Event Log","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1d48703-7561-467e-a0c1-657e5a139e2e.variable","label":"6 - Call powershell script to get event logs➛ECC Queue SysId","reference_display":"ECC Queue SysId","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"131f65a9-89a2-490c-98a9-51dd52a3fa64"}},{"name":"d1d48703-7561-467e-a0c1-657e5a139e2e.__dont_treat_as_error__","label":"6 - Call powershell script to get event logs➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bcf774df-37da-44d7-a3f3-57fa2c6a94e5"}},{"name":"d1d48703-7561-467e-a0c1-657e5a139e2e.__action_status__","label":"6 - Call powershell script to get event logs➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDbe736be8f1d09110ba3b42d261a2eeae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9fe01bcc-3ddb-494b-a43d-fcfbb19a5ed1"}},{"name":"flow_variable.last_event_index","label":"Flow Variables➛Last Event Index","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1c0053a2-aa2e-44c8-aea3-9484d727938b"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Record.index","label":"2 - Look Up Record➛Veeam Event Log Record➛Index","reference":"","reference_display":"Index","type":"integer","base_type":"integer","parent_table_name":"x_tesgh_veeam_app_veeam_event_log","column_name":"index"},{"name":"af6dafda-c922-492f-9115-ca5312336de1.__action_status__","label":"7 - Get Event Logs from Veeam Server➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDe3a6f97f32a59910b87ab98e360f93ac","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9fe01bcc-3ddb-494b-a43d-fcfbb19a5ed1"}},{"name":"af6dafda-c922-492f-9115-ca5312336de1.__dont_treat_as_error__","label":"7 - Get Event Logs from Veeam Server➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bcf774df-37da-44d7-a3f3-57fa2c6a94e5"}},{"name":"af6dafda-c922-492f-9115-ca5312336de1.variable","label":"7 - Get Event Logs from Veeam Server➛ECC Queue SysId","reference_display":"ECC Queue SysId","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"131f65a9-89a2-490c-98a9-51dd52a3fa64"}},{"name":"9c5f81c5-9f14-43a6-a5d1-87fe9334d44c.Records","label":"5 - Look Up Records➛Veeam Connection Records","reference":"x_tesgh_veeam_app_veeam_connection","reference_display":"Veeam Connection","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master_snapshot>9ff635bf1ba59910e06d520b234bcb51</master_snapshot>
+        <name>Get latest Event Logs</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>ebf635bf1ba59910e06d520b234bcbbc</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>72d1b1ab1b695910e06d520b234bcb2f</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>Get latest Event Logs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_72d1b1ab1b695910e06d520b234bcb2f</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-07 13:41:31</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_variable_value action="delete_multiple" query="document_key=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_flow_timer_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <day_of_month>1</day_of_month>
+        <day_of_week/>
+        <name/>
+        <run_period>1970-01-01 01:00:01</run_period>
+        <run_start/>
+        <sys_class_name>sys_flow_timer_trigger</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ebf635bf1ba59910e06d520b234bcbbc</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:06:10</sys_updated_on>
+        <time/>
+        <timer_type>1</timer_type>
+    </sys_flow_timer_trigger>
+    <sys_flow_trigger_auto_script action="delete_multiple" query="name=Trigger:ebf635bf1ba59910e06d520b234bcbbc^sys_idNOT IN96f7bdff1ba59910e06d520b234bcb54"/>
+    <sys_flow_trigger_auto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time/>
+        <max_drift/>
+        <name>Trigger:ebf635bf1ba59910e06d520b234bcbbc</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="Cristian Girbu">a8195b2d97b30150628271e3a253af47</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek/>
+        <run_period>1970-01-01 01:00:01</run_period>
+        <run_start/>
+        <run_time/>
+        <run_type>periodically</run_type>
+        <script><![CDATA[sn_flow_trigger.FlowTriggerAPI.fireTimerTrigger('ebf635bf1ba59910e06d520b234bcbbc');]]></script>
+        <sys_class_name>sys_flow_trigger_auto_script</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:49:47</sys_created_on>
+        <sys_id>96f7bdff1ba59910e06d520b234bcb54</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:06:10</sys_updated_on>
+        <time_zone/>
+        <trigger display_value="">ebf635bf1ba59910e06d520b234bcbbc</trigger>
+        <upgrade_safe>true</upgrade_safe>
+    </sys_flow_trigger_auto_script>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=72d1b1ab1b695910e06d520b234bcb2f^sys_idNOT IN4fd1b1ab1b695910e06d520b234bcb7d"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>4fd1b1ab1b695910e06d520b234bcb7d</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4fd1b1ab1b695910e06d520b234bcb7d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>4fd1b1ab1b695910e06d520b234bcb7d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>c3d1b1ab1b695910e06d520b234bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:36</sys_updated_on>
+        <value>1970-01-01 01:00:01</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=4fd1b1ab1b695910e06d520b234bcb7d"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=72d1b1ab1b695910e06d520b234bcb2f^sys_idNOT IN76d1b1ab1b695910e06d520b234bcb31"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>72d1b1ab1b695910e06d520b234bcb2f</id>
+        <name>Pull latest Event Logs</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>76d1b1ab1b695910e06d520b234bcb31</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:35</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=76d1b1ab1b695910e06d520b234bcb31"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=72d1b1ab1b695910e06d520b234bcb2f^sys_idNOT IN28d25f3f1bacb5106e76da03b24bcbf6,3ee6b1bf1ba59910e06d520b234bcb4e,4fd1b1ab1b695910e06d520b234bcb61"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:46:13</sys_created_on>
+        <sys_id>28d25f3f1bacb5106e76da03b24bcbf6</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-08-16 12:25:30</sys_updated_on>
+        <ui_id>9c5f81c5-9f14-43a6-a5d1-87fe9334d44c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=28d25f3f1bacb5106e76da03b24bcbf6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28d25f3f1bacb5106e76da03b24bcbf6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:46:13</sys_created_on>
+        <sys_id>a4d25f3f1bacb5106e76da03b24bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:46:13</sys_updated_on>
+        <value>x_tesgh_veeam_app_veeam_connection</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>28d25f3f1bacb5106e76da03b24bcbf6</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:46:13</sys_created_on>
+        <sys_id>ecd25f3f1bacb5106e76da03b24bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:46:13</sys_updated_on>
+        <value>active=true^connection_urlISNOTEMPTY^credentialISNOTEMPTY^use_mid=true^mid_serverISNOTEMPTY</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=28d25f3f1bacb5106e76da03b24bcbf6"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=28d25f3f1bacb5106e76da03b24bcbf6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=28d25f3f1bacb5106e76da03b24bcbf6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Event Logs from Veeam Server">1fa6f97f1ba59910e06d520b234bcb8f</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <order>7</order>
+        <parent_ui_id>179fdff5-8364-4bd8-8971-18799403dae7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:11</sys_created_on>
+        <sys_id>3ee6b1bf1ba59910e06d520b234bcb4e</sys_id>
+        <sys_mod_count>58</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-08-16 12:25:30</sys_updated_on>
+        <ui_id>af6dafda-c922-492f-9115-ca5312336de1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=3ee6b1bf1ba59910e06d520b234bcb4e"/>
+    <sys_element_mapping action="delete_multiple" query="id=3ee6b1bf1ba59910e06d520b234bcb4e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>last_event_index</field>
+        <id>3ee6b1bf1ba59910e06d520b234bcb4e</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:11</sys_created_on>
+        <sys_id>36e6b1bf1ba59910e06d520b234bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:11</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1fa6f97f1ba59910e06d520b234bcb8f</table>
+        <value>{{flow_variable.last_event_index}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_server_name</field>
+        <id>3ee6b1bf1ba59910e06d520b234bcb4e</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:37</sys_created_on>
+        <sys_id>6b04d3bf1bacb5106e76da03b24bcbf4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:37</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1fa6f97f1ba59910e06d520b234bcb8f</table>
+        <value>{{179fdff5-8364-4bd8-8971-18799403dae7.item.mid_server.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3ee6b1bf1ba59910e06d520b234bcb4e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=3ee6b1bf1ba59910e06d520b234bcb4e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>4fd1b1ab1b695910e06d520b234bcb61</sys_id>
+        <sys_mod_count>60</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-08-16 12:25:30</sys_updated_on>
+        <ui_id>d83f4188-caa9-4598-8e10-25978d94338a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4fd1b1ab1b695910e06d520b234bcb61"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4fd1b1ab1b695910e06d520b234bcb61</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>03d1b1ab1b695910e06d520b234bcb66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:06:04</sys_updated_on>
+        <value>x_tesgh_veeam_app_veeam_event_log</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4fd1b1ab1b695910e06d520b234bcb61</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>07d1b1ab1b695910e06d520b234bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:36</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="Sort Type">5d09f99587003300663ca1bb36cb0bb1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4fd1b1ab1b695910e06d520b234bcb61</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>4fd1b1ab1b695910e06d520b234bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:36</sys_updated_on>
+        <value>indexISNOTEMPTY</value>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4fd1b1ab1b695910e06d520b234bcb61</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>8bd1b1ab1b695910e06d520b234bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:36</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4fd1b1ab1b695910e06d520b234bcb61</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:36</sys_created_on>
+        <sys_id>c7d1b1ab1b695910e06d520b234bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:36</sys_updated_on>
+        <value>index</value>
+        <variable display_value="Order by">1d09f99587003300663ca1bb36cb0bad</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=4fd1b1ab1b695910e06d520b234bcb61"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4fd1b1ab1b695910e06d520b234bcb61"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4fd1b1ab1b695910e06d520b234bcb61"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=72d1b1ab1b695910e06d520b234bcb2f^sys_idNOT IN64d25f3f1bacb5106e76da03b24bcbfa,7ad1b1ab1b695910e06d520b234bcb52,b6d1b1ab1b695910e06d520b234bcb56,f6d1b1ab1b695910e06d520b234bcb4d"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2cd25f3f1bacb5106e76da03b24bcbf9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:46:13</sys_created_on>
+        <sys_id>64d25f3f1bacb5106e76da03b24bcbfa</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <ui_id>179fdff5-8364-4bd8-8971-18799403dae7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=64d25f3f1bacb5106e76da03b24bcbfa"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_72d1b1ab1b695910e06d520b234bcb2f^id=64d25f3f1bacb5106e76da03b24bcbfa"/>
+    <sys_element_mapping action="delete_multiple" query="id=64d25f3f1bacb5106e76da03b24bcbfa"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>64d25f3f1bacb5106e76da03b24bcbfa</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:46:13</sys_created_on>
+        <sys_id>20d25f3f1bacb5106e76da03b24bcbfd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:46:13</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9c5f81c5-9f14-43a6-a5d1-87fe9334d44c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=64d25f3f1bacb5106e76da03b24bcbfa"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=64d25f3f1bacb5106e76da03b24bcbfa"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">53d3284997dc1110628271e3a253afae</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>7ad1b1ab1b695910e06d520b234bcb52</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <ui_id>871ff09a-719f-4352-a0a8-c789c64823bf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=7ad1b1ab1b695910e06d520b234bcb52"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_72d1b1ab1b695910e06d520b234bcb2f^id=7ad1b1ab1b695910e06d520b234bcb52"/>
+    <sys_element_mapping action="delete_multiple" query="id=7ad1b1ab1b695910e06d520b234bcb52"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>7ad1b1ab1b695910e06d520b234bcb52</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>7ad1b1ab1b695910e06d520b234bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d83f4188-caa9-4598-8e10-25978d94338a.status}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=7ad1b1ab1b695910e06d520b234bcb52"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7ad1b1ab1b695910e06d520b234bcb52"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d7d3284997dc1110628271e3a253afb1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>last_event_index</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>871ff09a-719f-4352-a0a8-c789c64823bf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>b6d1b1ab1b695910e06d520b234bcb56</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <ui_id>3d409d1e-a15a-45ee-a80b-c6e9981e23a2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=b6d1b1ab1b695910e06d520b234bcb56"/>
+    <sys_element_mapping action="delete_multiple" query="id=b6d1b1ab1b695910e06d520b234bcb56"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>last_event_index</field>
+        <id>b6d1b1ab1b695910e06d520b234bcb56</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>fad1b1ab1b695910e06d520b234bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:35</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_72d1b1ab1b695910e06d520b234bcb2f</table>
+        <value>{{d83f4188-caa9-4598-8e10-25978d94338a.Record.index}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=b6d1b1ab1b695910e06d520b234bcb56"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b6d1b1ab1b695910e06d520b234bcb56"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9bd3284997dc1110628271e3a253af9e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</flow>
+        <flow_variable/>
+        <flow_variables_assigned>last_event_index</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>f6d1b1ab1b695910e06d520b234bcb4d</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <ui_id>92b77deb-279f-4a6d-ba27-61018c66909a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=f6d1b1ab1b695910e06d520b234bcb4d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>f6d1b1ab1b695910e06d520b234bcb4d</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>f2d1b1ab1b695910e06d520b234bcb51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:35</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Last Event Index">7ad1b1ab1b695910e06d520b234bcb39</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_72d1b1ab1b695910e06d520b234bcb2f^id=f6d1b1ab1b695910e06d520b234bcb4d"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=f6d1b1ab1b695910e06d520b234bcb4d"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f6d1b1ab1b695910e06d520b234bcb4d"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=72d1b1ab1b695910e06d520b234bcb2f^sys_idNOT IN7ad1b1ab1b695910e06d520b234bcb39"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1c0053a2-aa2e-44c8-aea3-9484d727938b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_event_index</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Last Event Index</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</model>
+        <model_id>72d1b1ab1b695910e06d520b234bcb2f</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_72d1b1ab1b695910e06d520b234bcb2f</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:44:35</sys_created_on>
+        <sys_id>7ad1b1ab1b695910e06d520b234bcb39</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Last Event Index</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_7ad1b1ab1b695910e06d520b234bcb39</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:44:35</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_72d1b1ab1b695910e06d520b234bcb2f"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>pull_latest_event_logs</internal_name>
+        <label_cache>[{"name":"179fdff5-8364-4bd8-8971-18799403dae7.item.mid_server.name","label":"6 - For Each➛Veeam Connection Record➛MID Server➛Name","reference":"","reference_display":"Name","type":"string","base_type":"string","parent_table_name":"ecc_agent","column_name":"name"},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Record.event_id","label":"2 - Look Up Record➛Veeam Event Log Record➛Event ID","reference":"","reference_display":"Event ID","type":"string","base_type":"string","parent_table_name":"x_tesgh_veeam_veeam_event_logs","column_name":"event_id"},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.__dont_treat_as_error__","label":"2 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.__action_status__","label":"2 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.error_message","label":"2 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.status","label":"2 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Table","label":"2 - Look Up Record➛Veeam Event Log Table","reference":"x_tesgh_veeam_app_veeam_event_log","reference_display":"Veeam Event Log","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Record","label":"2 - Look Up Record➛Veeam Event Log Record","reference":"x_tesgh_veeam_app_veeam_event_log","reference_display":"Veeam Event Log","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"d1d48703-7561-467e-a0c1-657e5a139e2e.variable","label":"6 - Call powershell script to get event logs➛ECC Queue SysId","reference_display":"ECC Queue SysId","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"131f65a9-89a2-490c-98a9-51dd52a3fa64"}},{"name":"d1d48703-7561-467e-a0c1-657e5a139e2e.__dont_treat_as_error__","label":"6 - Call powershell script to get event logs➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bcf774df-37da-44d7-a3f3-57fa2c6a94e5"}},{"name":"d1d48703-7561-467e-a0c1-657e5a139e2e.__action_status__","label":"6 - Call powershell script to get event logs➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDbe736be8f1d09110ba3b42d261a2eeae","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9fe01bcc-3ddb-494b-a43d-fcfbb19a5ed1"}},{"name":"flow_variable.last_event_index","label":"Flow Variables➛Last Event Index","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"1c0053a2-aa2e-44c8-aea3-9484d727938b"}},{"name":"d83f4188-caa9-4598-8e10-25978d94338a.Record.index","label":"2 - Look Up Record➛Veeam Event Log Record➛Index","reference":"","reference_display":"Index","type":"integer","base_type":"integer","parent_table_name":"x_tesgh_veeam_app_veeam_event_log","column_name":"index"},{"name":"af6dafda-c922-492f-9115-ca5312336de1.__action_status__","label":"7 - Get Event Logs from Veeam Server➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiTypeLabel":"Object","co_type_name":"FDe3a6f97f32a59910b87ab98e360f93ac","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"object","action_error_output":"true","uiUniqueId":"9fe01bcc-3ddb-494b-a43d-fcfbb19a5ed1"}},{"name":"af6dafda-c922-492f-9115-ca5312336de1.__dont_treat_as_error__","label":"7 - Get Event Logs from Veeam Server➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiTypeLabel":"True/False","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"boolean","visible_in_ui":"false","action_error_output":"true","uiUniqueId":"bcf774df-37da-44d7-a3f3-57fa2c6a94e5"}},{"name":"af6dafda-c922-492f-9115-ca5312336de1.variable","label":"7 - Get Event Logs from Veeam Server➛ECC Queue SysId","reference_display":"ECC Queue SysId","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"131f65a9-89a2-490c-98a9-51dd52a3fa64"}},{"name":"9c5f81c5-9f14-43a6-a5d1-87fe9334d44c.Records","label":"5 - Look Up Records➛Veeam Connection Records","reference":"x_tesgh_veeam_app_veeam_connection","reference_display":"Veeam Connection","type":"records","base_type":"records","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}}]</label_cache>
+        <master>true</master>
+        <name>Get latest Event Logs</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Get latest Event Logs">72d1b1ab1b695910e06d520b234bcb2f</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9ff635bf1ba59910e06d520b234bcb51</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_variable_value action="delete_multiple" query="document_key=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=9ff635bf1ba59910e06d520b234bcb51^sys_idNOT INd7f635bf1ba59910e06d520b234bcb7a"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <name>Repeat</name>
+        <remote_sys_id/>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>d7f635bf1ba59910e06d520b234bcb7a</sys_id>
+        <sys_mod_count>11</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <trigger_definition display_value="Repeat">f63f0d94c32222002841b63b12d3aeed</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>repeat</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d7f635bf1ba59910e06d520b234bcb7a"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_trigger_instance</document>
+        <document_key>d7f635bf1ba59910e06d520b234bcb7a</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>57f635bf1ba59910e06d520b234bcb7b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:30</sys_updated_on>
+        <value>1970-01-01 01:00:01</value>
+        <variable display_value="Repeat">1c5f4d94c32222002841b63b12d3aeb3</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_trigger_input_f63f0d94c32222002841b63b12d3aeed^id=d7f635bf1ba59910e06d520b234bcb7a"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=9ff635bf1ba59910e06d520b234bcb51^sys_idNOT INd3f635bf1ba59910e06d520b234bcb53"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>9ff635bf1ba59910e06d520b234bcb51</id>
+        <name>Pull latest Event Logs</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>d3f635bf1ba59910e06d520b234bcb53</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d3f635bf1ba59910e06d520b234bcb53"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=9ff635bf1ba59910e06d520b234bcb51^sys_idNOT IN7d1457bf1bacb5106e76da03b24bcb8b,d7f635bf1ba59910e06d520b234bcb79,dff635bf1ba59910e06d520b234bcb6f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Records">43400a1587003300663ca1bb36cb0b4b</action_type>
+        <action_type_parent display_value="Look Up Records">d1c56ec50b30030085c083eb37673a50</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:46</sys_created_on>
+        <sys_id>7d1457bf1bacb5106e76da03b24bcb8b</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>9c5f81c5-9f14-43a6-a5d1-87fe9334d44c</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=7d1457bf1bacb5106e76da03b24bcb8b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d1457bf1bacb5106e76da03b24bcb8b</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:46</sys_created_on>
+        <sys_id>b51457bf1bacb5106e76da03b24bcb8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <value>x_tesgh_veeam_app_veeam_connection</value>
+        <variable display_value="Table">8f400a1587003300663ca1bb36cb0b4b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>7d1457bf1bacb5106e76da03b24bcb8b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:46</sys_created_on>
+        <sys_id>fd1457bf1bacb5106e76da03b24bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <value>active=true^connection_urlISNOTEMPTY^credentialISNOTEMPTY^use_mid=true^mid_serverISNOTEMPTY</value>
+        <variable display_value="Conditions">8f400a1587003300663ca1bb36cb0b50</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_43400a1587003300663ca1bb36cb0b4b^id=7d1457bf1bacb5106e76da03b24bcb8b"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7d1457bf1bacb5106e76da03b24bcb8b"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=7d1457bf1bacb5106e76da03b24bcb8b"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Event Logs from Veeam Server">1fa6f97f1ba59910e06d520b234bcb8f</action_type>
+        <action_type_parent display_value="Get Event Logs from Veeam Server">ed46b17f1ba59910e06d520b234bcbd4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <order>7</order>
+        <parent_ui_id>179fdff5-8364-4bd8-8971-18799403dae7</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>d7f635bf1ba59910e06d520b234bcb79</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>af6dafda-c922-492f-9115-ca5312336de1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d7f635bf1ba59910e06d520b234bcb79"/>
+    <sys_element_mapping action="delete_multiple" query="id=d7f635bf1ba59910e06d520b234bcb79"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>last_event_index</field>
+        <id>d7f635bf1ba59910e06d520b234bcb79</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>17f635bf1ba59910e06d520b234bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:30</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1fa6f97f1ba59910e06d520b234bcb8f</table>
+        <value>{{flow_variable.last_event_index}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>mid_server_name</field>
+        <id>d7f635bf1ba59910e06d520b234bcb79</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:46</sys_created_on>
+        <sys_id>fd1457bf1bacb5106e76da03b24bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_1fa6f97f1ba59910e06d520b234bcb8f</table>
+        <value>{{179fdff5-8364-4bd8-8971-18799403dae7.item.mid_server.name}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d7f635bf1ba59910e06d520b234bcb79"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=d7f635bf1ba59910e06d520b234bcb79"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>dff635bf1ba59910e06d520b234bcb6f</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>d83f4188-caa9-4598-8e10-25978d94338a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=dff635bf1ba59910e06d520b234bcb6f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dff635bf1ba59910e06d520b234bcb6f</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>17f635bf1ba59910e06d520b234bcb73</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:06:09</sys_updated_on>
+        <value>x_tesgh_veeam_app_veeam_event_log</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dff635bf1ba59910e06d520b234bcb6f</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>1bf635bf1ba59910e06d520b234bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+        <value>sort_desc</value>
+        <variable display_value="Sort Type">5d09f99587003300663ca1bb36cb0bb1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dff635bf1ba59910e06d520b234bcb6f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>53f635bf1ba59910e06d520b234bcb73</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:30</sys_updated_on>
+        <value>indexISNOTEMPTY</value>
+        <variable display_value="Conditions">d509f99587003300663ca1bb36cb0ba9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dff635bf1ba59910e06d520b234bcb6f</document_key>
+        <order>5</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_id>9ff635bf1ba59910e06d520b234bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:30</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Don't fail on error">ceab42a673110010d70877186bf6a74f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>dff635bf1ba59910e06d520b234bcb6f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>dbf635bf1ba59910e06d520b234bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+        <value>index</value>
+        <variable display_value="Order by">1d09f99587003300663ca1bb36cb0bad</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3^id=dff635bf1ba59910e06d520b234bcb6f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=dff635bf1ba59910e06d520b234bcb6f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dff635bf1ba59910e06d520b234bcb6f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=9ff635bf1ba59910e06d520b234bcb51^sys_idNOT IN311457bf1bacb5106e76da03b24bcba0,5ff635bf1ba59910e06d520b234bcb65,93f635bf1ba59910e06d520b234bcb62,97f635bf1ba59910e06d520b234bcb5e"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">2cd25f3f1bacb5106e76da03b24bcbf9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>6</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:46</sys_created_on>
+        <sys_id>311457bf1bacb5106e76da03b24bcba0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>179fdff5-8364-4bd8-8971-18799403dae7</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=311457bf1bacb5106e76da03b24bcba0"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9ff635bf1ba59910e06d520b234bcb51^id=311457bf1bacb5106e76da03b24bcba0"/>
+    <sys_element_mapping action="delete_multiple" query="id=311457bf1bacb5106e76da03b24bcba0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>items</field>
+        <id>311457bf1bacb5106e76da03b24bcba0</id>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-16 11:51:46</sys_created_on>
+        <sys_id>b91457bf1bacb5106e76da03b24bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_098e1dc5c3e232002841b63b12d3ae33</table>
+        <value>{{9c5f81c5-9f14-43a6-a5d1-87fe9334d44c.Records}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=311457bf1bacb5106e76da03b24bcba0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=311457bf1bacb5106e76da03b24bcba0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">d7d3284997dc1110628271e3a253afb1</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <flow_variable/>
+        <flow_variable/>
+        <flow_variables_assigned>last_event_index</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id>871ff09a-719f-4352-a0a8-c789c64823bf</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>5ff635bf1ba59910e06d520b234bcb65</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>3d409d1e-a15a-45ee-a80b-c6e9981e23a2</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5ff635bf1ba59910e06d520b234bcb65"/>
+    <sys_element_mapping action="delete_multiple" query="id=5ff635bf1ba59910e06d520b234bcb65"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>last_event_index</field>
+        <id>5ff635bf1ba59910e06d520b234bcb65</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>93f635bf1ba59910e06d520b234bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_variable_9ff635bf1ba59910e06d520b234bcb51</table>
+        <value>{{d83f4188-caa9-4598-8e10-25978d94338a.Record.index}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5ff635bf1ba59910e06d520b234bcb65"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5ff635bf1ba59910e06d520b234bcb65"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">53d3284997dc1110628271e3a253afae</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>93f635bf1ba59910e06d520b234bcb62</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>871ff09a-719f-4352-a0a8-c789c64823bf</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=93f635bf1ba59910e06d520b234bcb62"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9ff635bf1ba59910e06d520b234bcb51^id=93f635bf1ba59910e06d520b234bcb62"/>
+    <sys_element_mapping action="delete_multiple" query="id=93f635bf1ba59910e06d520b234bcb62"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>93f635bf1ba59910e06d520b234bcb62</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>13f635bf1ba59910e06d520b234bcb65</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{d83f4188-caa9-4598-8e10-25978d94338a.status}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=93f635bf1ba59910e06d520b234bcb62"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=93f635bf1ba59910e06d520b234bcb62"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">9bd3284997dc1110628271e3a253af9e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</flow>
+        <flow_variable/>
+        <flow_variables_assigned>last_event_index</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>1</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>97f635bf1ba59910e06d520b234bcb5e</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:46</sys_updated_on>
+        <ui_id>92b77deb-279f-4a6d-ba27-61018c66909a</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=97f635bf1ba59910e06d520b234bcb5e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_flow_logic</document>
+        <document_key>97f635bf1ba59910e06d520b234bcb5e</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>17f635bf1ba59910e06d520b234bcb61</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Last Event Index">9ff635bf1ba59910e06d520b234bcb58</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_9ff635bf1ba59910e06d520b234bcb51^id=97f635bf1ba59910e06d520b234bcb5e"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=97f635bf1ba59910e06d520b234bcb5e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=97f635bf1ba59910e06d520b234bcb5e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=9ff635bf1ba59910e06d520b234bcb51^sys_idNOT IN9ff635bf1ba59910e06d520b234bcb58"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=1c0053a2-aa2e-44c8-aea3-9484d727938b</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>last_event_index</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Last Event Index</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Get latest Event Logs">9ff635bf1ba59910e06d520b234bcb51</model>
+        <model_id>9ff635bf1ba59910e06d520b234bcb51</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_9ff635bf1ba59910e06d520b234bcb51</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:29</sys_created_on>
+        <sys_id>9ff635bf1ba59910e06d520b234bcb58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Last Event Index</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_9ff635bf1ba59910e06d520b234bcb58</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 05:45:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_9ff635bf1ba59910e06d520b234bcb51"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>72d1b1ab1b695910e06d520b234bcb2f</sys_id>
+        <latest_snapshot>9ff635bf1ba59910e06d520b234bcb51</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch5-07-06-2023_07-23-2023_0036.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=72d1b1ab1b695910e06d520b234bcb2f^sys_idNOT INe7f635bf1ba59910e06d520b234bcbbf"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"e7f635bf1ba59910e06d520b234bcbbf","name":"plan","plan_signature":null}}</plan>
+        <plan_id>72d1b1ab1b695910e06d520b234bcb2f</plan_id>
+        <snapshot>f7cb57b71becb5106e76da03b24bcbc8</snapshot>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 05:45:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e7f635bf1ba59910e06d520b234bcbbf</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-16 11:51:48</sys_updated_on>
+        <trigger display_value="">ebf635bf1ba59910e06d520b234bcbbc</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=72d1b1ab1b695910e06d520b234bcb2f"/>
+</record_update>

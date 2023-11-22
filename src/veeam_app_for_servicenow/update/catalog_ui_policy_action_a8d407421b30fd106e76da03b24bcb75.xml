@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="INSERT_OR_UPDATE">
+        <catalog_item display_value="New Backup Job Template">f6fb86d91b6695106e76da03b24bcb22</catalog_item>
+        <catalog_variable>IO:8330c70e1bfcbd106e76da03b24bcb74</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>true</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-23 10:31:31</sys_created_on>
+        <sys_id>a8d407421b30fd106e76da03b24bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>keep_monthly_backups_for</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_a8d407421b30fd106e76da03b24bcb75</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 10:31:31</sys_updated_on>
+        <table/>
+        <ui_policy display_value="If Keep montly full backups selected">d7c403421b30fd106e76da03b24bcbf4</ui_policy>
+        <variable>keep_monthly_backups_for</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+</record_update>

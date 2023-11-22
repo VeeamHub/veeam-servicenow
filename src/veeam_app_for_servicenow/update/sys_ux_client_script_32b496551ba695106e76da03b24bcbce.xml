@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="List">fab4de151ba695106e76da03b24bcb9f</macroponent>
+        <name>List CRUD </name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({api, event, imports}) {
+  let type = '';
+	if(event.name === "NOW_RECORD_LIST_CONNECTED#SAVE_AS_REQUESTED") {
+		type = "CREATE";
+	}
+	else if (event.name  ===  "NOW_RECORD_LIST_CONNECTED#DELETE_REQUESTED") {
+		type = "DESTROY";
+	}
+	else if (event.name  ===  "NOW_RECORD_LIST_CONNECTED#RENAME_REQUESTED" ||  event.name  ===  "NOW_RECORD_LIST_CONNECTED#EDIT_COLUMNS_REQUESTED" || event.name  === "NOW_RECORD_LIST_CONNECTED#SAVE_REQUESTED") {
+		type = "UPDATE";
+	}
+
+	const CRUD = {
+		type: type,
+		options: event.payload.update,
+		timestamp: event.payload.timestamp
+	};
+	
+	api.setState('CRUD', CRUD);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-14 06:33:25</sys_created_on>
+        <sys_id>32b496551ba695106e76da03b24bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List CRUD </sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ux_client_script_32b496551ba695106e76da03b24bcbce</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-14 06:33:25</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

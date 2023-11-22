@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="DELETE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_backup_job_template_from_sctask</internal_name>
+        <label_cache>[]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Create Backup Job Template from SCTASK</name>
+        <natlang/>
+        <outputs/>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:45:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a3aecdd11bbb1510e06d520b234bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Backup Job Template from SCTASK</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_a3aecdd11bbb1510e06d520b234bcb00</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:45:50</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="DELETE" query="documentkey=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_variable_value action="DELETE" query="document_key=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_trigger_instance action="DELETE" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_flow_stage action="DELETE" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_flow_cat_variable_model action="DELETE" query="id=a3aecdd11bbb1510e06d520b234bcb00^sys_idNOT INafaecdd11bbb1510e06d520b234bcb00"/>
+    <sys_flow_cat_variable_model action="DELETE">
+        <id>a3aecdd11bbb1510e06d520b234bcb00</id>
+        <name>Create Backup Job Template from SCTASK</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:45:50</sys_created_on>
+        <sys_id>afaecdd11bbb1510e06d520b234bcb00</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:45:50</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="DELETE" query="flow_catalog_model=afaecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_flow_input action="DELETE" query="model=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_flow_output action="DELETE" query="model=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_alias_mapping action="DELETE" query="source_id=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_action_instance action="DELETE" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_sub_flow_instance action="DELETE" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_flow_logic action="DELETE" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_hub_flow_variable action="DELETE" query="model=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_input_a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_input_a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_flow_output_a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_flow_output_a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_flow_trigger_plan action="DELETE" query="plan_id=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_flow_subflow_plan action="DELETE" query="plan_id=a3aecdd11bbb1510e06d520b234bcb00"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_hub_flow_a3aecdd11bbb1510e06d520b234bcb00</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow"><sys_hub_flow action="INSERT_OR_UPDATE"><access>public</access><acls/><active>false</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><internal_name>create_backup_job_template_from_sctask</internal_name><label_cache>[]</label_cache><latest_snapshot/><master_snapshot/><name>Create Backup Job Template from SCTASK</name><natlang/><outputs/><remote_trigger_id/><run_as>system</run_as><run_with_roles/><sc_callable>false</sc_callable><show_draft_actions>false</show_draft_actions><show_triggered_flows>false</show_triggered_flows><status>draft</status><sys_class_name>sys_hub_flow</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-12-15 04:45:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>a3aecdd11bbb1510e06d520b234bcb00</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Create Backup Job Template from SCTASK</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_hub_flow_a3aecdd11bbb1510e06d520b234bcb00</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-12-15 04:45:50</sys_updated_on><type>flow</type></sys_hub_flow><sys_translated_text action="delete_multiple" query="documentkey=a3aecdd11bbb1510e06d520b234bcb00"/><sys_variable_value action="delete_multiple" query="document_key=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_trigger_instance action="delete_multiple" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_flow_stage action="delete_multiple" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/><sys_flow_cat_variable_model action="delete_multiple" query="id=a3aecdd11bbb1510e06d520b234bcb00^sys_idNOT INafaecdd11bbb1510e06d520b234bcb00"/><sys_flow_cat_variable_model action="INSERT_OR_UPDATE"><id>a3aecdd11bbb1510e06d520b234bcb00</id><name>Create Backup Job Template from SCTASK</name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-12-15 04:45:50</sys_created_on><sys_id>afaecdd11bbb1510e06d520b234bcb00</sys_id><sys_mod_count>0</sys_mod_count><sys_scope/><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-12-15 04:45:50</sys_updated_on></sys_flow_cat_variable_model><sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=afaecdd11bbb1510e06d520b234bcb00"/><sys_hub_flow_input action="delete_multiple" query="model=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_flow_output action="delete_multiple" query="model=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_alias_mapping action="delete_multiple" query="source_id=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_action_instance action="delete_multiple" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_sub_flow_instance action="delete_multiple" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_flow_logic action="delete_multiple" query="flow=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=a3aecdd11bbb1510e06d520b234bcb00"/><sys_hub_flow_variable action="delete_multiple" query="model=a3aecdd11bbb1510e06d520b234bcb00"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_a3aecdd11bbb1510e06d520b234bcb00"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_a3aecdd11bbb1510e06d520b234bcb00"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_a3aecdd11bbb1510e06d520b234bcb00"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_a3aecdd11bbb1510e06d520b234bcb00"/><sys_flow_trigger_plan action="delete_multiple" query="plan_id=a3aecdd11bbb1510e06d520b234bcb00"/><sys_flow_subflow_plan action="delete_multiple" query="plan_id=a3aecdd11bbb1510e06d520b234bcb00"/></record_update>]]></payload>
+        <payload_hash>859694246</payload_hash>
+        <record_name>Create Backup Job Template from SCTASK</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:45:50</sys_created_on>
+        <sys_id>abae49151bbb1510e06d520b234bcb6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185141a5d980000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:45:50</sys_updated_on>
+        <type>Flow</type>
+        <update_guid>6baecdd136bb15105e0b71c4f6346d06</update_guid>
+        <update_guid_history>6baecdd136bb15105e0b71c4f6346d06:859694246</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-07-04 10:21:58</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_flow">sys_hub_flow</sys_db_object>
+        <sys_id>38f7ec07b4114f43b66439f5a370c641</sys_id>
+        <sys_metadata>a3aecdd11bbb1510e06d520b234bcb00</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Create Backup Job Template from SCTASK</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_hub_flow_a3aecdd11bbb1510e06d520b234bcb00</sys_update_name>
+        <sys_update_version display_value="sys_hub_flow_a3aecdd11bbb1510e06d520b234bcb00">abae49151bbb1510e06d520b234bcb6c</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-07-04 10:21:58</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

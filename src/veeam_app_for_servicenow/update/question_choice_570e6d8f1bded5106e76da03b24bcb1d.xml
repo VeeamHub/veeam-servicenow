@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Schedule">c94685b91bb1551063fd6243604bcbc0</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-07 03:59:01</sys_created_on>
+        <sys_id>570e6d8f1bded5106e76da03b24bcb1d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Monthly</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>question_choice_570e6d8f1bded5106e76da03b24bcb1d</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-07 03:59:30</sys_updated_on>
+        <text>Monthly</text>
+        <value>Monthly</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=570e6d8f1bded5106e76da03b24bcb1d"/>
+</record_update>

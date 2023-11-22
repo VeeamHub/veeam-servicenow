@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="content_block_static">
+    <content_block_static action="DELETE">
+        <active>true</active>
+        <category>general</category>
+        <condition/>
+        <conditional>false</conditional>
+        <frame/>
+        <logged_on>false</logged_on>
+        <name>Most Recent Incidents</name>
+        <static_content><![CDATA[<p><span style="font-size: 36pt;"><strong>Most Recent Incidents</strong></span></p>]]></static_content>
+        <sys_class_name>content_block_static</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-07 03:36:32</sys_created_on>
+        <sys_id>c309a14b1bded5106e76da03b24bcbbf</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Most Recent Incidents</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>content_block_static_c309a14b1bded5106e76da03b24bcbbf</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-07 03:36:47</sys_updated_on>
+    </content_block_static>
+    <sys_translated_text action="DELETE" query="documentkey=c309a14b1bded5106e76da03b24bcbbf"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>content_block_static_c309a14b1bded5106e76da03b24bcbbf</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="content_block_static"&gt;&lt;content_block_static action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;category&gt;general&lt;/category&gt;&lt;condition/&gt;&lt;conditional&gt;false&lt;/conditional&gt;&lt;frame/&gt;&lt;logged_on&gt;false&lt;/logged_on&gt;&lt;name&gt;Most Recent Incidents&lt;/name&gt;&lt;static_content&gt;&lt;![CDATA[&lt;p&gt;&lt;span style="font-size: 36pt;"&gt;&lt;strong&gt;Most Recent Incidents&lt;/strong&gt;&lt;/span&gt;&lt;/p&gt;]]&gt;&lt;/static_content&gt;&lt;sys_class_name&gt;content_block_static&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-10-07 03:36:32&lt;/sys_created_on&gt;&lt;sys_id&gt;c309a14b1bded5106e76da03b24bcbbf&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name&gt;Most Recent Incidents&lt;/sys_name&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name&gt;content_block_static_c309a14b1bded5106e76da03b24bcbbf&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-10-07 03:36:47&lt;/sys_updated_on&gt;&lt;/content_block_static&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=c309a14b1bded5106e76da03b24bcbbf"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-726027672</payload_hash>
+        <record_name>Most Recent Incidents</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-07 03:36:47</sys_created_on>
+        <sys_id>1f29614b1bded5106e76da03b24bcb04</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183b0845a3e0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-07 03:36:47</sys_updated_on>
+        <type>Static Content</type>
+        <update_guid>1729614b7eded510ed0e015599d44104</update_guid>
+        <update_guid_history>1729614b7eded510ed0e015599d44104:-726027672,e719e14b58ded51066ff803a389c98ea:-816310874</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Most Recent Incidents">b82ef0701ba5f150e06d520b234bcb5a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-25 10:17:38</sys_created_on>
+        <sys_db_object display_value="" name="content_block_static">content_block_static</sys_db_object>
+        <sys_id>730ad2a1623d4c8e9a8aa3904c359bd9</sys_id>
+        <sys_metadata>c309a14b1bded5106e76da03b24bcbbf</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Most Recent Incidents</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>content_block_static_c309a14b1bded5106e76da03b24bcbbf</sys_update_name>
+        <sys_update_version display_value="content_block_static_c309a14b1bded5106e76da03b24bcbbf">1f29614b1bded5106e76da03b24bcb04</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:17:38</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

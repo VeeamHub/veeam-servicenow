@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<ol style="list-style-position: inside;"><li>Open the installed MID Server record;</li><li>Configure the MID Server to have &#34;<strong>Veeam App</strong>&#34; or &#34;<strong>ALL</strong>&#34; as <strong>Supported Applications</strong> in the Related Lists.</li></ol>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents>b5a6d60a1bb32d50e06d520b234bcb9e</dependent_on_contents>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>ecc_agent_list.do</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>400</order>
+        <parent display_value="MID Server Configuration">db9e6ed41bae9110e06d520b234bcb51</parent>
+        <parents>db9e6ed41bae9110e06d520b234bcb51,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-11 06:17:12</sys_created_on>
+        <sys_id>8d14769c1bae9110e06d520b234bcbc4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Supported Applications</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_8d14769c1bae9110e06d520b234bcbc4</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-19 11:45:48</sys_updated_on>
+        <table/>
+        <title>Supported Applications</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=8d14769c1bae9110e06d520b234bcbc4"/>
+</record_update>

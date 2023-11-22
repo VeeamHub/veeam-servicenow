@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template>DATASOURCE_REQUEST</action_template>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>import_event_logs</internal_name>
+        <label_cache/>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <name>Import Event Logs</name>
+        <natlang/>
+        <outputs/>
+        <state>draft</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:13:28</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8bba25a31b695910e06d520b234bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Event Logs</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_8bba25a31b695910e06d520b234bcba0</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:13:28</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_variable_value action="DELETE" query="document_key=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_hub_step_instance action="DELETE" query="action=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_hub_action_input action="DELETE" query="model=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_hub_action_output action="DELETE" query="model=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_8bba25a31b695910e06d520b234bcba0"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_8bba25a31b695910e06d520b234bcba0"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_8bba25a31b695910e06d520b234bcba0"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_8bba25a31b695910e06d520b234bcba0"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=8bba25a31b695910e06d520b234bcba0"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_hub_action_type_definition_8bba25a31b695910e06d520b234bcba0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition"><sys_hub_action_type_definition action="INSERT_OR_UPDATE"><access>public</access><acls/><action_status/><action_template>DATASOURCE_REQUEST</action_template><active>true</active><annotation/><callable_by_client_api>false</callable_by_client_api><category/><compiler_build/><copied_from/><copied_from_name/><description/><ih_action>false</ih_action><internal_name>import_event_logs</internal_name><label_cache/><latest_snapshot/><master_snapshot/><name>Import Event Logs</name><natlang/><outputs/><state>draft</state><sys_class_name>sys_hub_action_type_definition</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-09-01 10:13:28</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>8bba25a31b695910e06d520b234bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Import Event Logs</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_hub_action_type_definition_8bba25a31b695910e06d520b234bcba0</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-09-01 10:13:28</sys_updated_on><system_level>false</system_level><type/></sys_hub_action_type_definition><sys_translated_text action="delete_multiple" query="documentkey=8bba25a31b695910e06d520b234bcba0"/><sys_variable_value action="delete_multiple" query="document_key=8bba25a31b695910e06d520b234bcba0"/><sys_hub_step_instance action="delete_multiple" query="action=8bba25a31b695910e06d520b234bcba0"/><sys_hub_action_input action="delete_multiple" query="model=8bba25a31b695910e06d520b234bcba0"/><sys_hub_action_output action="delete_multiple" query="model=8bba25a31b695910e06d520b234bcba0"/><sys_hub_pill_compound action="delete_multiple" query="attached_to=8bba25a31b695910e06d520b234bcba0"/><sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=8bba25a31b695910e06d520b234bcba0"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_8bba25a31b695910e06d520b234bcba0"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_8bba25a31b695910e06d520b234bcba0"/><sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_8bba25a31b695910e06d520b234bcba0"/><sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_8bba25a31b695910e06d520b234bcba0"/><sys_hub_action_plan action="delete_multiple" query="action_id=8bba25a31b695910e06d520b234bcba0"/></record_update>]]></payload>
+        <payload_hash>-1532928286</payload_hash>
+        <record_name>Import Event Logs</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:13:28</sys_created_on>
+        <sys_id>0fba25a31b695910e06d520b234bcba6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182f88a96d10000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:13:28</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>47ba25a301695910194c51f8d3a795a6</update_guid>
+        <update_guid_history>47ba25a301695910194c51f8d3a795a6:-1532928286</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:14:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>6b146ad803184a428198fdf177be2544</sys_id>
+        <sys_metadata>8bba25a31b695910e06d520b234bcba0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Import Event Logs</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_8bba25a31b695910e06d520b234bcba0</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_8bba25a31b695910e06d520b234bcba0">0fba25a31b695910e06d520b234bcba6</sys_update_version>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:14:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

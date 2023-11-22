@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>keep_monthly_backups_for</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-06 12:03:52</sys_created_on>
+        <sys_id>5d30ef261b09fd506e76da03b24bcb9e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>keep_monthly_backups_for</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_5d30ef261b09fd506e76da03b24bcb9e</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-06 12:06:45</sys_updated_on>
+        <table>x_tesgh_veeam_app_backup_job_template</table>
+        <ui_policy display_value="If Keep monthly full backups is selected">ef1c834a1b30fd106e76da03b24bcbf0</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

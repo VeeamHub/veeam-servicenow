@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a369b0239371311094a1398efaba1034" extends="sys_import_set_row" label="Import Veeam Sessions" max_length="40" name="x_tesgh_veeam_app_import_veeam_sessions" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=activityId" label="activityId" max_length="40" name="u_activityid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=creationTime" label="creationTime" max_length="40" name="u_creationtime" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=endTime" label="endTime" max_length="40" name="u_endtime" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=parentSessionId" label="parentSessionId" max_length="40" name="u_parentsessionid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=progressPercent" label="progressPercent" max_length="40" name="u_progresspercent" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=resourceId" label="resourceId" max_length="40" name="u_resourceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=resourceReference" label="resourceReference" max_length="52" name="u_resourcereference" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=result" label="result" max_length="1000" name="u_result" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=ritmContext" label="ritmContext" max_length="40" name="u_ritmcontext" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=sessionType" label="sessionType" max_length="40" name="u_sessiontype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=state" label="state" max_length="40" name="u_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=usn" label="usn" max_length="40" name="u_usn" type="string"/>
+    </element>
+</database>

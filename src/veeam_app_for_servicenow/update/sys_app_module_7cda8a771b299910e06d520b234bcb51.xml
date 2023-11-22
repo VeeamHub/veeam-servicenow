@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Veeam">4630b52b1b695910e06d520b234bcb6c</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_import_set">table_nameLIKEx_tesgh_veeam_app^EQ<item endquery="false" field="table_name" goto="false" newquery="false" operator="LIKE" or="false" value="x_tesgh_veeam_app"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Import Sets VEE</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_import_set</name>
+        <order>3400</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 07:12:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7cda8a771b299910e06d520b234bcb51</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Import Sets</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_app_module_7cda8a771b299910e06d520b234bcb51</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-29 14:37:01</sys_updated_on>
+        <timeline_page/>
+        <title>Import Sets</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

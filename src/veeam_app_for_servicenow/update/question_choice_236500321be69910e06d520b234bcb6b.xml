@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Occurence">194dce1d1b6695106e76da03b24bcb92</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-18 11:58:26</sys_created_on>
+        <sys_id>236500321be69910e06d520b234bcb6b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Weekdays (M-F)</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>question_choice_236500321be69910e06d520b234bcb6b</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-18 11:58:52</sys_updated_on>
+        <text>Weekdays (M-F)</text>
+        <value>weekdays</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=236500321be69910e06d520b234bcb6b"/>
+</record_update>

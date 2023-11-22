@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_tesgh_veeam_app_backup_job</basic_apply_to>
+        <basic_query_from>x_tesgh_veeam_app_session</basic_query_from>
+        <insert_callback/>
+        <name>Sessions</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	current.addQuery('backup_job_id', parent.id);
+
+})(current, parent);]]></query_with>
+        <reference_field/>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-05 07:58:02</sys_created_on>
+        <sys_id>3f5d19561bc1f190e06d520b234bcb75</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Sessions</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_relationship_3f5d19561bc1f190e06d520b234bcb75</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-05 07:58:02</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=3f5d19561bc1f190e06d520b234bcb75"/>
+</record_update>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update node_type="sys_portal_page" unload_date="2023-05-10 09:11:37">
+    <sys_portal_page action="INSERT_OR_UPDATE">
+        <layout/>
+        <order/>
+        <read_roles/>
+        <roles/>
+        <selectable>false</selectable>
+        <sys_class_name>sys_portal_page</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-21 08:42:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f67e709f1b7f9910e06d520b234bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA My Veeam 2 - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_portal_page_f67e709f1b7f9910e06d520b234bcbb3</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-21 08:42:54</sys_updated_on>
+        <title>PA My Veeam 2 - New Tab</title>
+        <user/>
+        <view>pa_my_veeam_2_-_new_tab</view>
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA My Veeam 2 - New Tab">f67e709f1b7f9910e06d520b234bcbb3</page>
+                <summary>Virtual Machines</summary>
+                <sys_created_by>c.girbu</sys_created_by>
+                <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                <sys_id>9bff30df1b7f9910e06d520b234bcb6b</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>c.girbu</sys_updated_by>
+                <sys_updated_on>2022-12-21 08:49:59</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>publisher_widget</name>
+                        <portal_section display_value="Created 2022-12-21 09:49:30">9bff30df1b7f9910e06d520b234bcb6b</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                        <sys_id>1bff30df1b7f9910e06d520b234bcb6c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:49:30</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-12-21 09:49:30">9bff30df1b7f9910e06d520b234bcb6b</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                        <sys_id>1fff30df1b7f9910e06d520b234bcb6b</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:49:59</sys_updated_on>
+                        <value>8000c9df1b7f9910e06d520b234bcbdd</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>type</name>
+                        <portal_section display_value="Created 2022-12-21 09:49:30">9bff30df1b7f9910e06d520b234bcb6b</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                        <sys_id>53ff30df1b7f9910e06d520b234bcb6d</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:49:59</sys_updated_on>
+                        <value>sys_ui_hp_publisher</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_publish</name>
+                        <portal_section display_value="Created 2022-12-21 09:49:30">9bff30df1b7f9910e06d520b234bcb6b</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                        <sys_id>57ff30df1b7f9910e06d520b234bcb6c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:49:30</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-12-21 09:49:30">9bff30df1b7f9910e06d520b234bcb6b</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                        <sys_id>93ff30df1b7f9910e06d520b234bcb6c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:49:30</sys_updated_on>
+                        <value>com.glideapp.home.RenderHomepagePublishers</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-12-21 09:49:30">9bff30df1b7f9910e06d520b234bcb6b</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:49:30</sys_created_on>
+                        <sys_id>dbff30df1b7f9910e06d520b234bcb6c</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:49:59</sys_updated_on>
+                        <value>Virtual Machines</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone/>
+                <offset/>
+                <page display_value="PA My Veeam 2 - New Tab">f67e709f1b7f9910e06d520b234bcbb3</page>
+                <summary>Restore Points</summary>
+                <sys_created_by>c.girbu</sys_created_by>
+                <sys_created_on>2022-12-21 08:43:38</sys_created_on>
+                <sys_id>9dae749f1b7f9910e06d520b234bcbb6</sys_id>
+                <sys_mod_count>2</sys_mod_count>
+                <sys_updated_by>c.girbu</sys_updated_by>
+                <sys_updated_on>2022-12-21 08:48:08</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>can_subscribe</name>
+                        <portal_section display_value="Created 2022-12-21 09:43:38">9dae749f1b7f9910e06d520b234bcbb6</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:43:38</sys_created_on>
+                        <sys_id>29ae749f1b7f9910e06d520b234bcbb8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:43:38</sys_updated_on>
+                        <value>true</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>help_text_window</name>
+                        <portal_section display_value="Created 2022-12-21 09:43:38">9dae749f1b7f9910e06d520b234bcbb6</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:43:38</sys_created_on>
+                        <sys_id>65ae749f1b7f9910e06d520b234bcbb8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:43:38</sys_updated_on>
+                        <value>report_widget_description</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 2022-12-21 09:43:38">9dae749f1b7f9910e06d520b234bcbb6</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:43:38</sys_created_on>
+                        <sys_id>95ae749f1b7f9910e06d520b234bcbb7</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:48:08</sys_updated_on>
+                        <value>9faff0df1b7f9910e06d520b234bcbe9</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 2022-12-21 09:43:38">9dae749f1b7f9910e06d520b234bcbb6</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:43:38</sys_created_on>
+                        <sys_id>a1ae749f1b7f9910e06d520b234bcbb8</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:43:38</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderReport</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 2022-12-21 09:43:38">9dae749f1b7f9910e06d520b234bcbb6</portal_section>
+                        <sys_created_by>c.girbu</sys_created_by>
+                        <sys_created_on>2022-12-21 08:43:38</sys_created_on>
+                        <sys_id>e9ae749f1b7f9910e06d520b234bcbb8</sys_id>
+                        <sys_mod_count>1</sys_mod_count>
+                        <sys_updated_by>c.girbu</sys_updated_by>
+                        <sys_updated_on>2022-12-21 08:48:08</sys_updated_on>
+                        <value>Restore Points</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal_page>
+</record_update>

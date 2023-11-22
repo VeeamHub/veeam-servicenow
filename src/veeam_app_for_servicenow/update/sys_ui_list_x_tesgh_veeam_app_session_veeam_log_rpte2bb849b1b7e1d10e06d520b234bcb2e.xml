@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_tesgh_veeam_app_session_veeam_log" version="2" view="RPTe2bb849b1b7e1d10e06d520b234bcb2e">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_description</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>eabbcc9b1b7e1d10e06d520b234bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_end_date</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>6ebbcc9b1b7e1d10e06d520b234bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_id</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>eebbcc9b1b7e1d10e06d520b234bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_number</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>62bbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_session</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>e2bbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_start_date</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>66bbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_status</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>e6bbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_sys_created_by</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>6abbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_sys_created_on</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>eabbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sl_sys_id</element>
+            <list_id display_value="x_tesgh_veeam_app_session_veeam_log" element="NULL" name="x_tesgh_veeam_app_session_veeam_log" parent="NULL" relationship="NULL" sys_domain="global" view="62bbcc9b1b7e1d10e06d520b234bcb6f">22bbcc9b1b7e1d10e06d520b234bcb70</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_id>6ebbcc9b1b7e1d10e06d520b234bcb71</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_tesgh_veeam_app_session_veeam_log</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-01 11:58:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>22bbcc9b1b7e1d10e06d520b234bcb70</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_tesgh_veeam_app_session_veeam_log</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_ui_list_x_tesgh_veeam_app_session_veeam_log_RPTe2bb849b1b7e1d10e06d520b234bcb2e</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-01 11:58:22</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpte2bb849b1b7e1d10e06d520b234bcb2e" name="RPTe2bb849b1b7e1d10e06d520b234bcb2e">62bbcc9b1b7e1d10e06d520b234bcb6f</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

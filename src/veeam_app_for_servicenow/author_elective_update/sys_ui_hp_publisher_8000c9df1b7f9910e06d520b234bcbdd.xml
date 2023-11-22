@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher">
+    <sys_ui_hp_publisher action="DELETE">
+        <allow_database_view_filter>false</allow_database_view_filter>
+        <allow_extended_table>false</allow_extended_table>
+        <boolean_field/>
+        <boolean_table/>
+        <date_filter/>
+        <default_boolean_field/>
+        <default_choice/>
+        <default_date_filter/>
+        <default_reference_field_value/>
+        <description/>
+        <exclusion_choice_list/>
+        <look_up_name/>
+        <name>Virtual Machines</name>
+        <reference_conditions/>
+        <reference_table>x_tesgh_veeam_app_virtual_machine</reference_table>
+        <remove_all_option>false</remove_all_option>
+        <source_field/>
+        <source_table/>
+        <sys_class_name>sys_ui_hp_publisher</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-21 08:49:59</sys_created_on>
+        <sys_id>8000c9df1b7f9910e06d520b234bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Virtual Machines</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ui_hp_publisher_8000c9df1b7f9910e06d520b234bcbdd</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-21 08:49:59</sys_updated_on>
+        <type>2</type>
+        <ui_control_type>4</ui_control_type>
+        <use_starts_with_on_search_keyword>false</use_starts_with_on_search_keyword>
+    </sys_ui_hp_publisher>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_ui_hp_publisher_8000c9df1b7f9910e06d520b234bcbdd</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_hp_publisher"><sys_ui_hp_publisher action="INSERT_OR_UPDATE"><allow_database_view_filter>false</allow_database_view_filter><allow_extended_table>false</allow_extended_table><boolean_field/><boolean_table/><date_filter/><default_boolean_field/><default_choice/><default_date_filter/><default_reference_field_value/><description/><exclusion_choice_list/><look_up_name/><name>Virtual Machines</name><reference_conditions/><reference_table>x_tesgh_veeam_app_virtual_machine</reference_table><remove_all_option>false</remove_all_option><source_field/><source_table/><sys_class_name>sys_ui_hp_publisher</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-12-21 08:49:59</sys_created_on><sys_id>8000c9df1b7f9910e06d520b234bcbdd</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Virtual Machines</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_ui_hp_publisher_8000c9df1b7f9910e06d520b234bcbdd</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-12-21 08:49:59</sys_updated_on><type>2</type><ui_control_type>4</ui_control_type><use_starts_with_on_search_keyword>false</use_starts_with_on_search_keyword></sys_ui_hp_publisher></record_update>]]></payload>
+        <payload_hash>884618835</payload_hash>
+        <record_name>Virtual Machines</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-21 08:49:59</sys_created_on>
+        <sys_id>2a10c9df1b7f9910e06d520b234bcb4a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18533e00d2d0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-21 08:49:59</sys_updated_on>
+        <type>Interactive Filter</type>
+        <update_guid>6210c9df3e7f9910d78aedfbcc7ff04a</update_guid>
+        <update_guid_history>6210c9df3e7f9910d78aedfbcc7ff04a:884618835</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-06-29 09:50:29</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_hp_publisher">sys_ui_hp_publisher</sys_db_object>
+        <sys_id>005467581baf447580009ca01bd2e331</sys_id>
+        <sys_metadata>8000c9df1b7f9910e06d520b234bcbdd</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Virtual Machines</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_ui_hp_publisher_8000c9df1b7f9910e06d520b234bcbdd</sys_update_name>
+        <sys_update_version display_value="sys_ui_hp_publisher_8000c9df1b7f9910e06d520b234bcbdd">2a10c9df1b7f9910e06d520b234bcb4a</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-29 09:50:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

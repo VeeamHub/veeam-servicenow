@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_complex_object">
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD3ccfe9b2ac6f9950a33c9c71cf772e8f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>d50434871b9dd91063fd6243604bcb7b</scope_name>
+        <serialized_content>{"FlowDesigner:FD3ccfe9b2ac6f9950a33c9c71cf772e8f":{"$COCollectionField":["String"],"$COCollectionField.$field_facets":{"SimpleMapFacet":"{\"up-shift-collection-level\":\"true\"}"}},"FlowDesigner:FD3ccfe9b2ac6f9950a33c9c71cf772e8f.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"Veeam Connections\",\"mandatory\":\"true\",\"child_name\":\"veeam_connections_child0\",\"uiUniqueId\":\"a7ce011d-3c05-4fa7-8aa5-24a8914af4e7\",\"uiTypeLabel\":\"Array.String\",\"co_type_name\":\"FD3ccfe9b2ac6f9950a33c9c71cf772e8f\",\"child_label\":\"Veeam Connections_child0\",\"child_type_label\":\"String\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"array.string\",\"child_defaultValue\":\"\",\"child_type\":\"string\",\"order\":\"1\",\"max_length\":\"65000\",\"child_uiUniqueId\":\"45866a94-4761-456c-956e-88e5ffd90968\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fccfe9b21b6f99506e76da03b24bcb8f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>FD3ccfe9b2ac6f9950a33c9c71cf772e8f</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_complex_object_fccfe9b21b6f99506e76da03b24bcb8f</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <type>complex_object_collection</type>
+    </sys_complex_object>
+</record_update>

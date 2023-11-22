@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="sys_import_set_row" label="Import Veeam Backup Job" max_length="40" name="x_tesgh_veeam_app_import_veeam_backup_job" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=description" label="description" max_length="1000" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=guestProcessing" label="guestProcessing" max_length="10000" name="u_guestprocessing" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=isDisabled" label="isDisabled" max_length="40" name="u_isdisabled" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=isHighPriority" label="isHighPriority" max_length="40" name="u_ishighpriority" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="200" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=schedule" label="schedule" max_length="10000" name="u_schedule" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=storage" label="storage" max_length="10000" name="u_storage" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=type" label="type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=veeamConnection" label="veeamConnection" max_length="40" name="u_veeamconnection" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=virtualMachines" label="virtualMachines" max_length="10000" name="u_virtualmachines" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=virtualMachinesExcludes" label="virtualMachinesExcludes" max_length="10000" name="u_virtualmachinesexcludes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=virtualMachinesIncludes" label="virtualMachinesIncludes" max_length="10000" name="u_virtualmachinesincludes" type="string"/>
+    </element>
+</database>

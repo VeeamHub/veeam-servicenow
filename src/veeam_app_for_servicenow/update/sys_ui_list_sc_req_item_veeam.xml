@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="sc_req_item" version="2" view="veeam">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>6a987b1e1b78b550e06d520b234bcb50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>short_description</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>ea987b1e1b78b550e06d520b234bcb50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>cat_item</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>6e987b1e1b78b550e06d520b234bcb50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>requested_for</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>ee987b1e1b78b550e06d520b234bcb50</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>due_date</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>62987b1e1b78b550e06d520b234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>e2987b1e1b78b550e06d520b234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assignment_group</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>66987b1e1b78b550e06d520b234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_to</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>e6987b1e1b78b550e06d520b234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>6a987b1e1b78b550e06d520b234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="sc_req_item" element="NULL" name="sc_req_item" parent="NULL" relationship="NULL" sys_domain="global" view="ba171fc21b70fd106e76da03b24bcb9d">ee987b1e1b78b550e06d520b234bcb4f</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_id>ea987b1e1b78b550e06d520b234bcb51</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sc_req_item</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-08-24 08:56:06</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee987b1e1b78b550e06d520b234bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sc_req_item</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_ui_list_sc_req_item_veeam</sys_update_name>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-08-24 08:56:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="Veeam" name="veeam">ba171fc21b70fd106e76da03b24bcb9d</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

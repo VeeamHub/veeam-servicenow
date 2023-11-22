@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_m2m_dashboard_tabs">
+    <pa_m2m_dashboard_tabs action="INSERT_OR_UPDATE">
+        <dashboard display_value="Veeam Homepage">574fa62e937131109d0b398efaba100d</dashboard>
+        <home>false</home>
+        <homepage/>
+        <order>1</order>
+        <sys_class_name>pa_m2m_dashboard_tabs</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-13 15:28:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1fc13aee937131109d0b398efaba10ae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>574fa62e937131109d0b398efaba100d</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>pa_m2m_dashboard_tabs_1fc13aee937131109d0b398efaba10ae</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-13 15:28:03</sys_updated_on>
+        <tab display_value="Veeam Homepage - New Tab">13c13aee937131109d0b398efaba10ac</tab>
+    </pa_m2m_dashboard_tabs>
+</record_update>

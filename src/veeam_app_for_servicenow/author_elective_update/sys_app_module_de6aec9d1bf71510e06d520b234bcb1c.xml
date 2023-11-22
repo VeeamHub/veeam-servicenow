@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Veeam">4630b52b1b695910e06d520b234bcb6c</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>DIRECT</link_type>
+        <map_page/>
+        <mobile_title>Job Mapping</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_tesgh_veeam_app_veeam_requests</name>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query>$pa_dashboard.do?sysparm_dashboard=314140531b7e1d10e06d520b234bcb61&amp;sysparm_tab=3341c4131b7e1d10e06d520b234bcb80&amp;sysparm_cancelable=true&amp;sysparm_editable=false&amp;sysparm_active_panel=false</query>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 02:07:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>de6aec9d1bf71510e06d520b234bcb1c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>My Veeam</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_app_module_de6aec9d1bf71510e06d520b234bcb1c</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-29 14:32:24</sys_updated_on>
+        <timeline_page/>
+        <title>My Veeam</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_app_module_de6aec9d1bf71510e06d520b234bcb1c</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Veeam">4630b52b1b695910e06d520b234bcb6c</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>DIRECT</link_type><map_page/><mobile_title>Job Mapping</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_tesgh_veeam_app_veeam_requests</name><order>200</order><override_menu_roles>false</override_menu_roles><query>$pa_dashboard.do?sysparm_dashboard=314140531b7e1d10e06d520b234bcb61&amp;sysparm_tab=3341c4131b7e1d10e06d520b234bcb80&amp;sysparm_cancelable=true&amp;sysparm_editable=false&amp;sysparm_active_panel=false</query><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-12-15 02:07:23</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>de6aec9d1bf71510e06d520b234bcb1c</sys_id><sys_mod_count>1</sys_mod_count><sys_name>My Veeam</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_app_module_de6aec9d1bf71510e06d520b234bcb1c</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-06-29 14:32:24</sys_updated_on><timeline_page/><title>My Veeam</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>1440693143</payload_hash>
+        <record_name>My Veeam</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-06-29 14:32:24</sys_created_on>
+        <sys_id>768c2c6c1b73e5506e76da03b24bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1890791d3c90000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-29 14:32:24</sys_updated_on>
+        <type>Module</type>
+        <update_guid>be8c2c6c9c73e5508c22d16702951156</update_guid>
+        <update_guid_history>be8c2c6c9c73e5508c22d16702951156:1440693143,526aa4dd02f715103d87e883d9fde8b5:-742229896</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My Veeam">4cfd70701ba5f150e06d520b234bcbb1</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-25 10:16:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>59738e7e5808455882c78cab0f8aa389</sys_id>
+        <sys_metadata>de6aec9d1bf71510e06d520b234bcb1c</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Veeam</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_app_module_de6aec9d1bf71510e06d520b234bcb1c</sys_update_name>
+        <sys_update_version display_value="sys_app_module_de6aec9d1bf71510e06d520b234bcb1c">768c2c6c1b73e5506e76da03b24bcb57</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:16:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

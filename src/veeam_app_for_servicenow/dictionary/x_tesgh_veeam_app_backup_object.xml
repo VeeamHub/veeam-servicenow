@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Backup Object" max_length="40" name="x_tesgh_veeam_app_backup_object" sizeclass="0" type="collection">
+        <element label="ID" max_length="100" name="id" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Object ID" max_length="100" name="object_id" type="string"/>
+        <element label="Path" max_length="100" name="path" type="string"/>
+        <element label="Platform ID" max_length="100" name="platform_id" type="string"/>
+        <element label="Platform Name" max_length="100" name="platform_name" type="string"/>
+        <element label="Restore Points Count" max_length="100" name="restore_points_count" type="string"/>
+        <element label="Type" max_length="100" name="type" type="string"/>
+    </element>
+</database>

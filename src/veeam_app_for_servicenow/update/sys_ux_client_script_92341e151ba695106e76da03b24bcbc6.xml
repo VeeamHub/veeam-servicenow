@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_client_script">
+    <sys_ux_client_script action="INSERT_OR_UPDATE">
+        <includes/>
+        <macroponent display_value="Dashboard">52349ed11ba695106e76da03b24bcbb4</macroponent>
+        <name>Data Visualization Clicked Event Handler</name>
+        <required_translations/>
+        <script><![CDATA[/**
+ * @param {params} params
+ * @param {api} params.api
+ * @param {any} params.event
+ * @param {any} params.imports
+ */
+function handler({
+    api,
+    event,
+    helpers,
+    imports
+}) {
+    const {
+        params: {
+            table,
+            query,
+            indicatorSysid,
+            breakdowns,
+            aggregate,
+            domain,
+            scoreDate
+        },
+        title
+    } = event.payload;
+
+    let payload;
+
+    if (table) {
+        payload = {
+            fields: {
+                table
+            },
+            params: {
+                query,
+            },
+            route: 'simplelist',
+            title: title || 'List'
+        };
+    } else {
+        payload = {
+            fields: {
+                uuid: indicatorSysid,
+            },
+            params: {
+                breakdowns: breakdowns,
+                aggregate: aggregate,
+                domain: domain,
+                scoreDate: scoreDate,
+            },
+            route: 'ac_kpi_details',
+            title: title || 'KPI Details'
+        };
+
+    }
+
+    api.emit('NAV_ITEM_SELECTED', payload);
+}]]></script>
+        <script_api_version>2.0.0</script_api_version>
+        <sys_class_name>sys_ux_client_script</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-14 06:31:12</sys_created_on>
+        <sys_id>92341e151ba695106e76da03b24bcbc6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data Visualization Clicked Event Handler</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ux_client_script_92341e151ba695106e76da03b24bcbc6</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-14 06:31:12</sys_updated_on>
+        <type>default</type>
+    </sys_ux_client_script>
+</record_update>

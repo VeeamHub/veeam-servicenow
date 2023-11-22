@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="frequency" table="x_tesgh_veeam_app_backup_job_template" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>frequency</element>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:35:12</sys_created_on>
+            <sys_id>fe394bea1be29910e06d520b234bcb37</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>frequency</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_choice_x_tesgh_veeam_app_backup_job_template_frequency</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:35:12</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>frequency</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Every hour</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:35:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>eb2983ea1be29910e06d520b234bcb02</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:35:55</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>frequency</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Every 4 hours</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:35:15</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>be394bea1be29910e06d520b234bcb62</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:35:57</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>frequency</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Every 12 hours</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:35:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f33907ea1be29910e06d520b234bcbbb</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:35:58</sys_updated_on>
+            <value>12</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>frequency</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Every 24 hours</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:35:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6c49472e1be29910e06d520b234bcb9b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:36:00</sys_updated_on>
+            <value>24</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>frequency</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Custom</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a14907ea1be29910e06d520b234bcbbc</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:36:02</sys_updated_on>
+            <value>custom</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

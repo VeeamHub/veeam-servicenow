@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers">
+    <sys_rest_message_fn_headers action="DELETE">
+        <name>Authorization</name>
+        <rest_message_function display_value="">258ceb401b031150e06d520b234bcbf7</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_headers</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-04 12:16:29</sys_created_on>
+        <sys_id>7d8cef801b031150e06d520b234bcb47</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_rest_message_fn_headers_7d8cef801b031150e06d520b234bcb47</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-04 12:16:29</sys_updated_on>
+        <value>Bearer ${token}</value>
+    </sys_rest_message_fn_headers>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_rest_message_fn_headers_7d8cef801b031150e06d520b234bcb47</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_headers"><sys_rest_message_fn_headers action="INSERT_OR_UPDATE"><name>Authorization</name><rest_message_function display_value="">258ceb401b031150e06d520b234bcbf7</rest_message_function><sys_class_name>sys_rest_message_fn_headers</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-11-04 12:16:29</sys_created_on><sys_id>7d8cef801b031150e06d520b234bcb47</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Authorization</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_rest_message_fn_headers_7d8cef801b031150e06d520b234bcb47</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-11-04 12:16:29</sys_updated_on><value>Bearer ${token}</value></sys_rest_message_fn_headers></record_update>]]></payload>
+        <payload_hash>-390011304</payload_hash>
+        <record_name>Authorization</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-04 12:16:29</sys_created_on>
+        <sys_id>05ace3801b031150e06d520b234bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184429237730000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-04 12:16:29</sys_updated_on>
+        <type>HTTP Headers</type>
+        <update_guid>4dace380a003115000aa89d96ffae328</update_guid>
+        <update_guid_history>4dace380a003115000aa89d96ffae328:-390011304</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-23 10:11:09</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_headers">sys_rest_message_fn_headers</sys_db_object>
+        <sys_id>38bd9ad3312f4414b9abf07f17e694c1</sys_id>
+        <sys_metadata>7d8cef801b031150e06d520b234bcb47</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Authorization</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_headers_7d8cef801b031150e06d520b234bcb47</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_headers_7d8cef801b031150e06d520b234bcb47">05ace3801b031150e06d520b234bcb29</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-23 10:11:09</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

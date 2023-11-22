@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_resourceid" label="resourceId" language="en" table="x_tesgh_veeam_app_import_veeam_sessions">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_resourceid</element>
+            <help/>
+            <hint/>
+            <label>resourceId</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_import_veeam_sessions</name>
+            <plural>resourceIds</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-22 09:41:59</sys_created_on>
+            <sys_id>a6ecad121b86151063fd6243604bcbce</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>resourceId</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_documentation_x_tesgh_veeam_app_import_veeam_sessions_u_resourceid_en</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-22 09:41:59</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

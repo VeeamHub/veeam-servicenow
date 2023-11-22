@@ -1,0 +1,1104 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_backup_job_template_from_sctask</internal_name>
+        <label_cache>[{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.record.sys_id","label":"3 - Create Record➛Backup Job Template Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_tesgh_veeam_app_backup_job_template","column_name":"sys_id"},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.__dont_treat_as_error__","label":"3 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.__action_status__","label":"3 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.table_name","label":"3 - Create Record➛Backup Job Template Table","reference":"x_tesgh_veeam_app_backup_job_template","reference_display":"Backup Job Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.record","label":"3 - Create Record➛Backup Job Template Record","reference":"x_tesgh_veeam_app_backup_job_template","reference_display":"Backup Job Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.retention_details","label":"2 - Get Catalog Variables➛retention_details","reference":"","reference_display":"retention_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.retention","label":"2 - Get Catalog Variables➛retention","reference":"","reference_display":"retention","type":"choice","base_type":"choice","choices":[{"label":"Days","value":"days","order":100.0},{"label":"Weeks","value":"weeks","order":100.0},{"label":"Months","value":"months","order":100.0},{"label":"Years","value":"years","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.ocurrence_notes","label":"2 - Get Catalog Variables➛ocurrence_notes","reference":"","reference_display":"ocurrence_notes","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.occurence","label":"2 - Get Catalog Variables➛occurence","reference":"","reference_display":"occurence","type":"choice","base_type":"choice","choices":[{"label":"Daily","value":"daily","order":100.0},{"label":"Weekdays (M-F)","value":"weekdays","order":100.0},{"label":"Weekly","value":"weekly","order":100.0},{"label":"Monthly","value":"monthly","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.frequency_details","label":"2 - Get Catalog Variables➛frequency_details","reference":"","reference_display":"frequency_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.frequency","label":"2 - Get Catalog Variables➛frequency","reference":"","reference_display":"frequency","type":"choice","base_type":"choice","choices":[{"label":"Every hour","value":"1","order":100.0},{"label":"Every 4 hours","value":"4","order":100.0},{"label":"Every 12 hours","value":"12","order":100.0},{"label":"Every 24 hours","value":"24","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.description","label":"2 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.name","label":"2 - Get Catalog Variables➛name","reference":"","reference_display":"name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.Record.request_item","label":"1 - Look Up Record➛Catalog Task Record➛Request item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":"sc_task","column_name":"request_item"},{"name":"subflow.sctask","label":"Input➛SCTASK","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8246cde9-a2e6-48db-94d0-0e128ae10704"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.Table","label":"1 - Look Up Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.Record","label":"1 - Look Up Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.amount","label":"2 - Get Catalog Variables➛amount","reference":"","reference_display":"amount","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups","label":"2 - Get Catalog Variables➛keep_weekly_backups","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups_for","label":"2 - Get Catalog Variables➛keep_monthly_backups_for","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups_for","label":"2 - Get Catalog Variables➛keep_yearly_backups_for","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups","label":"2 - Get Catalog Variables➛keep_yearly_backups","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups","label":"2 - Get Catalog Variables➛keep_monthly_backups","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups_for","label":"2 - Get Catalog Variables➛keep_weekly_backups_for","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.retention_policy","label":"2 - Get Catalog Variables➛retention_policy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}}]</label_cache>
+        <master_snapshot>349fc5551bbb1510e06d520b234bcb11</master_snapshot>
+        <name>Create Backup Job Template from SCTASK</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:46:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>42de09d11bbb1510e06d520b234bcb59</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Create Backup Job Template from SCTASK</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_42de09d11bbb1510e06d520b234bcb59</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:52</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_variable_value action="delete_multiple" query="document_key=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_42de09d11bbb1510e06d520b234bcb59^id=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=42de09d11bbb1510e06d520b234bcb59^sys_idNOT IN8ade09d11bbb1510e06d520b234bcb59"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>42de09d11bbb1510e06d520b234bcb59</id>
+        <name>Create Backup Job Template from SCTASK</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:46:33</sys_created_on>
+        <sys_id>8ade09d11bbb1510e06d520b234bcb59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:46:33</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=8ade09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=42de09d11bbb1510e06d520b234bcb59^sys_idNOT INd49f85551bbb1510e06d520b234bcb85"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8246cde9-a2e6-48db-94d0-0e128ae10704</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sctask</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SCTASK</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</model>
+        <model_id>42de09d11bbb1510e06d520b234bcb59</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_42de09d11bbb1510e06d520b234bcb59</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>d49f85551bbb1510e06d520b234bcb85</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=42de09d11bbb1510e06d520b234bcb59^sys_idNOT INdc9f85551bbb1510e06d520b234bcb8a"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f38e23ca-b02b-4ad0-8704-b24cda7668f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>backup_job_template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Backup Job Template</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</model>
+        <model_id>42de09d11bbb1510e06d520b234bcb59</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_output_42de09d11bbb1510e06d520b234bcb59</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>dc9f85551bbb1510e06d520b234bcb8a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=42de09d11bbb1510e06d520b234bcb59^sys_idNOT IN189f85551bbb1510e06d520b234bcb98,a09f85551bbb1510e06d520b234bcba6,ac9f85551bbb1510e06d520b234bcb9f"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>189f85551bbb1510e06d520b234bcb98</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:52</sys_updated_on>
+        <ui_id>104d5d9e-6c6a-4d35-8251-44bb14a3caee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=189f85551bbb1510e06d520b234bcb98"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>189f85551bbb1510e06d520b234bcb98</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>d49f85551bbb1510e06d520b234bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=189f85551bbb1510e06d520b234bcb98"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>189f85551bbb1510e06d520b234bcb98</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>9c9f85551bbb1510e06d520b234bcb9a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.sctask}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>189f85551bbb1510e06d520b234bcb98</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>549f85551bbb1510e06d520b234bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=189f85551bbb1510e06d520b234bcb98"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=189f85551bbb1510e06d520b234bcb98"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>a09f85551bbb1510e06d520b234bcba6</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:52</sys_updated_on>
+        <ui_id>66add71a-c32f-42a7-918e-983a1ef0135b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a09f85551bbb1510e06d520b234bcba6"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>a09f85551bbb1510e06d520b234bcba6</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>e89f85551bbb1510e06d520b234bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <value>x_tesgh_veeam_app_backup_job_template</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=a09f85551bbb1510e06d520b234bcba6"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>a09f85551bbb1510e06d520b234bcba6</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>a49f85551bbb1510e06d520b234bcba7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>a09f85551bbb1510e06d520b234bcba6</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>689f85551bbb1510e06d520b234bcba7</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:49</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{75aa70ff-70c3-4786-994b-d3844b59e540.name}}^description={{75aa70ff-70c3-4786-994b-d3844b59e540.description}}^frequency={{75aa70ff-70c3-4786-994b-d3844b59e540.frequency}}^frequency_details={{75aa70ff-70c3-4786-994b-d3844b59e540.frequency_details}}^occurence={{75aa70ff-70c3-4786-994b-d3844b59e540.occurence}}^occurence_notes={{75aa70ff-70c3-4786-994b-d3844b59e540.ocurrence_notes}}^retention={{75aa70ff-70c3-4786-994b-d3844b59e540.retention_policy}}^keep_monthly_backups={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups}}^keep_monthly_backups_for={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups_for}}^keep_weekly_backups={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups}}^keep_weekly_backups_for={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups_for}}^keep_yearly_backups={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups}}^keep_yearly_backups_for={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups_for}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a09f85551bbb1510e06d520b234bcba6"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=a09f85551bbb1510e06d520b234bcba6"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>ac9f85551bbb1510e06d520b234bcb9f</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:52</sys_updated_on>
+        <ui_id>75aa70ff-70c3-4786-994b-d3844b59e540</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ac9f85551bbb1510e06d520b234bcb9f"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac9f85551bbb1510e06d520b234bcb9f</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>2c9f85551bbb1510e06d520b234bcba1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:49</sys_updated_on>
+        <value>19ac061d1b6695106e76da03b24bcb95:item_option_new,9dbc461d1b6695106e76da03b24bcb59:item_option_new,e03d0a1d1b6695106e76da03b24bcb3a:item_option_new,ecb744b21be69910e06d520b234bcb38:item_option_new,194dce1d1b6695106e76da03b24bcb92:item_option_new,f86700b21be69910e06d520b234bcb58:item_option_new,821ece1d1b6695106e76da03b24bcbfa:item_option_new,774731ed1bbc3d106e76da03b24bcba8:item_option_new,0abebe0a1bfcbd106e76da03b24bcbb9:item_option_new,f612c38e1bfcbd106e76da03b24bcbec:item_option_new,7642c38e1bfcbd106e76da03b24bcb89:item_option_new,8330c70e1bfcbd106e76da03b24bcb74:item_option_new,3350c30e1bfcbd106e76da03b24bcb3b:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ac9f85551bbb1510e06d520b234bcb9f</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>ec9f85551bbb1510e06d520b234bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <value>f6fb86d91b6695106e76da03b24bcb22</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ac9f85551bbb1510e06d520b234bcb9f"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>ac9f85551bbb1510e06d520b234bcb9f</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>249f85551bbb1510e06d520b234bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>ac9f85551bbb1510e06d520b234bcb9f</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>a89f85551bbb1510e06d520b234bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{104d5d9e-6c6a-4d35-8251-44bb14a3caee.Record.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>ac9f85551bbb1510e06d520b234bcb9f</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>e49f85551bbb1510e06d520b234bcba1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ac9f85551bbb1510e06d520b234bcb9f"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ac9f85551bbb1510e06d520b234bcb9f"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=42de09d11bbb1510e06d520b234bcb59^sys_idNOT IN2c9f85551bbb1510e06d520b234bcba8"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">609f85551bbb1510e06d520b234bcba8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>backup_job_template</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>2c9f85551bbb1510e06d520b234bcba8</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:52</sys_updated_on>
+        <ui_id>01cab348-7d97-468d-9a1f-f2856535f52f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=2c9f85551bbb1510e06d520b234bcba8"/>
+    <sys_element_mapping action="delete_multiple" query="id=2c9f85551bbb1510e06d520b234bcba8"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>backup_job_template</field>
+        <id>2c9f85551bbb1510e06d520b234bcba8</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>609f85551bbb1510e06d520b234bcbac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_42de09d11bbb1510e06d520b234bcb59</table>
+        <value>{{66add71a-c32f-42a7-918e-983a1ef0135b.record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=2c9f85551bbb1510e06d520b234bcba8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2c9f85551bbb1510e06d520b234bcba8"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_42de09d11bbb1510e06d520b234bcb59^sys_idNOT IN5c9f85551bbb1510e06d520b234bcb88"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sctask</element>
+        <help/>
+        <hint/>
+        <label>SCTASK</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_42de09d11bbb1510e06d520b234bcb59</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>5c9f85551bbb1510e06d520b234bcb88</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_42de09d11bbb1510e06d520b234bcb59^sys_idNOT IN989f85551bbb1510e06d520b234bcb8e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>backup_job_template</element>
+        <help/>
+        <hint/>
+        <label>Backup Job Template</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_42de09d11bbb1510e06d520b234bcb59</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:43</sys_created_on>
+        <sys_id>989f85551bbb1510e06d520b234bcb8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>create_backup_job_template_from_sctask</internal_name>
+        <label_cache>[{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.record.sys_id","label":"3 - Create Record➛Backup Job Template Record➛Sys ID","reference":"","reference_display":"Sys ID","type":"GUID","base_type":"GUID","parent_table_name":"x_tesgh_veeam_app_backup_job_template","column_name":"sys_id"},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.__dont_treat_as_error__","label":"3 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.__action_status__","label":"3 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.table_name","label":"3 - Create Record➛Backup Job Template Table","reference":"x_tesgh_veeam_app_backup_job_template","reference_display":"Backup Job Template","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"66add71a-c32f-42a7-918e-983a1ef0135b.record","label":"3 - Create Record➛Backup Job Template Record","reference":"x_tesgh_veeam_app_backup_job_template","reference_display":"Backup Job Template","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.retention_details","label":"2 - Get Catalog Variables➛retention_details","reference":"","reference_display":"retention_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.retention","label":"2 - Get Catalog Variables➛retention","reference":"","reference_display":"retention","type":"choice","base_type":"choice","choices":[{"label":"Days","value":"days","order":100.0},{"label":"Weeks","value":"weeks","order":100.0},{"label":"Months","value":"months","order":100.0},{"label":"Years","value":"years","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.ocurrence_notes","label":"2 - Get Catalog Variables➛ocurrence_notes","reference":"","reference_display":"ocurrence_notes","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.occurence","label":"2 - Get Catalog Variables➛occurence","reference":"","reference_display":"occurence","type":"choice","base_type":"choice","choices":[{"label":"Daily","value":"daily","order":100.0},{"label":"Weekdays (M-F)","value":"weekdays","order":100.0},{"label":"Weekly","value":"weekly","order":100.0},{"label":"Monthly","value":"monthly","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.frequency_details","label":"2 - Get Catalog Variables➛frequency_details","reference":"","reference_display":"frequency_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.frequency","label":"2 - Get Catalog Variables➛frequency","reference":"","reference_display":"frequency","type":"choice","base_type":"choice","choices":[{"label":"Every hour","value":"1","order":100.0},{"label":"Every 4 hours","value":"4","order":100.0},{"label":"Every 12 hours","value":"12","order":100.0},{"label":"Every 24 hours","value":"24","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.description","label":"2 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.name","label":"2 - Get Catalog Variables➛name","reference":"","reference_display":"name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.Record.request_item","label":"1 - Look Up Record➛Catalog Task Record➛Request item","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","parent_table_name":"sc_task","column_name":"request_item"},{"name":"subflow.sctask","label":"Input➛SCTASK","type":"string","base_type":"string","attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"8246cde9-a2e6-48db-94d0-0e128ae10704"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.__dont_treat_as_error__","label":"1 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.error_message","label":"1 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.status","label":"1 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.Table","label":"1 - Look Up Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"104d5d9e-6c6a-4d35-8251-44bb14a3caee.Record","label":"1 - Look Up Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.amount","label":"2 - Get Catalog Variables➛amount","reference":"","reference_display":"amount","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups","label":"2 - Get Catalog Variables➛keep_weekly_backups","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups_for","label":"2 - Get Catalog Variables➛keep_monthly_backups_for","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups_for","label":"2 - Get Catalog Variables➛keep_yearly_backups_for","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups","label":"2 - Get Catalog Variables➛keep_yearly_backups","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups","label":"2 - Get Catalog Variables➛keep_monthly_backups","reference":"","reference_display":"","type":"boolean","base_type":"boolean","column_name":"","attributes":{"catalogType":"7","catalogTypeLabel":"CheckBox"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups_for","label":"2 - Get Catalog Variables➛keep_weekly_backups_for","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"75aa70ff-70c3-4786-994b-d3844b59e540.retention_policy","label":"2 - Get Catalog Variables➛retention_policy","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}}]</label_cache>
+        <master>true</master>
+        <name>Create Backup Job Template from SCTASK</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>349fc5551bbb1510e06d520b234bcb11</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <type>subflow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_variable_value action="delete_multiple" query="document_key=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_output_349fc5551bbb1510e06d520b234bcb11^id=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=349fc5551bbb1510e06d520b234bcb11^sys_idNOT IN349fc5551bbb1510e06d520b234bcb12"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>349fc5551bbb1510e06d520b234bcb11</id>
+        <name>Create Backup Job Template from SCTASK</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>349fc5551bbb1510e06d520b234bcb12</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:44</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=349fc5551bbb1510e06d520b234bcb12"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=349fc5551bbb1510e06d520b234bcb11^sys_idNOT IN749fc5551bbb1510e06d520b234bcb13"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=8246cde9-a2e6-48db-94d0-0e128ae10704</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sctask</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>SCTASK</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Backup Job Template from SCTASK">349fc5551bbb1510e06d520b234bcb11</model>
+        <model_id>349fc5551bbb1510e06d520b234bcb11</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_349fc5551bbb1510e06d520b234bcb11</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>749fc5551bbb1510e06d520b234bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=349fc5551bbb1510e06d520b234bcb11^sys_idNOT INb09fc5551bbb1510e06d520b234bcb2f"/>
+    <sys_hub_flow_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=f38e23ca-b02b-4ad0-8704-b24cda7668f6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>backup_job_template</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Backup Job Template</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Backup Job Template from SCTASK">349fc5551bbb1510e06d520b234bcb11</model>
+        <model_id>349fc5551bbb1510e06d520b234bcb11</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_output_349fc5551bbb1510e06d520b234bcb11</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>b09fc5551bbb1510e06d520b234bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:44</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_output>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=349fc5551bbb1510e06d520b234bcb11^sys_idNOT INf49fc5551bbb1510e06d520b234bcb4e,fc9fc5551bbb1510e06d520b234bcb46,fc9fc5551bbb1510e06d520b234bcb55"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Backup Job Template from SCTASK">349fc5551bbb1510e06d520b234bcb11</flow>
+        <order>2</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>f49fc5551bbb1510e06d520b234bcb4e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <ui_id>75aa70ff-70c3-4786-994b-d3844b59e540</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f49fc5551bbb1510e06d520b234bcb4e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49fc5551bbb1510e06d520b234bcb4e</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>309fc5551bbb1510e06d520b234bcb50</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <value>19ac061d1b6695106e76da03b24bcb95:item_option_new,9dbc461d1b6695106e76da03b24bcb59:item_option_new,e03d0a1d1b6695106e76da03b24bcb3a:item_option_new,ecb744b21be69910e06d520b234bcb38:item_option_new,194dce1d1b6695106e76da03b24bcb92:item_option_new,f86700b21be69910e06d520b234bcb58:item_option_new,821ece1d1b6695106e76da03b24bcbfa:item_option_new,774731ed1bbc3d106e76da03b24bcba8:item_option_new,0abebe0a1bfcbd106e76da03b24bcbb9:item_option_new,f612c38e1bfcbd106e76da03b24bcbec:item_option_new,7642c38e1bfcbd106e76da03b24bcb89:item_option_new,8330c70e1bfcbd106e76da03b24bcb74:item_option_new,3350c30e1bfcbd106e76da03b24bcb3b:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>f49fc5551bbb1510e06d520b234bcb4e</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>f09fc5551bbb1510e06d520b234bcb50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <value>f6fb86d91b6695106e76da03b24bcb22</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f49fc5551bbb1510e06d520b234bcb4e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>f49fc5551bbb1510e06d520b234bcb4e</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>389fc5551bbb1510e06d520b234bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>f49fc5551bbb1510e06d520b234bcb4e</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>bc9fc5551bbb1510e06d520b234bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{104d5d9e-6c6a-4d35-8251-44bb14a3caee.Record.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>f49fc5551bbb1510e06d520b234bcb4e</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>f89fc5551bbb1510e06d520b234bcb4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f49fc5551bbb1510e06d520b234bcb4e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=f49fc5551bbb1510e06d520b234bcb4e"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Backup Job Template from SCTASK">349fc5551bbb1510e06d520b234bcb11</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>fc9fc5551bbb1510e06d520b234bcb46</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <ui_id>104d5d9e-6c6a-4d35-8251-44bb14a3caee</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc9fc5551bbb1510e06d520b234bcb46"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fc9fc5551bbb1510e06d520b234bcb46</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>f89fc5551bbb1510e06d520b234bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fc9fc5551bbb1510e06d520b234bcb46"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>fc9fc5551bbb1510e06d520b234bcb46</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>b49fc5551bbb1510e06d520b234bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{subflow.sctask}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>fc9fc5551bbb1510e06d520b234bcb46</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>789fc5551bbb1510e06d520b234bcb48</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fc9fc5551bbb1510e06d520b234bcb46"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc9fc5551bbb1510e06d520b234bcb46"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Create Backup Job Template from SCTASK">349fc5551bbb1510e06d520b234bcb11</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>fc9fc5551bbb1510e06d520b234bcb55</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <ui_id>66add71a-c32f-42a7-918e-983a1ef0135b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fc9fc5551bbb1510e06d520b234bcb55"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>fc9fc5551bbb1510e06d520b234bcb55</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>f09fc5551bbb1510e06d520b234bcb57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <value>x_tesgh_veeam_app_backup_job_template</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fc9fc5551bbb1510e06d520b234bcb55"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>fc9fc5551bbb1510e06d520b234bcb55</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>bc9fc5551bbb1510e06d520b234bcb56</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:45</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>fc9fc5551bbb1510e06d520b234bcb55</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:45</sys_created_on>
+        <sys_id>709fc5551bbb1510e06d520b234bcb57</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>name={{75aa70ff-70c3-4786-994b-d3844b59e540.name}}^description={{75aa70ff-70c3-4786-994b-d3844b59e540.description}}^frequency={{75aa70ff-70c3-4786-994b-d3844b59e540.frequency}}^frequency_details={{75aa70ff-70c3-4786-994b-d3844b59e540.frequency_details}}^occurence={{75aa70ff-70c3-4786-994b-d3844b59e540.occurence}}^occurence_notes={{75aa70ff-70c3-4786-994b-d3844b59e540.ocurrence_notes}}^retention={{75aa70ff-70c3-4786-994b-d3844b59e540.retention_policy}}^keep_monthly_backups={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups}}^keep_monthly_backups_for={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_monthly_backups_for}}^keep_weekly_backups={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups}}^keep_weekly_backups_for={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_weekly_backups_for}}^keep_yearly_backups={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups}}^keep_yearly_backups_for={{75aa70ff-70c3-4786-994b-d3844b59e540.keep_yearly_backups_for}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fc9fc5551bbb1510e06d520b234bcb55"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc9fc5551bbb1510e06d520b234bcb55"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=349fc5551bbb1510e06d520b234bcb11^sys_idNOT IN709fc5551bbb1510e06d520b234bcb3a"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">609f85551bbb1510e06d520b234bcba8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Create Backup Job Template from SCTASK">349fc5551bbb1510e06d520b234bcb11</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned>backup_job_template</outputs_assigned>
+        <outputs_to_assign/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>709fc5551bbb1510e06d520b234bcb3a</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:51</sys_updated_on>
+        <ui_id>01cab348-7d97-468d-9a1f-f2856535f52f</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=709fc5551bbb1510e06d520b234bcb3a"/>
+    <sys_element_mapping action="delete_multiple" query="id=709fc5551bbb1510e06d520b234bcb3a"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>backup_job_template</field>
+        <id>709fc5551bbb1510e06d520b234bcb3a</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>349fc5551bbb1510e06d520b234bcb3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:44</sys_updated_on>
+        <table>var__m_sys_hub_flow_output_349fc5551bbb1510e06d520b234bcb11</table>
+        <value>{{66add71a-c32f-42a7-918e-983a1ef0135b.record.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=709fc5551bbb1510e06d520b234bcb3a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=709fc5551bbb1510e06d520b234bcb3a"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_349fc5551bbb1510e06d520b234bcb11^sys_idNOT INf49fc5551bbb1510e06d520b234bcb2a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sctask</element>
+        <help/>
+        <hint/>
+        <label>SCTASK</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_349fc5551bbb1510e06d520b234bcb11</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>f49fc5551bbb1510e06d520b234bcb2a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_349fc5551bbb1510e06d520b234bcb11^sys_idNOT IN709fc5551bbb1510e06d520b234bcb34"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>backup_job_template</element>
+        <help/>
+        <hint/>
+        <label>Backup Job Template</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_output_349fc5551bbb1510e06d520b234bcb11</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:44</sys_created_on>
+        <sys_id>709fc5551bbb1510e06d520b234bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:49:44</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_349fc5551bbb1510e06d520b234bcb11"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>42de09d11bbb1510e06d520b234bcb59</sys_id>
+        <latest_snapshot>349fc5551bbb1510e06d520b234bcb11</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch7b-10-17-2022_11-01-2022_0949.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=42de09d11bbb1510e06d520b234bcb59"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=42de09d11bbb1510e06d520b234bcb59^sys_idNOT IN899fc5551bbb1510e06d520b234bcb92"/>
+    <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
+        <plan>com.snc.process_flow.engine.ProcessPlan@1559725</plan>
+        <plan_id display_value="Create Backup Job Template from SCTASK">42de09d11bbb1510e06d520b234bcb59</plan_id>
+        <snapshot>349fc5551bbb1510e06d520b234bcb11</snapshot>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:49:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>899fc5551bbb1510e06d520b234bcb92</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 10:33:52</sys_updated_on>
+    </sys_flow_subflow_plan>
+</record_update>

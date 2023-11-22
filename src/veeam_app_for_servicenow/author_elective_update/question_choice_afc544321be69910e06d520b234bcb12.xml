@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="DELETE">
+        <inactive>false</inactive>
+        <order>200</order>
+        <published_ref/>
+        <question display_value="Data Lifecycle">821ece1d1b6695106e76da03b24bcbfa</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-18 11:59:53</sys_created_on>
+        <sys_id>afc544321be69910e06d520b234bcb12</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Months</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>question_choice_afc544321be69910e06d520b234bcb12</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-18 12:00:10</sys_updated_on>
+        <text>Months</text>
+        <value>months</value>
+    </question_choice>
+    <fx_price action="DELETE" query="id=afc544321be69910e06d520b234bcb12"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>question_choice_afc544321be69910e06d520b234bcb12</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice"><question_choice action="INSERT_OR_UPDATE"><inactive>false</inactive><order>200</order><published_ref/><question display_value="Data Lifecycle">821ece1d1b6695106e76da03b24bcbfa</question><sys_class_name>question_choice</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-10-18 11:59:53</sys_created_on><sys_id>afc544321be69910e06d520b234bcb12</sys_id><sys_mod_count>2</sys_mod_count><sys_name>Months</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>question_choice_afc544321be69910e06d520b234bcb12</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-10-18 12:00:10</sys_updated_on><text>Months</text><value>months</value></question_choice><fx_price action="delete_multiple" query="id=afc544321be69910e06d520b234bcb12"/></record_update>]]></payload>
+        <payload_hash>-239209727</payload_hash>
+        <record_name>Months</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-18 12:00:10</sys_created_on>
+        <sys_id>94e548321be69910e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183eaf72bf20000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-18 12:00:10</sys_updated_on>
+        <type>Question Choice</type>
+        <update_guid>d0e5803243e699108b8d24e13edb0af9</update_guid>
+        <update_guid_history>d0e5803243e699108b8d24e13edb0af9:-239209727,12d5403232e69910dc064ef57d3e687f:-2066708766,c8d5843294e69910185d447894ffcfe2:-945534144</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Months">9e5f7eca1bfcbd106e76da03b24bcb02</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-23 10:07:29</sys_created_on>
+        <sys_db_object display_value="" name="question_choice">question_choice</sys_db_object>
+        <sys_id>35ed97de3ce94f178471dc30f43c9e19</sys_id>
+        <sys_metadata>afc544321be69910e06d520b234bcb12</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Months</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent display_value="Keep weekly full backups for (weeks)">821ece1d1b6695106e76da03b24bcbfa</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>question_choice_afc544321be69910e06d520b234bcb12</sys_update_name>
+        <sys_update_version display_value="question_choice_afc544321be69910e06d520b234bcb12">94e548321be69910e06d520b234bcbd3</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 10:07:29</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

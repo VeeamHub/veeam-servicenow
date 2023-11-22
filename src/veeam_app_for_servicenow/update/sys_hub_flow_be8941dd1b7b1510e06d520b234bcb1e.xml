@@ -1,0 +1,2466 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>request_a_new_backup_job_template</internal_name>
+        <label_cache>[{"name":"eef6122a-bf52-4b56-829e-79b109532489.retention_policy","label":"1 - Get Catalog Variables➛retention_policy","reference":"","reference_display":"retention_policy","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.keep_yearly_backups_for","label":"1 - Get Catalog Variables➛keep_yearly_backups_for","reference":"","reference_display":"keep_yearly_backups_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.keep_monthly_backups_for","label":"1 - Get Catalog Variables➛keep_monthly_backups_for","reference":"","reference_display":"keep_monthly_backups_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.keep_weekly_backups_for","label":"1 - Get Catalog Variables➛keep_weekly_backups_for","reference":"","reference_display":"keep_weekly_backups_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.amount","label":"1 - Get Catalog Variables➛amount","reference":"","reference_display":"amount","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.__dont_treat_as_error__","label":"8 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.__action_status__","label":"8 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.table_name","label":"8 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.record","label":"8 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.__dont_treat_as_error__","label":"7 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.__action_status__","label":"7 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.table_name","label":"7 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.record","label":"7 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.__dont_treat_as_error__","label":"6 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.__action_status__","label":"6 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.table_name","label":"6 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.record","label":"6 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.__dont_treat_as_error__","label":"5 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.__action_status__","label":"5 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.table_name","label":"5 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.record","label":"5 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.name","label":"1 - Get Catalog Variables➛name","reference":"","reference_display":"name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.frequency","label":"1 - Get Catalog Variables➛frequency","reference":"","reference_display":"frequency","type":"choice","base_type":"choice","choices":[{"label":"Every hour","value":"1","order":100.0},{"label":"Every 4 hours","value":"4","order":100.0},{"label":"Every 12 hours","value":"12","order":100.0},{"label":"Every 24 hours","value":"24","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.description","label":"1 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.frequency_details","label":"1 - Get Catalog Variables➛frequency_details","reference":"","reference_display":"frequency_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.occurence","label":"1 - Get Catalog Variables➛occurence","reference":"","reference_display":"occurence","type":"choice","base_type":"choice","choices":[{"label":"Daily","value":"daily","order":100.0},{"label":"Weekdays (M-F)","value":"weekdays","order":100.0},{"label":"Weekly","value":"weekly","order":100.0},{"label":"Monthly","value":"monthly","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.ocurrence_notes","label":"1 - Get Catalog Variables➛ocurrence_notes","reference":"","reference_display":"ocurrence_notes","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.retention","label":"1 - Get Catalog Variables➛retention","reference":"","reference_display":"retention","type":"choice","base_type":"choice","choices":[{"label":"Days","value":"days","order":100.0},{"label":"Weeks","value":"weeks","order":100.0},{"label":"Months","value":"months","order":100.0},{"label":"Years","value":"years","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.retention_details","label":"1 - Get Catalog Variables➛retention_details","reference":"","reference_display":"retention_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.record","label":"4 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.table_name","label":"4 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.__action_status__","label":"4 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.__dont_treat_as_error__","label":"4 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.Record","label":"3 - Look Up Record➛Group Record","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.Table","label":"3 - Look Up Record➛Group Table","reference":"sys_user_group","reference_display":"Group","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.manual_task_assignment_group","label":"Flow Variables➛Manual Task Assignment Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6f6c1a2b-8e95-4d73-8942-c43c38d3bebe"}},{"name":"c3ef273e-9b8c-48eb-94c7-8e6a9c8b3aea.total_duration","label":"9 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"c3ef273e-9b8c-48eb-94c7-8e6a9c8b3aea.scheduled_end_date_time","label":"9 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"3e859a15-0f91-48da-b3f9-34ed9f70628a.state","label":"9 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"3e859a15-0f91-48da-b3f9-34ed9f70628a.__action_status__","label":"9 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e859a15-0f91-48da-b3f9-34ed9f70628a.__dont_treat_as_error__","label":"9 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.record","label":"11 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.table_name","label":"11 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.record","label":"12 - Update Record➛Request Record","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.table_name","label":"12 - Update Record➛Request Table","reference":"sc_request","reference_display":"Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"}]</label_cache>
+        <master_snapshot>326c0d511bbb1510e06d520b234bcb5a</master_snapshot>
+        <name>Request a new Backup Job Template</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>df6c4d511bbb1510e06d520b234bcb2f</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:23:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>be8941dd1b7b1510e06d520b234bcb1e</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Request a new Backup Job Template</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_be8941dd1b7b1510e06d520b234bcb1e</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_variable_value action="delete_multiple" query="document_key=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_flow_catalog_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <catalog_item/>
+        <name/>
+        <run_flow_in/>
+        <sys_class_name>sys_flow_catalog_trigger</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>df6c4d511bbb1510e06d520b234bcb2f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:30</sys_updated_on>
+    </sys_flow_catalog_trigger>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN1a6cc9511bbb1510e06d520b234bcbb1"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>1a6cc9511bbb1510e06d520b234bcbb1</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=1a6cc9511bbb1510e06d520b234bcbb1"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN7e8941dd1b7b1510e06d520b234bcb1f"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>be8941dd1b7b1510e06d520b234bcb1e</id>
+        <name>Request a new Backup Job Template</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:23:23</sys_created_on>
+        <sys_id>7e8941dd1b7b1510e06d520b234bcb1f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:23:23</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=7e8941dd1b7b1510e06d520b234bcb1f"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN526cc9511bbb1510e06d520b234bcbaa,5e6cc9511bbb1510e06d520b234bcb8c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</model>
+        <model_id>be8941dd1b7b1510e06d520b234bcb1e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_be8941dd1b7b1510e06d520b234bcb1e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>526cc9511bbb1510e06d520b234bcbaa</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</model>
+        <model_id>be8941dd1b7b1510e06d520b234bcb1e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_be8941dd1b7b1510e06d520b234bcb1e</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>5e6cc9511bbb1510e06d520b234bcb8c</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN09ae83e51b3f5510e06d520b234bcbcb,226cc9511bbb1510e06d520b234bcbdd,41ae83e51b3f5510e06d520b234bcba7,4dae83e51b3f5510e06d520b234bcbd1,666cc9511bbb1510e06d520b234bcbe2,6e6cc9511bbb1510e06d520b234bcbd1,966cc9511bbb1510e06d520b234bcbbc,aa6cc9511bbb1510e06d520b234bcbe7,e66cc9511bbb1510e06d520b234bcbcb,ea6cc9511bbb1510e06d520b234bcbd7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>11</order>
+        <parent_ui_id>2de4b76e-452e-4379-8fa2-443271faf79d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>09ae83e51b3f5510e06d520b234bcbcb</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>9c785873-42ff-42fa-9ae6-ac0fe1cb9928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=09ae83e51b3f5510e06d520b234bcbcb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>09ae83e51b3f5510e06d520b234bcbcb</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>09ae83e51b3f5510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>09ae83e51b3f5510e06d520b234bcbcb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>45ae83e51b3f5510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=09ae83e51b3f5510e06d520b234bcbcb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>09ae83e51b3f5510e06d520b234bcbcb</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>01ae83e51b3f5510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>09ae83e51b3f5510e06d520b234bcbcb</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>4dae83e51b3f5510e06d520b234bcbcc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>09ae83e51b3f5510e06d520b234bcbcb</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>c1ae83e51b3f5510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=09ae83e51b3f5510e06d520b234bcbcb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=09ae83e51b3f5510e06d520b234bcbcb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>226cc9511bbb1510e06d520b234bcbdd</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>ddf81176-165b-438d-ba35-c04add1570e1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=226cc9511bbb1510e06d520b234bcbdd"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>226cc9511bbb1510e06d520b234bcbdd</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>266cc9511bbb1510e06d520b234bcbde</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=226cc9511bbb1510e06d520b234bcbdd"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>226cc9511bbb1510e06d520b234bcbdd</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>ee6cc9511bbb1510e06d520b234bcbdd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>226cc9511bbb1510e06d520b234bcbdd</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>a26cc9511bbb1510e06d520b234bcbde</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Go to Backup Jobs table (x_tesgh_veeam_app_backup_job), click 'Sync Backup Jobs' and wait for your new Backup Job to appear^order=300^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=226cc9511bbb1510e06d520b234bcbdd"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=226cc9511bbb1510e06d520b234bcbdd"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>41ae83e51b3f5510e06d520b234bcba7</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>3e859a15-0f91-48da-b3f9-34ed9f70628a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=41ae83e51b3f5510e06d520b234bcba7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>41ae83e51b3f5510e06d520b234bcba7</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>41ae83e51b3f5510e06d520b234bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>41ae83e51b3f5510e06d520b234bcba7</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>49ae83e51b3f5510e06d520b234bcbaa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=41ae83e51b3f5510e06d520b234bcba7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>41ae83e51b3f5510e06d520b234bcba7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>0dae83e51b3f5510e06d520b234bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>41ae83e51b3f5510e06d520b234bcba7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>45ae83e51b3f5510e06d520b234bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{c4e36add-96c9-4f89-a784-fb7d6b57eada.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>41ae83e51b3f5510e06d520b234bcba7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>cdae83e51b3f5510e06d520b234bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=41ae83e51b3f5510e06d520b234bcba7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=41ae83e51b3f5510e06d520b234bcba7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>12</order>
+        <parent_ui_id>2de4b76e-452e-4379-8fa2-443271faf79d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>4dae83e51b3f5510e06d520b234bcbd1</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>bf48da1e-f736-48a3-bc2b-c7b5f25aad36</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4dae83e51b3f5510e06d520b234bcbd1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4dae83e51b3f5510e06d520b234bcbd1</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>49ae83e51b3f5510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4dae83e51b3f5510e06d520b234bcbd1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>85ae83e51b3f5510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <value>state=3^request_state=closed_complete</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4dae83e51b3f5510e06d520b234bcbd1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>4dae83e51b3f5510e06d520b234bcbd1</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>41ae83e51b3f5510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4dae83e51b3f5510e06d520b234bcbd1</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>8dae83e51b3f5510e06d520b234bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4dae83e51b3f5510e06d520b234bcbd1</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>05ae83e51b3f5510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4dae83e51b3f5510e06d520b234bcbd1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4dae83e51b3f5510e06d520b234bcbd1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>666cc9511bbb1510e06d520b234bcbe2</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>b9f4c95b-4af8-4530-8228-dcfad673013b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=666cc9511bbb1510e06d520b234bcbe2"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>666cc9511bbb1510e06d520b234bcbe2</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>6a6cc9511bbb1510e06d520b234bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=666cc9511bbb1510e06d520b234bcbe2"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>666cc9511bbb1510e06d520b234bcbe2</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>266cc9511bbb1510e06d520b234bcbe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>666cc9511bbb1510e06d520b234bcbe2</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>e66cc9511bbb1510e06d520b234bcbe3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Create a new Backup Job Template based on the request^order=400^description=Click 'Create Backup Job Template' button﻿ on this task^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=666cc9511bbb1510e06d520b234bcbe2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=666cc9511bbb1510e06d520b234bcbe2"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>6e6cc9511bbb1510e06d520b234bcbd1</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>8e2d6450-0bb4-4ea5-bdad-94f89fbc4553</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=6e6cc9511bbb1510e06d520b234bcbd1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>6e6cc9511bbb1510e06d520b234bcbd1</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>2a6cc9511bbb1510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=6e6cc9511bbb1510e06d520b234bcbd1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>6e6cc9511bbb1510e06d520b234bcbd1</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>e26cc9511bbb1510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>6e6cc9511bbb1510e06d520b234bcbd1</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>a66cc9511bbb1510e06d520b234bcbd3</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:46</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Create Backup Job in Veeam Server based on requestor's requirements﻿^description=Name: {{eef6122a-bf52-4b56-829e-79b109532489.name}}
+Description: {{eef6122a-bf52-4b56-829e-79b109532489.description}}
+
+Frequency: {{eef6122a-bf52-4b56-829e-79b109532489.frequency}}
+Frequency Details: {{eef6122a-bf52-4b56-829e-79b109532489.frequency_details}}
+Occurence: {{eef6122a-bf52-4b56-829e-79b109532489.occurence}}
+Occurence Notes: {{eef6122a-bf52-4b56-829e-79b109532489.ocurrence_notes}}
+
+Retention Policy: {{eef6122a-bf52-4b56-829e-79b109532489.retention_policy}}
+Keep weekly full backups for, week(s): {{eef6122a-bf52-4b56-829e-79b109532489.keep_weekly_backups_for}}
+Keep montly full backups for, month(s): {{eef6122a-bf52-4b56-829e-79b109532489.keep_monthly_backups_for}}
+Keep yearly full backups for, year(s): {{eef6122a-bf52-4b56-829e-79b109532489.keep_yearly_backups_for}}^order=100^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6e6cc9511bbb1510e06d520b234bcbd1"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=6e6cc9511bbb1510e06d520b234bcbd1"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>966cc9511bbb1510e06d520b234bcbbc</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>eef6122a-bf52-4b56-829e-79b109532489</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=966cc9511bbb1510e06d520b234bcbbc"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>966cc9511bbb1510e06d520b234bcbbc</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>166cc9511bbb1510e06d520b234bcbbf</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:46</sys_updated_on>
+        <value>19ac061d1b6695106e76da03b24bcb95:item_option_new,e03d0a1d1b6695106e76da03b24bcb3a:item_option_new,9dbc461d1b6695106e76da03b24bcb59:item_option_new,ecb744b21be69910e06d520b234bcb38:item_option_new,194dce1d1b6695106e76da03b24bcb92:item_option_new,f86700b21be69910e06d520b234bcb58:item_option_new,821ece1d1b6695106e76da03b24bcbfa:item_option_new,774731ed1bbc3d106e76da03b24bcba8:item_option_new,8330c70e1bfcbd106e76da03b24bcb74:item_option_new,3350c30e1bfcbd106e76da03b24bcb3b:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>966cc9511bbb1510e06d520b234bcbbc</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>1e6cc9511bbb1510e06d520b234bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <value>f6fb86d91b6695106e76da03b24bcb22</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=966cc9511bbb1510e06d520b234bcbbc"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>966cc9511bbb1510e06d520b234bcbbc</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>1a6cc9511bbb1510e06d520b234bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>966cc9511bbb1510e06d520b234bcbbc</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>926cc9511bbb1510e06d520b234bcbbf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>966cc9511bbb1510e06d520b234bcbbc</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>de6cc9511bbb1510e06d520b234bcbbe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=966cc9511bbb1510e06d520b234bcbbc"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=966cc9511bbb1510e06d520b234bcbbc"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>aa6cc9511bbb1510e06d520b234bcbe7</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>c4e36add-96c9-4f89-a784-fb7d6b57eada</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=aa6cc9511bbb1510e06d520b234bcbe7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>aa6cc9511bbb1510e06d520b234bcbe7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>ae6cc9511bbb1510e06d520b234bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=aa6cc9511bbb1510e06d520b234bcbe7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>aa6cc9511bbb1510e06d520b234bcbe7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>6a6cc9511bbb1510e06d520b234bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>aa6cc9511bbb1510e06d520b234bcbe7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>2e6cc9511bbb1510e06d520b234bcbe8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Go to the previously synced Backup Job and link it to the new Backup Job Template^order=500^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=aa6cc9511bbb1510e06d520b234bcbe7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=aa6cc9511bbb1510e06d520b234bcbe7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>e66cc9511bbb1510e06d520b234bcbcb</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>3257cf52-7a00-488d-8402-cd30dd49de13</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=e66cc9511bbb1510e06d520b234bcbcb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>e66cc9511bbb1510e06d520b234bcbcb</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>aa6cc9511bbb1510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:26</sys_updated_on>
+        <value>sys_user_group</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=e66cc9511bbb1510e06d520b234bcbcb"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>e66cc9511bbb1510e06d520b234bcbcb</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>666cc9511bbb1510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{flow_variable.manual_task_assignment_group}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>e66cc9511bbb1510e06d520b234bcbcb</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>2a6cc9511bbb1510e06d520b234bcbcd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e66cc9511bbb1510e06d520b234bcbcb"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=e66cc9511bbb1510e06d520b234bcbcb"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent/>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>ea6cc9511bbb1510e06d520b234bcbd7</sys_id>
+        <sys_mod_count>32</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ea6cc9511bbb1510e06d520b234bcbd7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>ea6cc9511bbb1510e06d520b234bcbd7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>ee6cc9511bbb1510e06d520b234bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=ea6cc9511bbb1510e06d520b234bcbd7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>ea6cc9511bbb1510e06d520b234bcbd7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>aa6cc9511bbb1510e06d520b234bcbd8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>ea6cc9511bbb1510e06d520b234bcbd7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>6e6cc9511bbb1510e06d520b234bcbd8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:26</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Run the Backup Job once after creation^order=200^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ea6cc9511bbb1510e06d520b234bcbd7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=ea6cc9511bbb1510e06d520b234bcbd7"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN05ae83e51b3f5510e06d520b234bcbc4,5e6cc9511bbb1510e06d520b234bcbc0"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4dae83e51b3f5510e06d520b234bcbc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>05ae83e51b3f5510e06d520b234bcbc4</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>2de4b76e-452e-4379-8fa2-443271faf79d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=05ae83e51b3f5510e06d520b234bcbc4"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_be8941dd1b7b1510e06d520b234bcb1e^id=05ae83e51b3f5510e06d520b234bcbc4"/>
+    <sys_element_mapping action="delete_multiple" query="id=05ae83e51b3f5510e06d520b234bcbc4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>05ae83e51b3f5510e06d520b234bcbc4</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:23</sys_created_on>
+        <sys_id>05ae83e51b3f5510e06d520b234bcbc7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:23</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{3e859a15-0f91-48da-b3f9-34ed9f70628a.state}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=05ae83e51b3f5510e06d520b234bcbc4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=05ae83e51b3f5510e06d520b234bcbc4"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">926cc9511bbb1510e06d520b234bcbc0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</flow>
+        <flow_variable/>
+        <flow_variables_assigned>manual_task_assignment_group</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>5e6cc9511bbb1510e06d520b234bcbc0</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <ui_id>4f4b31b9-0901-42c5-aa6b-c6cac3a49e76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=5e6cc9511bbb1510e06d520b234bcbc0"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_be8941dd1b7b1510e06d520b234bcb1e^id=5e6cc9511bbb1510e06d520b234bcbc0"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=5e6cc9511bbb1510e06d520b234bcbc0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=5e6cc9511bbb1510e06d520b234bcbc0^sys_idNOT INde6cc9511bbb1510e06d520b234bcbc1"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>manual_task_assignment_group</input_name>
+        <instance>5e6cc9511bbb1510e06d520b234bcbc0</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"manual_task_assignment_group":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn gs.getProperty(\u0027x_tesgh_veeam_app.assignment_group_manual_task\u0027);"}}</script>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:56</sys_created_on>
+        <sys_id>de6cc9511bbb1510e06d520b234bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:56</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN166cc9511bbb1510e06d520b234bcbb3"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6f6c1a2b-8e95-4d73-8942-c43c38d3bebe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>manual_task_assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Manual Task Assignment Group</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</model>
+        <model_id>be8941dd1b7b1510e06d520b234bcb1e</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_variable_be8941dd1b7b1510e06d520b234bcb1e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>166cc9511bbb1510e06d520b234bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manual Task Assignment Group</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_166cc9511bbb1510e06d520b234bcbb3</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN526cc9511bbb1510e06d520b234bcbaf,926cc9511bbb1510e06d520b234bcba9"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_be8941dd1b7b1510e06d520b234bcb1e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>526cc9511bbb1510e06d520b234bcbaf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_be8941dd1b7b1510e06d520b234bcb1e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:55</sys_created_on>
+        <sys_id>926cc9511bbb1510e06d520b234bcba9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_be8941dd1b7b1510e06d520b234bcb1e"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>request_a_new_backup_job_template</internal_name>
+        <label_cache>[{"name":"eef6122a-bf52-4b56-829e-79b109532489.retention_policy","label":"1 - Get Catalog Variables➛retention_policy","reference":"","reference_display":"retention_policy","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.keep_yearly_backups_for","label":"1 - Get Catalog Variables➛keep_yearly_backups_for","reference":"","reference_display":"keep_yearly_backups_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.keep_monthly_backups_for","label":"1 - Get Catalog Variables➛keep_monthly_backups_for","reference":"","reference_display":"keep_monthly_backups_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.keep_weekly_backups_for","label":"1 - Get Catalog Variables➛keep_weekly_backups_for","reference":"","reference_display":"keep_weekly_backups_for","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.amount","label":"1 - Get Catalog Variables➛amount","reference":"","reference_display":"amount","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.__dont_treat_as_error__","label":"8 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.__action_status__","label":"8 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.table_name","label":"8 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"c4e36add-96c9-4f89-a784-fb7d6b57eada.record","label":"8 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.__dont_treat_as_error__","label":"7 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.__action_status__","label":"7 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.table_name","label":"7 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"b9f4c95b-4af8-4530-8228-dcfad673013b.record","label":"7 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.__dont_treat_as_error__","label":"6 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.__action_status__","label":"6 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.table_name","label":"6 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"ddf81176-165b-438d-ba35-c04add1570e1.record","label":"6 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.__dont_treat_as_error__","label":"5 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.__action_status__","label":"5 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.table_name","label":"5 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e.record","label":"5 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item","label":"Trigger - Service Catalog➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"default_search_field":"number"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.name","label":"1 - Get Catalog Variables➛name","reference":"","reference_display":"name","type":"string","base_type":"string","attributes":{"catalogType":"6","catalogTypeLabel":"Single Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.frequency","label":"1 - Get Catalog Variables➛frequency","reference":"","reference_display":"frequency","type":"choice","base_type":"choice","choices":[{"label":"Every hour","value":"1","order":100.0},{"label":"Every 4 hours","value":"4","order":100.0},{"label":"Every 12 hours","value":"12","order":100.0},{"label":"Every 24 hours","value":"24","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.description","label":"1 - Get Catalog Variables➛description","reference":"","reference_display":"description","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.frequency_details","label":"1 - Get Catalog Variables➛frequency_details","reference":"","reference_display":"frequency_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.occurence","label":"1 - Get Catalog Variables➛occurence","reference":"","reference_display":"occurence","type":"choice","base_type":"choice","choices":[{"label":"Daily","value":"daily","order":100.0},{"label":"Weekdays (M-F)","value":"weekdays","order":100.0},{"label":"Weekly","value":"weekly","order":100.0},{"label":"Monthly","value":"monthly","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.ocurrence_notes","label":"1 - Get Catalog Variables➛ocurrence_notes","reference":"","reference_display":"ocurrence_notes","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.retention","label":"1 - Get Catalog Variables➛retention","reference":"","reference_display":"retention","type":"choice","base_type":"choice","choices":[{"label":"Days","value":"days","order":100.0},{"label":"Weeks","value":"weeks","order":100.0},{"label":"Months","value":"months","order":100.0},{"label":"Years","value":"years","order":100.0},{"label":"Custom","value":"custom","order":100.0}],"attributes":{"catalogType":"5","catalogTypeLabel":"Select Box"}},{"name":"eef6122a-bf52-4b56-829e-79b109532489.retention_details","label":"1 - Get Catalog Variables➛retention_details","reference":"","reference_display":"retention_details","type":"multi_small","base_type":"multi_small","attributes":{"catalogType":"2","catalogTypeLabel":"Multi Line Text"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.record","label":"4 - Create Record➛Catalog Task Record","reference":"sc_task","reference_display":"Catalog Task","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.table_name","label":"4 - Create Record➛Catalog Task Table","reference":"sc_task","reference_display":"Catalog Task","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.__action_status__","label":"4 - Create Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"8e2d6450-0bb4-4ea5-bdad-94f89fbc4553.__dont_treat_as_error__","label":"4 - Create Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.Record","label":"3 - Look Up Record➛Group Record","reference":"sys_user_group","reference_display":"Group","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.Table","label":"3 - Look Up Record➛Group Table","reference":"sys_user_group","reference_display":"Group","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","filter_table_source":"v_cluster_transaction"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.error_message","label":"3 - Look Up Record➛Error Message","reference_display":"Error Message","type":"string","base_type":"string","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","pwd2droppable":"true","uiUniqueId":"87687532-9e3d-4497-a88e-90f45bfb9adb"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.__action_status__","label":"3 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3257cf52-7a00-488d-8402-cd30dd49de13.__dont_treat_as_error__","label":"3 - Look Up Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"flow_variable.manual_task_assignment_group","label":"Flow Variables➛Manual Task Assignment Group","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"6f6c1a2b-8e95-4d73-8942-c43c38d3bebe"}},{"name":"c3ef273e-9b8c-48eb-94c7-8e6a9c8b3aea.total_duration","label":"9 - Wait for a duration of time➛Total Duration","reference_display":"Total Duration","type":"glide_duration","base_type":"glide_duration","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"c3ef273e-9b8c-48eb-94c7-8e6a9c8b3aea.scheduled_end_date_time","label":"9 - Wait for a duration of time➛Scheduled End date/time","reference_display":"Scheduled End date/time","type":"glide_date_time","base_type":"glide_date_time","attributes":{"pills_draggable_inside_block":"false","pills_draggable_outside_block":"true"}},{"name":"3e859a15-0f91-48da-b3f9-34ed9f70628a.state","label":"9 - Wait For Condition➛State","reference_display":"State","type":"choice","base_type":"choice","choices":[{"label":"Complete","value":"0","order":0.0},{"label":"Timeout","value":"1","order":1.0}],"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2e334039-7a20-4ead-9148-909988f1a7e4"}},{"name":"3e859a15-0f91-48da-b3f9-34ed9f70628a.__action_status__","label":"9 - Wait For Condition➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"3e859a15-0f91-48da-b3f9-34ed9f70628a.__dont_treat_as_error__","label":"9 - Wait For Condition➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.record","label":"11 - Update Record➛Requested Item Record","reference":"sc_req_item","reference_display":"Requested Item","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.table_name","label":"11 - Update Record➛Requested Item Table","reference":"sc_req_item","reference_display":"Requested Item","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.__action_status__","label":"11 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"9c785873-42ff-42fa-9ae6-ac0fe1cb9928.__dont_treat_as_error__","label":"11 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.record","label":"12 - Update Record➛Request Record","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.table_name","label":"12 - Update Record➛Request Table","reference":"sc_request","reference_display":"Request","type":"table_name","base_type":"table_name","attributes":{"element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.__action_status__","label":"12 - Update Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","attributes":{"uiType":"object","co_type_name":"FDACTIONSTATUS","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"bf48da1e-f736-48a3-bc2b-c7b5f25aad36.__dont_treat_as_error__","label":"12 - Update Record➛Don\u0027t Treat as Error","reference_display":"Don\u0027t Treat as Error","type":"boolean","base_type":"boolean","attributes":{"uiType":"boolean","visible_in_ui":"false","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"Service Catalog_1.request_item.request","label":"Trigger - Service Catalog➛Requested Item Record➛Request","reference":"sc_request","reference_display":"Request","type":"reference","base_type":"reference","parent_table_name":"sc_req_item","column_name":"request"}]</label_cache>
+        <master>true</master>
+        <name>Request a new Backup Job Template</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Request a new Backup Job Template">be8941dd1b7b1510e06d520b234bcb1e</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:57</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>326c0d511bbb1510e06d520b234bcb5a</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <type>flow</type>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_variable_value action="delete_multiple" query="document_key=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_hub_trigger_instance action="delete_multiple" query="flow=326c0d511bbb1510e06d520b234bcb5a^sys_idNOT IN0b6c0d511bbb1510e06d520b234bcbd6"/>
+    <sys_hub_trigger_instance action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <name>Service Catalog</name>
+        <remote_sys_id/>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>0b6c0d511bbb1510e06d520b234bcbd6</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:23:00</sys_updated_on>
+        <trigger_definition display_value="Service Catalog">c43a1011c36813002841b63b12d3ae15</trigger_definition>
+        <trigger_inputs/>
+        <trigger_outputs/>
+        <trigger_type>service_catalog</trigger_type>
+    </sys_hub_trigger_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0b6c0d511bbb1510e06d520b234bcbd6"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=326c0d511bbb1510e06d520b234bcb5a^sys_idNOT IN726c0d511bbb1510e06d520b234bcb5b"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>326c0d511bbb1510e06d520b234bcb5a</id>
+        <name>Request a new Backup Job Template</name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:57</sys_created_on>
+        <sys_id>726c0d511bbb1510e06d520b234bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:57</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=726c0d511bbb1510e06d520b234bcb5b"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=326c0d511bbb1510e06d520b234bcb5a^sys_idNOT IN036c0d511bbb1510e06d520b234bcb91,f66c0d511bbb1510e06d520b234bcb5c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>default_search_field=number,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>request_item</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Request Item</label>
+        <mandatory>true</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</model>
+        <model_id>326c0d511bbb1510e06d520b234bcb5a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_326c0d511bbb1510e06d520b234bcb5a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="sc_req_item">sc_req_item</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>036c0d511bbb1510e06d520b234bcb91</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>sc_req_item</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</model>
+        <model_id>326c0d511bbb1510e06d520b234bcb5a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_326c0d511bbb1510e06d520b234bcb5a</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>true</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:57</sys_created_on>
+        <sys_id>f66c0d511bbb1510e06d520b234bcb5c</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_flow_output action="delete_multiple" query="model=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_hub_action_instance action="delete_multiple" query="flow=326c0d511bbb1510e06d520b234bcb5a^sys_idNOT IN036c0d511bbb1510e06d520b234bcbd5,076c0d511bbb1510e06d520b234bcbbf,0aaec3e51b3f5510e06d520b234bcbed,0f6c0d511bbb1510e06d520b234bcbb7,4b6c0d511bbb1510e06d520b234bcbac,4b6c0d511bbb1510e06d520b234bcbcf,836c0d511bbb1510e06d520b234bcbca,c6aec3e51b3f5510e06d520b234bcbe7,caaec3e51b3f5510e06d520b234bcbdf,cb6c0d511bbb1510e06d520b234bcbc4"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>8</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>036c0d511bbb1510e06d520b234bcbd5</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>c4e36add-96c9-4f89-a784-fb7d6b57eada</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=036c0d511bbb1510e06d520b234bcbd5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>036c0d511bbb1510e06d520b234bcbd5</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>076c0d511bbb1510e06d520b234bcbd6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:59</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=036c0d511bbb1510e06d520b234bcbd5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>036c0d511bbb1510e06d520b234bcbd5</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>cf6c0d511bbb1510e06d520b234bcbd5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>036c0d511bbb1510e06d520b234bcbd5</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>836c0d511bbb1510e06d520b234bcbd6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Go to the previously synced Backup Job and link it to the new Backup Job Template^order=500^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=036c0d511bbb1510e06d520b234bcbd5"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=036c0d511bbb1510e06d520b234bcbd5"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>4</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>076c0d511bbb1510e06d520b234bcbbf</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>8e2d6450-0bb4-4ea5-bdad-94f89fbc4553</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=076c0d511bbb1510e06d520b234bcbbf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>076c0d511bbb1510e06d520b234bcbbf</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>0b6c0d511bbb1510e06d520b234bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=076c0d511bbb1510e06d520b234bcbbf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>076c0d511bbb1510e06d520b234bcbbf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>c36c0d511bbb1510e06d520b234bcbc0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>076c0d511bbb1510e06d520b234bcbbf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>876c0d511bbb1510e06d520b234bcbc0</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:57</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Create Backup Job in Veeam Server based on requestor's requirements﻿^description=Name: {{eef6122a-bf52-4b56-829e-79b109532489.name}}
+Description: {{eef6122a-bf52-4b56-829e-79b109532489.description}}
+
+Frequency: {{eef6122a-bf52-4b56-829e-79b109532489.frequency}}
+Frequency Details: {{eef6122a-bf52-4b56-829e-79b109532489.frequency_details}}
+Occurence: {{eef6122a-bf52-4b56-829e-79b109532489.occurence}}
+Occurence Notes: {{eef6122a-bf52-4b56-829e-79b109532489.ocurrence_notes}}
+
+Retention Policy: {{eef6122a-bf52-4b56-829e-79b109532489.retention_policy}}
+Keep weekly full backups for, week(s): {{eef6122a-bf52-4b56-829e-79b109532489.keep_weekly_backups_for}}
+Keep montly full backups for, month(s): {{eef6122a-bf52-4b56-829e-79b109532489.keep_monthly_backups_for}}
+Keep yearly full backups for, year(s): {{eef6122a-bf52-4b56-829e-79b109532489.keep_yearly_backups_for}}^order=100^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=076c0d511bbb1510e06d520b234bcbbf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=076c0d511bbb1510e06d520b234bcbbf"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>12</order>
+        <parent_ui_id>2de4b76e-452e-4379-8fa2-443271faf79d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>0aaec3e51b3f5510e06d520b234bcbed</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>bf48da1e-f736-48a3-bc2b-c7b5f25aad36</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0aaec3e51b3f5510e06d520b234bcbed"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0aaec3e51b3f5510e06d520b234bcbed</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>06aec3e51b3f5510e06d520b234bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <value>sc_request</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0aaec3e51b3f5510e06d520b234bcbed</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>42aec3e51b3f5510e06d520b234bcbef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <value>state=3^request_state=closed_complete</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0aaec3e51b3f5510e06d520b234bcbed"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>0aaec3e51b3f5510e06d520b234bcbed</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>0eaec3e51b3f5510e06d520b234bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item.request}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>0aaec3e51b3f5510e06d520b234bcbed</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>4aaec3e51b3f5510e06d520b234bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>0aaec3e51b3f5510e06d520b234bcbed</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>ceaec3e51b3f5510e06d520b234bcbee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0aaec3e51b3f5510e06d520b234bcbed"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0aaec3e51b3f5510e06d520b234bcbed"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>0f6c0d511bbb1510e06d520b234bcbb7</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>3257cf52-7a00-488d-8402-cd30dd49de13</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=0f6c0d511bbb1510e06d520b234bcbb7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>0f6c0d511bbb1510e06d520b234bcbb7</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>0b6c0d511bbb1510e06d520b234bcbb9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:28</sys_updated_on>
+        <value>sys_user_group</value>
+        <variable display_value="Table">d909f99587003300663ca1bb36cb0ba4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0f6c0d511bbb1510e06d520b234bcbb7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>0f6c0d511bbb1510e06d520b234bcbb7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>c36c0d511bbb1510e06d520b234bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value>sys_id={{flow_variable.manual_task_assignment_group}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table</field>
+        <id>0f6c0d511bbb1510e06d520b234bcbb7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>876c0d511bbb1510e06d520b234bcbb9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_9d09f99587003300663ca1bb36cb0ba3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0f6c0d511bbb1510e06d520b234bcbb7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=0f6c0d511bbb1510e06d520b234bcbb7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Get Catalog Variables">330ba3abc31013002841b63b12d3aee8</action_type>
+        <action_type_parent display_value="Get Catalog Variables">22f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>4b6c0d511bbb1510e06d520b234bcbac</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>eef6122a-bf52-4b56-829e-79b109532489</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b6c0d511bbb1510e06d520b234bcbac"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b6c0d511bbb1510e06d520b234bcbac</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>476c0d511bbb1510e06d520b234bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <value>f6fb86d91b6695106e76da03b24bcb22</value>
+        <variable display_value="Template Catalog Items and Variable Sets">bb0ba3abc31013002841b63b12d3aef1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b6c0d511bbb1510e06d520b234bcbac</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>836c0d511bbb1510e06d520b234bcbae</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:57</sys_updated_on>
+        <value>19ac061d1b6695106e76da03b24bcb95:item_option_new,e03d0a1d1b6695106e76da03b24bcb3a:item_option_new,9dbc461d1b6695106e76da03b24bcb59:item_option_new,ecb744b21be69910e06d520b234bcb38:item_option_new,194dce1d1b6695106e76da03b24bcb92:item_option_new,f86700b21be69910e06d520b234bcb58:item_option_new,821ece1d1b6695106e76da03b24bcbfa:item_option_new,774731ed1bbc3d106e76da03b24bcba8:item_option_new,8330c70e1bfcbd106e76da03b24bcb74:item_option_new,3350c30e1bfcbd106e76da03b24bcb3b:item_option_new</value>
+        <variable display_value="Catalog Variables">7b0ba3abc31013002841b63b12d3aef7</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4b6c0d511bbb1510e06d520b234bcbac"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>catalog_variables</field>
+        <id>4b6c0d511bbb1510e06d520b234bcbac</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>8b6c0d511bbb1510e06d520b234bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>requested_item</field>
+        <id>4b6c0d511bbb1510e06d520b234bcbac</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>036c0d511bbb1510e06d520b234bcbae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>template_catalog_item</field>
+        <id>4b6c0d511bbb1510e06d520b234bcbac</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>4f6c0d511bbb1510e06d520b234bcbad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_330ba3abc31013002841b63b12d3aee8</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4b6c0d511bbb1510e06d520b234bcbac"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4b6c0d511bbb1510e06d520b234bcbac"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>7</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>4b6c0d511bbb1510e06d520b234bcbcf</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>b9f4c95b-4af8-4530-8228-dcfad673013b</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4b6c0d511bbb1510e06d520b234bcbcf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>4b6c0d511bbb1510e06d520b234bcbcf</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>4f6c0d511bbb1510e06d520b234bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:59</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4b6c0d511bbb1510e06d520b234bcbcf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>4b6c0d511bbb1510e06d520b234bcbcf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>0b6c0d511bbb1510e06d520b234bcbd0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:59</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>4b6c0d511bbb1510e06d520b234bcbcf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_id>cb6c0d511bbb1510e06d520b234bcbd0</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Create a new Backup Job Template based on the request^order=400^description=Click 'Create Backup Job Template' button﻿ on this task^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4b6c0d511bbb1510e06d520b234bcbcf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=4b6c0d511bbb1510e06d520b234bcbcf"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>6</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>836c0d511bbb1510e06d520b234bcbca</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>ddf81176-165b-438d-ba35-c04add1570e1</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=836c0d511bbb1510e06d520b234bcbca"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>836c0d511bbb1510e06d520b234bcbca</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>876c0d511bbb1510e06d520b234bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=836c0d511bbb1510e06d520b234bcbca"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>836c0d511bbb1510e06d520b234bcbca</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>436c0d511bbb1510e06d520b234bcbcb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>836c0d511bbb1510e06d520b234bcbca</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>076c0d511bbb1510e06d520b234bcbcb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Go to Backup Jobs table (x_tesgh_veeam_app_backup_job), click 'Sync Backup Jobs' and wait for your new Backup Job to appear^order=300^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=836c0d511bbb1510e06d520b234bcbca"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=836c0d511bbb1510e06d520b234bcbca"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Update Record">f9d01dd2c31332002841b63b12d3aea1</action_type>
+        <action_type_parent display_value="Update Record">baf174c8c3c232002841b63b12d3aee4</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>11</order>
+        <parent_ui_id>2de4b76e-452e-4379-8fa2-443271faf79d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>c6aec3e51b3f5510e06d520b234bcbe7</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>9c785873-42ff-42fa-9ae6-ac0fe1cb9928</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=c6aec3e51b3f5510e06d520b234bcbe7"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6aec3e51b3f5510e06d520b234bcbe7</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>02aec3e51b3f5510e06d520b234bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Fields">02d01916c31332002841b63b12d3aeee</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>c6aec3e51b3f5510e06d520b234bcbe7</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>c2aec3e51b3f5510e06d520b234bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <value>sc_req_item</value>
+        <variable display_value="Table">b5d01916c31332002841b63b12d3aec9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c6aec3e51b3f5510e06d520b234bcbe7"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>c6aec3e51b3f5510e06d520b234bcbe7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>caaec3e51b3f5510e06d520b234bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value>{{Service Catalog_1.request_item}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>c6aec3e51b3f5510e06d520b234bcbe7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>0aaec3e51b3f5510e06d520b234bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>c6aec3e51b3f5510e06d520b234bcbe7</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>8eaec3e51b3f5510e06d520b234bcbe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_f9d01dd2c31332002841b63b12d3aea1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c6aec3e51b3f5510e06d520b234bcbe7"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=c6aec3e51b3f5510e06d520b234bcbe7"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Wait For Condition">89ce8a4187120010663ca1bb36cb0be3</action_type>
+        <action_type_parent display_value="Wait For Condition">8bb9a8160b10030085c083eb37673aec</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>9</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>caaec3e51b3f5510e06d520b234bcbdf</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>3e859a15-0f91-48da-b3f9-34ed9f70628a</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=caaec3e51b3f5510e06d520b234bcbdf"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>caaec3e51b3f5510e06d520b234bcbdf</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>4eaec3e51b3f5510e06d520b234bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">45ce8a4187120010663ca1bb36cb0bea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>caaec3e51b3f5510e06d520b234bcbdf</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>8aaec3e51b3f5510e06d520b234bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <value>state=3</value>
+        <variable display_value="Conditions">49ce8a4187120010663ca1bb36cb0bef</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=caaec3e51b3f5510e06d520b234bcbdf"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>conditions</field>
+        <id>caaec3e51b3f5510e06d520b234bcbdf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>46aec3e51b3f5510e06d520b234bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>record</field>
+        <id>caaec3e51b3f5510e06d520b234bcbdf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>82aec3e51b3f5510e06d520b234bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value>{{c4e36add-96c9-4f89-a784-fb7d6b57eada.record}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>caaec3e51b3f5510e06d520b234bcbdf</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>0aaec3e51b3f5510e06d520b234bcbe1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_action_input_89ce8a4187120010663ca1bb36cb0be3</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=caaec3e51b3f5510e06d520b234bcbdf"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=caaec3e51b3f5510e06d520b234bcbdf"/>
+    <sys_hub_action_instance action="INSERT_OR_UPDATE">
+        <action_inputs/>
+        <action_inputs/>
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <comment/>
+        <display_text/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <order>5</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>cb6c0d511bbb1510e06d520b234bcbc4</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>4fc2bc46-1b82-4bd3-a917-02b8ea1c7c7e</ui_id>
+    </sys_hub_action_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=cb6c0d511bbb1510e06d520b234bcbc4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_instance</document>
+        <document_key>cb6c0d511bbb1510e06d520b234bcbc4</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>cf6c0d511bbb1510e06d520b234bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <value>sc_task</value>
+        <variable display_value="Table">61e05916c31332002841b63b12d3aee4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=cb6c0d511bbb1510e06d520b234bcbc4"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>table_name</field>
+        <id>cb6c0d511bbb1510e06d520b234bcbc4</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>8b6c0d511bbb1510e06d520b234bcbc5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>values</field>
+        <id>cb6c0d511bbb1510e06d520b234bcbc4</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>4f6c0d511bbb1510e06d520b234bcbc5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:39:28</sys_updated_on>
+        <table>var__m_sys_hub_action_input_2de05916c31332002841b63b12d3aee1</table>
+        <value>request_item={{Service Catalog_1.request_item}}^state=1^short_description=Run the Backup Job once after creation^order=200^assignment_group={{3257cf52-7a00-488d-8402-cd30dd49de13.Record}}</value>
+    </sys_element_mapping>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cb6c0d511bbb1510e06d520b234bcbc4"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=cb6c0d511bbb1510e06d520b234bcbc4"/>
+    <sys_hub_sub_flow_instance action="delete_multiple" query="flow=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_hub_flow_logic action="delete_multiple" query="flow=326c0d511bbb1510e06d520b234bcb5a^sys_idNOT IN82aec3e51b3f5510e06d520b234bcbf5,8f6c0d511bbb1510e06d520b234bcba3"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">4dae83e51b3f5510e06d520b234bcbc3</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <flow_variable/>
+        <flow_variables_assigned/>
+        <inputs/>
+        <inputs/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>10</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>82aec3e51b3f5510e06d520b234bcbf5</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>2de4b76e-452e-4379-8fa2-443271faf79d</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=82aec3e51b3f5510e06d520b234bcbf5"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_326c0d511bbb1510e06d520b234bcb5a^id=82aec3e51b3f5510e06d520b234bcbf5"/>
+    <sys_element_mapping action="delete_multiple" query="id=82aec3e51b3f5510e06d520b234bcbf5"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>condition</field>
+        <id>82aec3e51b3f5510e06d520b234bcbf5</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-16 08:43:27</sys_created_on>
+        <sys_id>02aec3e51b3f5510e06d520b234bcbf8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-16 08:43:27</sys_updated_on>
+        <table>var__m_sys_hub_flow_logic_input_af4e1945c3e232002841b63b12d3ae3e</table>
+        <value>{{3e859a15-0f91-48da-b3f9-34ed9f70628a.state}}=0</value>
+    </sys_element_mapping>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=82aec3e51b3f5510e06d520b234bcbf5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=82aec3e51b3f5510e06d520b234bcbf5"/>
+    <sys_hub_flow_logic action="INSERT_OR_UPDATE">
+        <block display_value="">926cc9511bbb1510e06d520b234bcbc0</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <decision_table_inputs/>
+        <display_text/>
+        <extended_inputs/>
+        <flow display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</flow>
+        <flow_variable/>
+        <flow_variables_assigned>manual_task_assignment_group</flow_variables_assigned>
+        <inputs/>
+        <logic_definition display_value="Set Flow Variables">4f787d1e0f9b0010ecf0cc52ff767ea0</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <outputs_to_assign/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>8f6c0d511bbb1510e06d520b234bcba3</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:22:58</sys_updated_on>
+        <ui_id>4f4b31b9-0901-42c5-aa6b-c6cac3a49e76</ui_id>
+        <workflow_inputs/>
+        <workflow_reference/>
+    </sys_hub_flow_logic>
+    <sys_variable_value action="delete_multiple" query="document_key=8f6c0d511bbb1510e06d520b234bcba3"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_flow_variable_326c0d511bbb1510e06d520b234bcb5a^id=8f6c0d511bbb1510e06d520b234bcba3"/>
+    <sys_hub_flow_logic_ext_input action="delete_multiple" query="model=8f6c0d511bbb1510e06d520b234bcba3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8f6c0d511bbb1510e06d520b234bcba3^sys_idNOT IN436c0d511bbb1510e06d520b234bcba5"/>
+    <sys_hub_input_scripts action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <input_name>manual_task_assignment_group</input_name>
+        <instance>8f6c0d511bbb1510e06d520b234bcba3</instance>
+        <referenced_table>sys_hub_flow_logic</referenced_table>
+        <script>{"manual_task_assignment_group":{"scriptActive":true,"script":"/*\n**Access Flow/Action data using the fd_data object. Script must return a value.\n**example: var shortDesc \u003d fd_data.trigger.current.short_description;\n**return shortDesc;\n*/\nreturn gs.getProperty(\u0027x_tesgh_veeam_app.assignment_group_manual_task\u0027);"}}</script>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>436c0d511bbb1510e06d520b234bcba5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+    </sys_hub_input_scripts>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=326c0d511bbb1510e06d520b234bcb5a^sys_idNOT INc76c0d511bbb1510e06d520b234bcb9e"/>
+    <sys_hub_flow_variable action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=6f6c1a2b-8e95-4d73-8942-c43c38d3bebe</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>manual_task_assignment_group</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Manual Task Assignment Group</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Request a new Backup Job Template">326c0d511bbb1510e06d520b234bcb5a</model>
+        <model_id>326c0d511bbb1510e06d520b234bcb5a</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_variable_326c0d511bbb1510e06d520b234bcb5a</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_variable</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>c76c0d511bbb1510e06d520b234bcb9e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Manual Task Assignment Group</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_flow_variable_c76c0d511bbb1510e06d520b234bcb9e</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_variable>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_input_326c0d511bbb1510e06d520b234bcb5a^sys_idNOT IN4b6c0d511bbb1510e06d520b234bcb95,c76c0d511bbb1510e06d520b234bcb8d"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>request_item</element>
+        <help/>
+        <hint/>
+        <label>Request Item</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_326c0d511bbb1510e06d520b234bcb5a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>4b6c0d511bbb1510e06d520b234bcb95</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_326c0d511bbb1510e06d520b234bcb5a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:58</sys_created_on>
+        <sys_id>c76c0d511bbb1510e06d520b234bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 04:35:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_flow_output_326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_326c0d511bbb1510e06d520b234bcb5a"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>be8941dd1b7b1510e06d520b234bcb1e</sys_id>
+        <latest_snapshot>326c0d511bbb1510e06d520b234bcb5a</latest_snapshot>
+        <compiler_build>glide-utah-12-21-2022__patch5-07-06-2023_07-23-2023_0036.zip</compiler_build>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=be8941dd1b7b1510e06d520b234bcb1e^sys_idNOT IN1b6c4d511bbb1510e06d520b234bcb30"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.RunAlways</binding_strategy>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_trigger_plan","id":"1b6c4d511bbb1510e06d520b234bcb30","name":"plan","plan_signature":null}}</plan>
+        <plan_id>be8941dd1b7b1510e06d520b234bcb1e</plan_id>
+        <snapshot>326c0d511bbb1510e06d520b234bcb5a</snapshot>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 04:35:59</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1b6c4d511bbb1510e06d520b234bcb30</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-22 09:51:41</sys_updated_on>
+        <trigger display_value="">df6c4d511bbb1510e06d520b234bcb2f</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=be8941dd1b7b1510e06d520b234bcb1e"/>
+</record_update>

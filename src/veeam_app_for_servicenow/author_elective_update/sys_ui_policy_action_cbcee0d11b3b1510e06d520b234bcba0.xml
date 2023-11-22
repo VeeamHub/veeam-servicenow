@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>mid_server</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 02:26:41</sys_created_on>
+        <sys_id>cbcee0d11b3b1510e06d520b234bcba0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mid_server</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_cbcee0d11b3b1510e06d520b234bcba0</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 02:26:41</sys_updated_on>
+        <table>x_tesgh_veeam_app_veeam_connection</table>
+        <ui_policy display_value="Use MID Server">0cbe60d11b3b1510e06d520b234bcbf8</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_ui_policy_action_cbcee0d11b3b1510e06d520b234bcba0</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>mid_server</field><mandatory>true</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-12-15 02:26:41</sys_created_on><sys_id>cbcee0d11b3b1510e06d520b234bcba0</sys_id><sys_mod_count>0</sys_mod_count><sys_name>mid_server</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_ui_policy_action_cbcee0d11b3b1510e06d520b234bcba0</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-12-15 02:26:41</sys_updated_on><table>x_tesgh_veeam_app_veeam_connection</table><ui_policy display_value="Use MID Server">0cbe60d11b3b1510e06d520b234bcbf8</ui_policy><visible>true</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1510739727</payload_hash>
+        <record_name>mid_server</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-15 02:26:41</sys_created_on>
+        <sys_id>95dee0d11b3b1510e06d520b234bcb84</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>185139af99c0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-15 02:26:41</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>dddee0d11e3b15101964fc09a44fa883</update_guid>
+        <update_guid_history>dddee0d11e3b15101964fc09a44fa883:1510739727</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 13:07:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>585f3c387fbf41e8932ca6722b6ba040</sys_id>
+        <sys_metadata>cbcee0d11b3b1510e06d520b234bcba0</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>mid_server</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_cbcee0d11b3b1510e06d520b234bcba0</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_cbcee0d11b3b1510e06d520b234bcba0">95dee0d11b3b1510e06d520b234bcb84</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 13:07:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

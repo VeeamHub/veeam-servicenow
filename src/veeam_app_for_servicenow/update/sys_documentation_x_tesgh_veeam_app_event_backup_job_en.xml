@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="backup_job" label="Backup Job" language="en" table="x_tesgh_veeam_app_event">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>backup_job</element>
+            <help/>
+            <hint/>
+            <label>Backup Job</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_event</name>
+            <plural>Backup Jobs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>pavel.egorov</sys_created_by>
+            <sys_created_on>2023-10-23 22:08:29</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Backup Job</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_documentation_x_tesgh_veeam_app_event_backup_job_en</sys_update_name>
+            <sys_updated_by>pavel.egorov</sys_updated_by>
+            <sys_updated_on>2023-10-23 22:08:29</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

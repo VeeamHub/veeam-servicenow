@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Load Backup Jobs from the Veeam Backup &amp; Replication servers.</p>
+<ol style="list-style-position: inside;"><li>Open the &#34;<strong>Backup Jobs</strong>&#34; Module in the navigation bar;</li><li>Click the &#34;<strong>Sync Backup Jobs</strong>&#34; button.<br />    Note - The process may take up to 5 minutes and depends on the number of Backup Jobs and included Virtual Machines.</li></ol>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>x_tesgh_veeam_app_backup_job_list.do</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on>839f26181bae9110e06d520b234bcbdb</implicit_dependent_on>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>200</order>
+        <parent display_value="Initial Data Upload">b2bfee581bae9110e06d520b234bcb68</parent>
+        <parents>b2bfee581bae9110e06d520b234bcb68,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 09:53:42</sys_created_on>
+        <sys_id>a2d3d5131b4d71906e76da03b24bcbde</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Synchronize Backup Jobs</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_a2d3d5131b4d71906e76da03b24bcbde</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-19 11:55:54</sys_updated_on>
+        <table/>
+        <title>Synchronize Backup Jobs</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=a2d3d5131b4d71906e76da03b24bcbde"/>
+</record_update>

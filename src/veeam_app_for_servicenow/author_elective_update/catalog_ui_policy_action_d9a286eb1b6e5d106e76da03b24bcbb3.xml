@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action">
+    <catalog_ui_policy_action action="DELETE">
+        <catalog_item display_value="Request backup of Virtual Machine">b2f63a3f1ba99910e06d520b234bcb10</catalog_item>
+        <catalog_variable>IO:a10246ab1b6e5d106e76da03b24bcb8c</catalog_variable>
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field/>
+        <mandatory>ignore</mandatory>
+        <order>100</order>
+        <sys_class_name>catalog_ui_policy_action</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-21 05:00:51</sys_created_on>
+        <sys_id>d9a286eb1b6e5d106e76da03b24bcbb3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>retention_details</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>catalog_ui_policy_action_d9a286eb1b6e5d106e76da03b24bcbb3</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-21 05:00:51</sys_updated_on>
+        <table/>
+        <ui_policy display_value="If Rention is Custom">d57282eb1b6e5d106e76da03b24bcbee</ui_policy>
+        <variable>retention_details</variable>
+        <variable_set/>
+        <visible>true</visible>
+    </catalog_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>catalog_ui_policy_action_d9a286eb1b6e5d106e76da03b24bcbb3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="catalog_ui_policy_action"><catalog_ui_policy_action action="INSERT_OR_UPDATE"><catalog_item display_value="Request backup of Virtual Machine">b2f63a3f1ba99910e06d520b234bcb10</catalog_item><catalog_variable>IO:a10246ab1b6e5d106e76da03b24bcb8c</catalog_variable><cleared>false</cleared><disabled>ignore</disabled><field/><mandatory>ignore</mandatory><order>100</order><sys_class_name>catalog_ui_policy_action</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-10-21 05:00:51</sys_created_on><sys_id>d9a286eb1b6e5d106e76da03b24bcbb3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>retention_details</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>catalog_ui_policy_action_d9a286eb1b6e5d106e76da03b24bcbb3</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-10-21 05:00:51</sys_updated_on><table/><ui_policy display_value="If Rention is Custom">d57282eb1b6e5d106e76da03b24bcbee</ui_policy><variable>retention_details</variable><variable_set/><visible>true</visible></catalog_ui_policy_action></record_update>]]></payload>
+        <payload_hash>1597813678</payload_hash>
+        <record_name>retention_details</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-21 05:00:51</sys_created_on>
+        <sys_id>c3a2c6eb1b6e5d106e76da03b24bcb43</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183f8ea59430000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-21 05:00:51</sys_updated_on>
+        <type>Catalog UI Policy Action</type>
+        <update_guid>0fa2c6eb346e5d10e27e436b64684842</update_guid>
+        <update_guid_history>0fa2c6eb346e5d10e27e436b64684842:1597813678</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="retention_details">b810d7e61b853590e06d520b234bcb20</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2023-09-06 10:53:13</sys_created_on>
+        <sys_db_object display_value="" name="catalog_ui_policy_action">catalog_ui_policy_action</sys_db_object>
+        <sys_id>024cf169e3cf4b169dbbe5d63e022684</sys_id>
+        <sys_metadata>d9a286eb1b6e5d106e76da03b24bcbb3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>retention_details</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>catalog_ui_policy_action_d9a286eb1b6e5d106e76da03b24bcbb3</sys_update_name>
+        <sys_update_version display_value="catalog_ui_policy_action_d9a286eb1b6e5d106e76da03b24bcbb3">c3a2c6eb1b6e5d106e76da03b24bcb43</sys_update_version>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2023-09-06 10:53:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

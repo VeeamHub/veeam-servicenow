@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="System Import Sets" source="com.glide.system_import_set">e01c58961b10011063fd6243604bcbf3</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 06:03:42</sys_created_on>
+        <sys_id>ce2b71f31be59910e06d520b234bcbda</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 06:03:42</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

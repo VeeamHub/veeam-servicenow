@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Veeam">4630b52b1b695910e06d520b234bcb6c</application>
+        <assessment/>
+        <device_type/>
+        <filter table="sys_data_source">sys_scope=d50434871b9dd91063fd6243604bcb7b^EQ<item display_table="sys_scope" display_value="Veeam App" endquery="false" field="sys_scope" goto="false" newquery="false" operator="=" or="false" value="d50434871b9dd91063fd6243604bcb7b"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </filter>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Data Source</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>sys_data_source</name>
+        <order>3300</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 07:10:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5d3a8e371b299910e06d520b234bcbe6</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Data Sources</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_app_module_5d3a8e371b299910e06d520b234bcbe6</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-29 14:36:58</sys_updated_on>
+        <timeline_page/>
+        <title>Data Sources</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_app_module_5d3a8e371b299910e06d520b234bcbe6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Veeam">4630b52b1b695910e06d520b234bcb6c</application><assessment/><device_type/><filter table="sys_data_source">sys_scope=d50434871b9dd91063fd6243604bcb7b^EQ<item display_table="sys_scope" display_value="Veeam App" endquery="false" field="sys_scope" goto="false" newquery="false" operator="=" or="false" value="d50434871b9dd91063fd6243604bcb7b"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></filter><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Data Source</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>sys_data_source</name><order>3300</order><override_menu_roles>false</override_menu_roles><query/><report/><roles/><sys_class_name>sys_app_module</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-09-02 07:10:48</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>5d3a8e371b299910e06d520b234bcbe6</sys_id><sys_mod_count>6</sys_mod_count><sys_name>Data Sources</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_app_module_5d3a8e371b299910e06d520b234bcbe6</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-06-29 14:36:58</sys_updated_on><timeline_page/><title>Data Sources</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>114071053</payload_hash>
+        <record_name>Data Sources</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-06-29 14:36:58</sys_created_on>
+        <sys_id>719de8ec1b73e5506e76da03b24bcb6b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189079601780000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-29 14:36:58</sys_updated_on>
+        <type>Module</type>
+        <update_guid>799de8ecd173e55040de5339e78b1b6a</update_guid>
+        <update_guid_history>799de8ecd173e55040de5339e78b1b6a:114071053,9f5d28ec9973e55082cc818b6b8d0777:700213644,537260f46f37d110e91619295dc9c449:1050231102,9271d33b632d9910fb1e2b16bacf663b:-1833878900,912b02b7c7299910d26bd7a0e66c7810:62254651,a9bac677bb299910c8394c592219f474:826860949,858a427751299910db9f6adacccece80:1381752619</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Data Sources">814e515f1b4d71906e76da03b24bcb21</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 10:31:25</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>5c146297e6424ec8a357620ef41bd440</sys_id>
+        <sys_metadata>5d3a8e371b299910e06d520b234bcbe6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data Sources</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_app_module_5d3a8e371b299910e06d520b234bcbe6</sys_update_name>
+        <sys_update_version display_value="sys_app_module_5d3a8e371b299910e06d520b234bcbe6">719de8ec1b73e5506e76da03b24bcb6b</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 10:31:25</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

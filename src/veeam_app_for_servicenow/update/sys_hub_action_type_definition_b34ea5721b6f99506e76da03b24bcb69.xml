@@ -1,0 +1,1693 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>get_veeam_connection_by_virtual_machine</internal_name>
+        <label_cache>[{"name":"{{action.credentials}}","label":"action➛Credentials","type":"action","ref":"","reference_display":"Basic Auth Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"72f782d9-5640-4b59-b889-d05db393a665"}},{"name":"{{action.credentials.user_name}}","label":"action➛Connection &amp; Credentials➛User name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.password}}","label":"action➛Connection &amp; Credentials➛Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.connection_url}}","label":"action➛Connection &amp; Credentials➛Connection URL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential.user_name}}","label":"action➛Connection &amp; Credentials➛Credential➛User name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential.password}}","label":"action➛Connection &amp; Credentials➛Credential➛Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential}}","label":"action➛Connection &amp; Credentials➛Credential","type":"action","ref":"discovery_credentials","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential.sys_id}}","label":"action➛Connection &amp; Credentials➛Credential➛Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials1}}","label":"action➛Credentials","type":"action","ref":"","reference_display":"Basic Auth Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛Credentials","type":"action","ref":"","reference_display":"Basic Auth Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Password (2 Way Encrypted)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"password2","uiUniqueId":"997dbd49-ab91-465b-b032-4928582191b2"}},{"name":"{{action.credentials1.password}}","label":"action➛Credentials➛Password","type":"action","ref":"","reference_display":"Password","base_type":"password2","parent_table_name":"basic_auth_credentials","column_name":"password","choices":null,"attributes":{}},{"name":"{{action.credentials1.sys_id}}","label":"action➛Credentials➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"basic_auth_credentials","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.credentials.sys_id}}","label":"action➛Credentials➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"basic_auth_credentials","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.virtual_machine}}","label":"action➛Virtual Machine","type":"action","ref":"","reference_display":"Virtual Machine Instance","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.virtual_machine.sys_id}}","label":"action➛Virtual Machine➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"cmdb_ci_vm_instance","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].http_status}}","label":"step➛Script step➛HTTP Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a06a49b4-98d6-4b34-b37b-5431a5cf06e7"}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].response_body}}","label":"step➛Script step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4c4fedeb-f8c6-478a-b64f-dab8d22e6dde"}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].error_message}}","label":"step➛Script step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].access_token}}","label":"step➛Script step➛Access Token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"3228cac4-14cc-42d1-8000-2ecfe0955a70"}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].password}}","label":"step➛Script step➛Password","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"f61eed17-ed1a-4947-b177-833a5b03e30e"}},{"name":"{{step[3a1035ca-db60-4b2d-816e-bd2d12499864].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3a1035ca-db60-4b2d-816e-bd2d12499864].access_token}}","label":"step➛Script step➛Access Token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2fadc2c8-6733-4222-b5f7-a7eeb440a03b].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2fadc2c8-6733-4222-b5f7-a7eeb440a03b].veeam_connections}}","label":"step➛Script step➛Veeam Connections","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master_snapshot>86cf2db21b6f99506e76da03b24bcb54</master_snapshot>
+        <name>Get Veeam Connection by Virtual Machine</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:39:13</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b34ea5721b6f99506e76da03b24bcb69</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Get Veeam Connection by Virtual Machine</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_b34ea5721b6f99506e76da03b24bcb69</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=b34ea5721b6f99506e76da03b24bcb69"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b34ea5721b6f99506e76da03b24bcb69"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b34ea5721b6f99506e76da03b24bcb69</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>4ecfe9b21b6f99506e76da03b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDb5cfe9b2076f99509ccba3395aa61ae5":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDb5cfe9b2076f99509ccba3395aa61ae5.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":null,\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"5cdbd4df-e61a-438e-846d-2d01f87324b6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDb5cfe9b2076f99509ccba3395aa61ae5\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"-1\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">31cfe9b21b6f99506e76da03b24bcbe9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>b34ea5721b6f99506e76da03b24bcb69</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>8acfe9b21b6f99506e76da03b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">f9cfe9b21b6f99506e76da03b24bcbed</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b34ea5721b6f99506e76da03b24bcb69"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>b34ea5721b6f99506e76da03b24bcb69</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>b4cfe9b21b6f99506e76da03b24bcb99</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</table>
+        <value>{{step[2fadc2c8-6733-4222-b5f7-a7eeb440a03b].veeam_connections}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>b34ea5721b6f99506e76da03b24bcb69</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>0acfe9b21b6f99506e76da03b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>b34ea5721b6f99506e76da03b24bcb69</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>46cfe9b21b6f99506e76da03b24bcbf6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=b34ea5721b6f99506e76da03b24bcb69^sys_idNOT INfccfe9b21b6f99506e76da03b24bcb66"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</action>
+        <cid>2fadc2c8-6733-4222-b5f7-a7eeb440a03b</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>fccfe9b21b6f99506e76da03b24bcb66</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=fccfe9b21b6f99506e76da03b24bcb66"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fccfe9b21b6f99506e76da03b24bcb66</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>34cfe9b21b6f99506e76da03b24bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var veeamConnections = new x_tesgh_veeam_app.VeeamAppUtil().getVeeamConnection(inputs.virtualMachineSysId);
+  outputs.veeam_connections = JSON.parse(veeamConnections.split(',');
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>fccfe9b21b6f99506e76da03b24bcb66</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>f8cfe9b21b6f99506e76da03b24bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=fccfe9b21b6f99506e76da03b24bcb66"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>fccfe9b21b6f99506e76da03b24bcb66</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>30cfe9b21b6f99506e76da03b24bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>fccfe9b21b6f99506e76da03b24bcb66</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>78cfe9b21b6f99506e76da03b24bcb8b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualMachineSysId</field>
+        <id>fccfe9b21b6f99506e76da03b24bcb66</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>30cfe9b21b6f99506e76da03b24bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_fccfe9b21b6f99506e76da03b24bcb66</table>
+        <value>{{action.virtual_machine.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_fccfe9b21b6f99506e76da03b24bcb66^id=fccfe9b21b6f99506e76da03b24bcb66"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=fccfe9b21b6f99506e76da03b24bcb66"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=fccfe9b21b6f99506e76da03b24bcb66^sys_idNOT IN30cfe9b21b6f99506e76da03b24bcb6f"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>virtualMachineSysId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">fccfe9b21b6f99506e76da03b24bcb66</model>
+        <model_id>fccfe9b21b6f99506e76da03b24bcb66</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_fccfe9b21b6f99506e76da03b24bcb66</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>30cfe9b21b6f99506e76da03b24bcb6f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=fccfe9b21b6f99506e76da03b24bcb66^sys_idNOT IN34cfe9b21b6f99506e76da03b24bcb76"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Veeam Connections_child0,child_name=veeam_connections_child0,child_type=string,child_type_label=String,child_uiUniqueId=072658ca-2940-44d4-b6c2-ac5047857ffb,co_type_name=FDfccfe9b2626f995079e5b12e4de88672,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=e4552671-0a84-4bb3-ae51-d88cc058fa17</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>veeam_connections</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Veeam Connections</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">fccfe9b21b6f99506e76da03b24bcb66</model>
+        <model_id>fccfe9b21b6f99506e76da03b24bcb66</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_fccfe9b21b6f99506e76da03b24bcb66</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>34cfe9b21b6f99506e76da03b24bcb76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fccfe9b21b6f99506e76da03b24bcb66"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_fccfe9b21b6f99506e76da03b24bcb66^sys_idNOT IN78cfe9b21b6f99506e76da03b24bcb7a"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>veeam_connections</element>
+        <help/>
+        <hint/>
+        <label>Veeam Connections</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_fccfe9b21b6f99506e76da03b24bcb66</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>78cfe9b21b6f99506e76da03b24bcb7a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=b34ea5721b6f99506e76da03b24bcb69^sys_idNOT INf8cfe5721b6f99506e76da03b24bcb1a"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ff6453bd-c48b-4a2d-8207-dcc50bf0837f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_vm_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>virtual_machine</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Virtual Machine</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</model>
+        <model_id>b34ea5721b6f99506e76da03b24bcb69</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_b34ea5721b6f99506e76da03b24bcb69</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_vm_instance">cmdb_ci_vm_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:33</sys_created_on>
+        <sys_id>f8cfe5721b6f99506e76da03b24bcb1a</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f8cfe5721b6f99506e76da03b24bcb1a"/>
+    <sys_hub_action_output action="delete_multiple" query="model=b34ea5721b6f99506e76da03b24bcb69^sys_idNOT IN31cfe9b21b6f99506e76da03b24bcbe9,b0cfe9b21b6f99506e76da03b24bcb92,f9cfe9b21b6f99506e76da03b24bcbed"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDb5cfe9b2076f99509ccba3395aa61ae5,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5cdbd4df-e61a-438e-846d-2d01f87324b6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</model>
+        <model_id>b34ea5721b6f99506e76da03b24bcb69</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>31cfe9b21b6f99506e76da03b24bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=31cfe9b21b6f99506e76da03b24bcbe9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=31cfe9b21b6f99506e76da03b24bcbe9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Veeam Connections_child0,child_name=veeam_connections_child0,child_type=string,child_type_label=String,child_uiUniqueId=45866a94-4761-456c-956e-88e5ffd90968,co_type_name=FD3ccfe9b2ac6f9950a33c9c71cf772e8f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=a7ce011d-3c05-4fa7-8aa5-24a8914af4e7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Veeam Connections</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</model>
+        <model_id>b34ea5721b6f99506e76da03b24bcb69</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>b0cfe9b21b6f99506e76da03b24bcb92</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b0cfe9b21b6f99506e76da03b24bcb92"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b0cfe9b21b6f99506e76da03b24bcb92"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=98bb267d-52dc-44e3-b9be-a009cb75f101,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</model>
+        <model_id>b34ea5721b6f99506e76da03b24bcb69</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>f9cfe9b21b6f99506e76da03b24bcbed</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f9cfe9b21b6f99506e76da03b24bcbed"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f9cfe9b21b6f99506e76da03b24bcbed"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b34ea5721b6f99506e76da03b24bcb69"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=b34ea5721b6f99506e76da03b24bcb69^sys_idNOT IN70cfe9b21b6f99506e76da03b24bcb9b"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</action_type_id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>70cfe9b21b6f99506e76da03b24bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=70cfe9b21b6f99506e76da03b24bcb9b"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_b34ea5721b6f99506e76da03b24bcb69^sys_idNOT IN7ccfe9b21b6f99506e76da03b24bcb64"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>virtual_machine</element>
+        <help/>
+        <hint/>
+        <label>Virtual Machine</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b34ea5721b6f99506e76da03b24bcb69</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>7ccfe9b21b6f99506e76da03b24bcb64</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b34ea5721b6f99506e76da03b24bcb69"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69^sys_idNOT IN30cfe9b21b6f99506e76da03b24bcb97,3dcfe9b21b6f99506e76da03b24bcbec,bdcfe9b21b6f99506e76da03b24bcbf3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>Veeam Connections</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:34</sys_created_on>
+        <sys_id>30cfe9b21b6f99506e76da03b24bcb97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:34</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>3dcfe9b21b6f99506e76da03b24bcbec</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:38</sys_created_on>
+        <sys_id>bdcfe9b21b6f99506e76da03b24bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_b34ea5721b6f99506e76da03b24bcb69"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=b34ea5721b6f99506e76da03b24bcb69^sys_idNOT IN22cf2db21b6f99506e76da03b24bcbce"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</action_id>
+        <plan>{"persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"22cf2db21b6f99506e76da03b24bcbce","name":"plan","plan_signature":null}}</plan>
+        <snapshot>5acf2db21b6f99506e76da03b24bcb8f</snapshot>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:41</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>22cf2db21b6f99506e76da03b24bcbce</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:41</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>get_veeam_connection_by_virtual_machine</internal_name>
+        <label_cache>[{"name":"{{action.credentials}}","label":"action➛Credentials","type":"action","ref":"","reference_display":"Basic Auth Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Reference","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"reference","uiUniqueId":"72f782d9-5640-4b59-b889-d05db393a665"}},{"name":"{{action.credentials.user_name}}","label":"action➛Connection &amp; Credentials➛User name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.password}}","label":"action➛Connection &amp; Credentials➛Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.connection_url}}","label":"action➛Connection &amp; Credentials➛Connection URL","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential.user_name}}","label":"action➛Connection &amp; Credentials➛Credential➛User name","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential.password}}","label":"action➛Connection &amp; Credentials➛Credential➛Password","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential}}","label":"action➛Connection &amp; Credentials➛Credential","type":"action","ref":"discovery_credentials","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials.credential.sys_id}}","label":"action➛Connection &amp; Credentials➛Credential➛Sys ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.credentials1}}","label":"action➛Credentials","type":"action","ref":"","reference_display":"Basic Auth Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.password}}","label":"action➛Credentials","type":"action","ref":"","reference_display":"Basic Auth Credentials","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","uiTypeLabel":"Password (2 Way Encrypted)","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","sourceUiUniqueId":"","sourceType":"","uiType":"password2","uiUniqueId":"997dbd49-ab91-465b-b032-4928582191b2"}},{"name":"{{action.credentials1.password}}","label":"action➛Credentials➛Password","type":"action","ref":"","reference_display":"Password","base_type":"password2","parent_table_name":"basic_auth_credentials","column_name":"password","choices":null,"attributes":{}},{"name":"{{action.credentials1.sys_id}}","label":"action➛Credentials➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"basic_auth_credentials","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.credentials.sys_id}}","label":"action➛Credentials➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"basic_auth_credentials","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{action.virtual_machine}}","label":"action➛Virtual Machine","type":"action","ref":"","reference_display":"Virtual Machine Instance","base_type":"reference","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.virtual_machine.sys_id}}","label":"action➛Virtual Machine➛Sys ID","type":"action","ref":"","reference_display":"Sys ID","base_type":"GUID","parent_table_name":"cmdb_ci_vm_instance","column_name":"sys_id","choices":null,"attributes":{}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].http_status}}","label":"step➛Script step➛HTTP Status","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"a06a49b4-98d6-4b34-b37b-5431a5cf06e7"}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].response_body}}","label":"step➛Script step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"4c4fedeb-f8c6-478a-b64f-dab8d22e6dde"}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].error_message}}","label":"step➛Script step➛Error Message","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].access_token}}","label":"step➛Script step➛Access Token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"3228cac4-14cc-42d1-8000-2ecfe0955a70"}},{"name":"{{step[d6f4c1ae-0e63-4495-bec2-834d8e368fbd].password}}","label":"step➛Script step➛Password","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"f61eed17-ed1a-4947-b177-833a5b03e30e"}},{"name":"{{step[3a1035ca-db60-4b2d-816e-bd2d12499864].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[3a1035ca-db60-4b2d-816e-bd2d12499864].access_token}}","label":"step➛Script step➛Access Token","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[2fadc2c8-6733-4222-b5f7-a7eeb440a03b].variable}}","label":"step➛Script step➛variable","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[2fadc2c8-6733-4222-b5f7-a7eeb440a03b].veeam_connections}}","label":"step➛Script step➛Veeam Connections","type":"step","ref":"","reference_display":"","base_type":"array.string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <master>true</master>
+        <name>Get Veeam Connection by Virtual Machine</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Get Veeam Connection by Virtual Machine">b34ea5721b6f99506e76da03b24bcb69</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>86cf2db21b6f99506e76da03b24bcb54</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=86cf2db21b6f99506e76da03b24bcb54"/>
+    <sys_variable_value action="delete_multiple" query="document_key=86cf2db21b6f99506e76da03b24bcb54"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>86cf2db21b6f99506e76da03b24bcb54</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>92cf2db21b6f99506e76da03b24bcb8d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDcacf2db2656f9950ae50b74b32aeb677":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDcacf2db2656f9950ae50b74b32aeb677.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"5cdbd4df-e61a-438e-846d-2d01f87324b6\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDcacf2db2656f9950ae50b74b32aeb677\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"2\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">06cf2db21b6f99506e76da03b24bcb7f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>86cf2db21b6f99506e76da03b24bcb54</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>decf2db21b6f99506e76da03b24bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">8ecf2db21b6f99506e76da03b24bcb83</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=86cf2db21b6f99506e76da03b24bcb54"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>variable</field>
+        <id>86cf2db21b6f99506e76da03b24bcb54</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>d6cf2db21b6f99506e76da03b24bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</table>
+        <value>{{step[2fadc2c8-6733-4222-b5f7-a7eeb440a03b].veeam_connections}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>86cf2db21b6f99506e76da03b24bcb54</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>5ecf2db21b6f99506e76da03b24bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>86cf2db21b6f99506e76da03b24bcb54</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>9acf2db21b6f99506e76da03b24bcb8c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <table>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=86cf2db21b6f99506e76da03b24bcb54^sys_idNOT IN86cf2db21b6f99506e76da03b24bcb60"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Get Veeam Connection by Virtual Machine">86cf2db21b6f99506e76da03b24bcb54</action>
+        <cid>2fadc2c8-6733-4222-b5f7-a7eeb440a03b</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>86cf2db21b6f99506e76da03b24bcb60</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=86cf2db21b6f99506e76da03b24bcb60"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>86cf2db21b6f99506e76da03b24bcb60</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>02cf2db21b6f99506e76da03b24bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>86cf2db21b6f99506e76da03b24bcb60</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>c2cf2db21b6f99506e76da03b24bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+  var veeamConnections = new x_tesgh_veeam_app.VeeamAppUtil().getVeeamConnection(inputs.virtualMachineSysId);
+  outputs.veeam_connections = JSON.parse(veeamConnections.split(',');
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=86cf2db21b6f99506e76da03b24bcb60"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>86cf2db21b6f99506e76da03b24bcb60</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>cacf2db21b6f99506e76da03b24bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>86cf2db21b6f99506e76da03b24bcb60</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>8ecf2db21b6f99506e76da03b24bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>virtualMachineSysId</field>
+        <id>86cf2db21b6f99506e76da03b24bcb60</id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>4ecf2db21b6f99506e76da03b24bcb72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_86cf2db21b6f99506e76da03b24bcb60</table>
+        <value>{{action.virtual_machine.sys_id}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_86cf2db21b6f99506e76da03b24bcb60^id=86cf2db21b6f99506e76da03b24bcb60"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=86cf2db21b6f99506e76da03b24bcb60"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=86cf2db21b6f99506e76da03b24bcb60^sys_idNOT IN8acf2db21b6f99506e76da03b24bcb63"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>virtualMachineSysId</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>virtualMachineSysId</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">86cf2db21b6f99506e76da03b24bcb60</model>
+        <model_id>86cf2db21b6f99506e76da03b24bcb60</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_86cf2db21b6f99506e76da03b24bcb60</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>8acf2db21b6f99506e76da03b24bcb63</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=86cf2db21b6f99506e76da03b24bcb60^sys_idNOT IN0acf2db21b6f99506e76da03b24bcb6a"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Veeam Connections_child0,child_name=veeam_connections_child0,child_type=string,child_type_label=String,child_uiUniqueId=072658ca-2940-44d4-b6c2-ac5047857ffb,co_type_name=FD06cf2db2f76f9950a5fd0fb064ae7e68,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=e4552671-0a84-4bb3-ae51-d88cc058fa17</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>veeam_connections</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Veeam Connections</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Script step">86cf2db21b6f99506e76da03b24bcb60</model>
+        <model_id>86cf2db21b6f99506e76da03b24bcb60</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_86cf2db21b6f99506e76da03b24bcb60</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>0acf2db21b6f99506e76da03b24bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=86cf2db21b6f99506e76da03b24bcb60"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_86cf2db21b6f99506e76da03b24bcb60^sys_idNOT IN86cf2db21b6f99506e76da03b24bcb6e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>veeam_connections</element>
+        <help/>
+        <hint/>
+        <label>Veeam Connections</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_86cf2db21b6f99506e76da03b24bcb60</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>86cf2db21b6f99506e76da03b24bcb6e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=86cf2db21b6f99506e76da03b24bcb54^sys_idNOT INc2cf2db21b6f99506e76da03b24bcb58"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=ff6453bd-c48b-4a2d-8207-dcc50bf0837f</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>cmdb_ci_vm_instance</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>virtual_machine</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Virtual Machine</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">86cf2db21b6f99506e76da03b24bcb54</model>
+        <model_id>86cf2db21b6f99506e76da03b24bcb54</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_86cf2db21b6f99506e76da03b24bcb54</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="cmdb_ci_vm_instance">cmdb_ci_vm_instance</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>c2cf2db21b6f99506e76da03b24bcb58</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c2cf2db21b6f99506e76da03b24bcb58"/>
+    <sys_hub_action_output action="delete_multiple" query="model=86cf2db21b6f99506e76da03b24bcb54^sys_idNOT IN06cf2db21b6f99506e76da03b24bcb7f,8ecf2db21b6f99506e76da03b24bcb83,cecf2db21b6f99506e76da03b24bcb79"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDcacf2db2656f9950ae50b74b32aeb677,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=5cdbd4df-e61a-438e-846d-2d01f87324b6</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">86cf2db21b6f99506e76da03b24bcb54</model>
+        <model_id>86cf2db21b6f99506e76da03b24bcb54</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>06cf2db21b6f99506e76da03b24bcb7f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=06cf2db21b6f99506e76da03b24bcb7f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=06cf2db21b6f99506e76da03b24bcb7f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=98bb267d-52dc-44e3-b9be-a009cb75f101,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">86cf2db21b6f99506e76da03b24bcb54</model>
+        <model_id>86cf2db21b6f99506e76da03b24bcb54</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>8ecf2db21b6f99506e76da03b24bcb83</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=8ecf2db21b6f99506e76da03b24bcb83"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=8ecf2db21b6f99506e76da03b24bcb83"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=Veeam Connections_child0,child_name=veeam_connections_child0,child_type=string,child_type_label=String,child_uiUniqueId=45866a94-4761-456c-956e-88e5ffd90968,co_type_name=FD0acf2db2376f9950be856d52effc3d75,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=array.string,uiTypeLabel=Array.String,uiUniqueId=a7ce011d-3c05-4fa7-8aa5-24a8914af4e7</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>variable</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Veeam Connections</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Get Veeam Connection by Virtual Machine">86cf2db21b6f99506e76da03b24bcb54</model>
+        <model_id>86cf2db21b6f99506e76da03b24bcb54</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>cecf2db21b6f99506e76da03b24bcb79</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=cecf2db21b6f99506e76da03b24bcb79"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=cecf2db21b6f99506e76da03b24bcb79"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=86cf2db21b6f99506e76da03b24bcb54"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=86cf2db21b6f99506e76da03b24bcb54^sys_idNOT IN56cf2db21b6f99506e76da03b24bcb8f"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Get Veeam Connection by Virtual Machine">86cf2db21b6f99506e76da03b24bcb54</action_type_id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>56cf2db21b6f99506e76da03b24bcb8f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=56cf2db21b6f99506e76da03b24bcb8f"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_86cf2db21b6f99506e76da03b24bcb54^sys_idNOT INc6cf2db21b6f99506e76da03b24bcb5e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>virtual_machine</element>
+        <help/>
+        <hint/>
+        <label>Virtual Machine</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_86cf2db21b6f99506e76da03b24bcb54</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>c6cf2db21b6f99506e76da03b24bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_86cf2db21b6f99506e76da03b24bcb54"/>
+    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54^sys_idNOT IN46cf2db21b6f99506e76da03b24bcb7e,cecf2db21b6f99506e76da03b24bcb82,dacf2db21b6f99506e76da03b24bcb89"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>variable</element>
+        <help/>
+        <hint/>
+        <label>Veeam Connections</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>46cf2db21b6f99506e76da03b24bcb7e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:39</sys_created_on>
+        <sys_id>cecf2db21b6f99506e76da03b24bcb82</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-12-07 12:45:40</sys_created_on>
+        <sys_id>dacf2db21b6f99506e76da03b24bcb89</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-12-07 12:45:40</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_86cf2db21b6f99506e76da03b24bcb54"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>b34ea5721b6f99506e76da03b24bcb69</sys_id>
+        <latest_snapshot>86cf2db21b6f99506e76da03b24bcb54</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch7a-09-20-2022_10-04-2022_1309.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Specify the URL, MID Server from the previous step to connect to the Veeam Backup &amp; Replication REST API endpoint.</p>
+<p>Example: <a href="https://vbr01.example.local:9419/" rel="nofollow">https://vbr01.example.local:9419/</a></p>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents>c145fadc1bae9110e06d520b234bcb42</dependent_on_contents>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>x_tesgh_veeam_app_veeam_connection_list.do</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on>db9e6ed41bae9110e06d520b234bcb51</implicit_dependent_on>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>200</order>
+        <parent display_value="Veeam Backup &amp; Replication Server Connection Configuration">c27f62581bae9110e06d520b234bcb4f</parent>
+        <parents>c27f62581bae9110e06d520b234bcb4f,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>false</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-11 06:24:11</sys_created_on>
+        <sys_id>66d5b2101bee9110e06d520b234bcba5</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Veeam Backup &amp; Replication Server Connection Configuration</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_66d5b2101bee9110e06d520b234bcba5</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-11-03 07:32:34</sys_updated_on>
+        <table/>
+        <title>Veeam Backup &amp; Replication Server Connection Configuration</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=66d5b2101bee9110e06d520b234bcba5"/>
+</record_update>

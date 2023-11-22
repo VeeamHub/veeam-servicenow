@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="40cfde541b1d3510e06d520b234bcbdd" label="Application Events" max_length="40" name="x_tesgh_veeam_app_event" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Backup Job" max_length="32" name="backup_job" reference="x_tesgh_veeam_app_backup_job" type="reference"/>
+        <element label="Description" max_length="250" name="description" type="string"/>
+        <element choice="1" label="Event" mandatory="true" max_length="40" name="event" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Adding Virtual Machine Error" sequence="100" value="adding_vm_error"/>
+                <element inactive_on_update="false" label="Getting Token Error" sequence="200" value="token_error"/>
+                <element inactive_on_update="false" label="Session Status Failed" sequence="300" value="session_status_failed"/>
+                <element inactive_on_update="false" label="Session Status Warning" sequence="400" value="session_status_warning"/>
+            </choice>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Requested Item" max_length="32" name="ritm" reference="sc_req_item" type="reference"/>
+        <index name="index">
+            <element name="ritm"/>
+        </index>
+        <index name="index2">
+            <element name="backup_job"/>
+        </index>
+    </element>
+</database>

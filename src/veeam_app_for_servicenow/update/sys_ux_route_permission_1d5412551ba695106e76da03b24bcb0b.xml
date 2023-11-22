@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_route_permission">
+    <sys_ux_route_permission action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <groups/>
+        <roles/>
+        <route display_value="Veeam App Overview">915412551ba695106e76da03b24bcb07</route>
+        <sys_class_name>sys_ux_route_permission</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-14 06:31:40</sys_created_on>
+        <sys_id>1d5412551ba695106e76da03b24bcb0b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ux_route_permission_1d5412551ba695106e76da03b24bcb0b</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-14 06:31:40</sys_updated_on>
+        <type>write</type>
+        <users>a8195b2d97b30150628271e3a253af47</users>
+    </sys_ux_route_permission>
+</record_update>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="DELETE">
+        <grid_canvas display_value="PA My Veeam - New Tab">3b41c4131b7e1d10e06d520b234bcb7d</grid_canvas>
+        <height>4</height>
+        <portal_widget display_value="Created 2022-11-01 04:59:09">c2ebcc9b1b7e1d10e06d520b234bcb9c</portal_widget>
+        <posx>0</posx>
+        <posy>11</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:59:09</sys_created_on>
+        <sys_id>4eeb80db1b7e1d10e06d520b234bcb7b</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>3b41c4131b7e1d10e06d520b234bcb7d</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_4eeb80db1b7e1d10e06d520b234bcb7b</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:13:02</sys_updated_on>
+        <width>6</width>
+    </sys_grid_canvas_pane>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_grid_canvas_pane_4eeb80db1b7e1d10e06d520b234bcb7b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane"><sys_grid_canvas_pane action="INSERT_OR_UPDATE"><grid_canvas display_value="PA My Veeam - New Tab">3b41c4131b7e1d10e06d520b234bcb7d</grid_canvas><height>4</height><portal_widget display_value="Created 2022-11-01 04:59:09">c2ebcc9b1b7e1d10e06d520b234bcb9c</portal_widget><posx>0</posx><posy>11</posy><sys_class_name>sys_grid_canvas_pane</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-11-01 11:59:09</sys_created_on><sys_id>4eeb80db1b7e1d10e06d520b234bcb7b</sys_id><sys_mod_count>30</sys_mod_count><sys_name>3b41c4131b7e1d10e06d520b234bcb7d</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_grid_canvas_pane_4eeb80db1b7e1d10e06d520b234bcb7b</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-09-25 10:13:02</sys_updated_on><width>6</width></sys_grid_canvas_pane></record_update>]]></payload>
+        <payload_hash>1768306644</payload_hash>
+        <record_name>3b41c4131b7e1d10e06d520b234bcb7d</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-25 10:13:02</sys_created_on>
+        <sys_id>a91d7cfc1b65f150e06d520b234bcb34</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18acbd3ff220000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:13:02</sys_updated_on>
+        <type>Grid Canvas Pane</type>
+        <update_guid>211d7cfce265f1507cc5000cc2258c34</update_guid>
+        <update_guid_history>211d7cfce265f1507cc5000cc2258c34:1768306644,473be96f3059bd10a6bf4692b7d03730:1733731544,e02ba56f0459bd1091b97183c22dcf19:-664421579,2e1b656fdb59bd1055f5bb11a6cc7adb:1508993394,891b296f2159bd10a5c146f3f4421e84:-923734829,ac1b252fcb59bd102754e6acface92ad:-698996679,841be56f2859bd1091b7234923f414f9:1474418294,0f0b6d2f2f59bd1038ff3d1219823192:-647134029,2ffa656f8f59bd10f2bf1b4529cb15be:1491705844,2bfa656fe459bd102bda381f9c726dbc:-439683429,27fa656ff959bd10f64a591b3c0bcaba:-405108329,55f7296b0f59bd102bf8e2e829dd7da4:-387820779,a3e7696be059bd1040e294d9095b82a5:-370533229,47e7696ba459bd10c108d5d8bafd2e8e:-1896462187,fae7296bce59bd10a6afcebae294e10f:-1879174637,bbd7e56bcf59bd100057ad60b953a5c9:-405108329,37d7e56b3e59bd10e1180ce2a18216c7:-370533229,27de089f757e1d106a197916083ef009:294240336,c7de849f977e1d10a7c1a90b061c3c13:402805842,0adec09f797e1d10a72bfb5537261abd:368230742,a9de449f357e1d104320eb7df8084e33:-1088088492,51dec49f337e1d102f109eab50fe3d3f:333655642,24de849f897e1d100f403a2f3d7ba43f:368230742,5bbe049f777e1d10aee099845c5c14e5:402805842,89aec09fc67e1d10dd7a65785df829a8:1923169357,3f8e809fc87e1d100c942bca0bcfed94:402805842,8afd085f207e1d106ff3bec9cc54610e:1923169357,82ccc01f3b7e1d10e620c94880a36c73:402805842,29cc001f067e1d10f264bc9253866c21:2145863283,59cc801f617e1d10dc80074331762cd4:2071872877,42eb80db4b7e1d109b80aaecf648607d:1729058028</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-25 10:14:46</sys_created_on>
+        <sys_db_object display_value="" name="sys_grid_canvas_pane">sys_grid_canvas_pane</sys_db_object>
+        <sys_id>4f6d92554c1f48109718e7266149c910</sys_id>
+        <sys_metadata>4eeb80db1b7e1d10e06d520b234bcb7b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>3b41c4131b7e1d10e06d520b234bcb7d</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_grid_canvas_pane_4eeb80db1b7e1d10e06d520b234bcb7b</sys_update_name>
+        <sys_update_version display_value="sys_grid_canvas_pane_4eeb80db1b7e1d10e06d520b234bcb7b">a91d7cfc1b65f150e06d520b234bcb34</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:14:46</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

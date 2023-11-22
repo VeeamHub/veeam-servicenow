@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_mpivot_rule">
+    <sys_report_mpivot_rule action="INSERT_OR_UPDATE">
+        <bg_color>background-color:</bg_color>
+        <bg_color_id/>
+        <color>background-color:#32CD32</color>
+        <color_id display_value="LimeGreen">65b30344a9fe3dba00c9f98d066d6526</color_id>
+        <operator>=</operator>
+        <order>100</order>
+        <report_id display_value="Open Incidents">5f6159271bd5bd106e76da03b24bcbd0</report_id>
+        <sys_class_name>sys_report_mpivot_rule</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-21 16:25:09</sys_created_on>
+        <sys_id>679ba1af1b59bd106e76da03b24bcbf0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>=</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_report_mpivot_rule_679ba1af1b59bd106e76da03b24bcbf0</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:25:09</sys_updated_on>
+        <value1>0</value1>
+        <value2/>
+    </sys_report_mpivot_rule>
+</record_update>

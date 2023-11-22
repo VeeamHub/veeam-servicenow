@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_tesgh_veeam_app.VeeamUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>VeeamUtil</name>
+        <script><![CDATA[var VeeamUtil = Class.create();
+VeeamUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getBackupJobTemplateInfo: function() {
+		var response = {
+			'name': '',
+			'description': '',
+			'frequency': '',
+			'frequency_details': '',
+			'occurence': '',
+			'occurence_notes': '',
+			'retention': '',
+			'retention_details': ''
+		};
+
+		var backupJobTemplateId = this.getParameter('sysparm_backup_job_template_id');
+		var backupJobTemplateGr = new GlideRecord('x_tesgh_veeam_app_backup_job_template');
+		if (backupJobTemplateGr.get(backupJobTemplateId)) {
+			response.name = backupJobTemplateGr.getValue('name');
+			response.description = backupJobTemplateGr.getValue('description');
+			
+			response.frequency = backupJobTemplateGr.getDisplayValue('frequency');
+			response.frequency_details = backupJobTemplateGr.getValue('frequency_details');
+			
+			response.occurence = backupJobTemplateGr.getDisplayValue('occurence');
+			response.occurence_notes = backupJobTemplateGr.getValue('occurence_notes');
+			
+			response.retention = backupJobTemplateGr.getDisplayValue('retention');
+			response.retention_details = backupJobTemplateGr.getValue('retention_details');			
+		}
+
+		return JSON.stringify(response);
+	},
+	
+	type: 'VeeamUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-30 11:58:31</sys_created_on>
+        <sys_id>23c81b3c1b9e11106e76da03b24bcb88</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>VeeamUtil</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_script_include_23c81b3c1b9e11106e76da03b24bcb88</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-06-28 10:53:13</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_script_include_23c81b3c1b9e11106e76da03b24bcb88</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_tesgh_veeam_app.VeeamUtil&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description/&gt;&lt;name&gt;VeeamUtil&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var VeeamUtil = Class.create();
+VeeamUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getBackupJobTemplateInfo: function() {
+		var response = {
+			'name': '',
+			'description': '',
+			'frequency': '',
+			'frequency_details': '',
+			'occurence': '',
+			'occurence_notes': '',
+			'retention': '',
+			'retention_details': ''
+		};
+
+		var backupJobTemplateId = this.getParameter('sysparm_backup_job_template_id');
+		var backupJobTemplateGr = new GlideRecord('x_tesgh_veeam_app_backup_job_template');
+		if (backupJobTemplateGr.get(backupJobTemplateId)) {
+			response.name = backupJobTemplateGr.getValue('name');
+			response.description = backupJobTemplateGr.getValue('description');
+			
+			response.frequency = backupJobTemplateGr.getDisplayValue('frequency');
+			response.frequency_details = backupJobTemplateGr.getValue('frequency_details');
+			
+			response.occurence = backupJobTemplateGr.getDisplayValue('occurence');
+			response.occurence_notes = backupJobTemplateGr.getValue('occurence_notes');
+			
+			response.retention = backupJobTemplateGr.getDisplayValue('retention');
+			response.retention_details = backupJobTemplateGr.getValue('retention_details');			
+		}
+
+		return JSON.stringify(response);
+	},
+	
+	type: 'VeeamUtil'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-30 11:58:31&lt;/sys_created_on&gt;&lt;sys_id&gt;23c81b3c1b9e11106e76da03b24bcb88&lt;/sys_id&gt;&lt;sys_mod_count&gt;7&lt;/sys_mod_count&gt;&lt;sys_name&gt;VeeamUtil&lt;/sys_name&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_23c81b3c1b9e11106e76da03b24bcb88&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;pavel.egorov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-06-28 10:53:13&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-191115117</payload_hash>
+        <record_name>VeeamUtil</record_name>
+        <reverted_from display_value="sys_script_include_23c81b3c1b9e11106e76da03b24bcb88">0ec07a801b37a550e06d520b234bcb89</reverted_from>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-06 12:17:27</sys_created_on>
+        <sys_id>be53a72a1b09fd506e76da03b24bcb33</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18a6a6d10ed0000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-06 12:17:27</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>f653a72a5309fd503b42b329cc20b131</update_guid>
+        <update_guid_history>f653a72a5309fd503b42b329cc20b131:-191115117,a8ee53e29109fd50e8d83069a5627543:515855192,b1be53e26f09fd503bbb2d3ada59db7e:1079591522,1d4e53a2fc09fd501dbcc28584a80101:260853290,e50e5ba24a09fd50a2041595edab2ccb:-1995840353,e35ddf622c09fd5015f90f961537f3fa:2103269292,4e0d57626209fd503ff922ee7d5e726c:534456738,697c13622909fd50014f72f7f0b33222:-1164414829,1f5c9f222309fd507e1d592bbb10795a:-191115117,4ac4d76a31c5fd50895e25baf52779ab:-100048333,46c07a80e137a5502282b8d6be4ec489:-191115117,c41386ebc06e5d10feca831d6a60a4ce:859181140,3c11426b096e5d10767cc9517653f0f8:-867025384,8d9ee98f93ded5104a69abe8e04e1b25:-1617222851,f95ded4fa5ded5105b745944aeca1cbe:-836800836,c14b29cb23ded51040110e86b1945028:-850306818,7f09537c069e1110c0292fca84ad3284:-168315329,ece8573c049e1110dfda3e7f7a1bf691:1728215486</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-06 12:17:32</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>040838af3db54fcc86982af6c74fb069</sys_id>
+        <sys_metadata>23c81b3c1b9e11106e76da03b24bcb88</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VeeamUtil</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_script_include_23c81b3c1b9e11106e76da03b24bcb88</sys_update_name>
+        <sys_update_version display_value="sys_script_include_23c81b3c1b9e11106e76da03b24bcb88">be53a72a1b09fd506e76da03b24bcb33</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-06 12:17:32</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

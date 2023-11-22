@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_index">
+    <sys_index action="INSERT_OR_UPDATE">
+        <col_name_string>id</col_name_string>
+        <index_col_name element="id" name="x_tesgh_veeam_app_restore_points">0a21dfb51bbe1910e06d520b234bcb63</index_col_name>
+        <logical_table_name>x_tesgh_veeam_app_restore_points</logical_table_name>
+        <sys_class_name>sys_index</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-10-28 10:34:54</sys_created_on>
+        <sys_id>b842d3f11bf655106e76da03b24bcb5d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app_restore_points</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_index_x_tesgh_veeam_app_restore_points_id</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-10-28 10:34:54</sys_updated_on>
+        <table display_value="Restore Points" name="x_tesgh_veeam_app_restore_points">67019fb51bbe1910e06d520b234bcb0e</table>
+        <unique_index>false</unique_index>
+    </sys_index>
+</record_update>

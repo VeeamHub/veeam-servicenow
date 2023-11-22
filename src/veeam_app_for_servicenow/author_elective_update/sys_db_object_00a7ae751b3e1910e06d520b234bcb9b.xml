@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access>public</access>
+        <actions_access>false</actions_access>
+        <alter_access>false</alter_access>
+        <caller_access/>
+        <client_scripts_access>false</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>false</create_access>
+        <create_access_controls>true</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>Restore Points</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_tesgh_veeam_app_st_restore_points</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>true</scriptable_table>
+        <super_class/>
+        <sys_class_code/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-28 07:29:34</sys_created_on>
+        <sys_id>00a7ae751b3e1910e06d520b234bcb9b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Restore Points</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_db_object_00a7ae751b3e1910e06d520b234bcb9b</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-28 07:29:34</sys_updated_on>
+        <update_access>false</update_access>
+        <user_role display_value="x_tesgh_veeam_app.restore_points_user" name="x_tesgh_veeam_app.restore_points_user">f9d76a751b3e1910e06d520b234bcbe9</user_role>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_db_object_00a7ae751b3e1910e06d520b234bcb9b</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access>public</access><actions_access>false</actions_access><alter_access>false</alter_access><caller_access/><client_scripts_access>false</client_scripts_access><configuration_access>false</configuration_access><create_access>false</create_access><create_access_controls>true</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>Restore Points</label><live_feed_enabled>false</live_feed_enabled><name>x_tesgh_veeam_app_st_restore_points</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>true</scriptable_table><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-10-28 07:29:34</sys_created_on><sys_id>00a7ae751b3e1910e06d520b234bcb9b</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Restore Points</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_db_object_00a7ae751b3e1910e06d520b234bcb9b</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-10-28 07:29:34</sys_updated_on><update_access>false</update_access><user_role display_value="x_tesgh_veeam_app.restore_points_user" name="x_tesgh_veeam_app.restore_points_user">f9d76a751b3e1910e06d520b234bcbe9</user_role><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>2027634615</payload_hash>
+        <record_name>Restore Points</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-28 07:29:35</sys_created_on>
+        <sys_id>82d762b51b3e1910e06d520b234bcbf7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1841d7f07e20000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-28 07:29:35</sys_updated_on>
+        <type>Table</type>
+        <update_guid>cad762b5283e19104985ce13619b0ff6</update_guid>
+        <update_guid_history>cad762b5283e19104985ce13619b0ff6:2027634615</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-28 10:29:27</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>3d79692eea4d47889f67f5fe36abc9c9</sys_id>
+        <sys_metadata>00a7ae751b3e1910e06d520b234bcb9b</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Restore Points</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_db_object_00a7ae751b3e1910e06d520b234bcb9b</sys_update_name>
+        <sys_update_version display_value="sys_db_object_00a7ae751b3e1910e06d520b234bcb9b">82d762b51b3e1910e06d520b234bcbf7</sys_update_version>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-28 10:29:27</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

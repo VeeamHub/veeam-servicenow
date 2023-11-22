@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>In case the Veeam Backup &amp; Replication Server does not have a valid trusted certificate, create a Certificate Check Policy.</p>
+<ol style="list-style-position: inside;"><li>Click &#34;<strong>New</strong>&#34; button to create a new Certificate Check Policy record;</li><li>Populate the fields with the following values:</li></ol>
+<table style="border-collapse: collapse; width: 100%;" border="1"><tbody><tr><td style="width: 17.6189%; text-align: center;"><strong>Name</strong></td><td style="width: 10.9526%; text-align: center;"><strong>Policy Type</strong></td><td style="width: 14.2857%; text-align: center;"><strong>Domain</strong></td><td style="width: 14.2857%; text-align: center;"><strong>Active</strong></td><td style="width: 14.2857%; text-align: center;"><strong>Certificate Chain Check</strong></td><td style="width: 14.2857%; text-align: center;"><strong>Hostname Check</strong></td><td style="width: 14.2857%; text-align: center;"><strong>Revocation Check</strong></td></tr><tr><td style="width: 17.6189%;">
+<p style="text-align: center;">Your domain name</p>
+<p style="text-align: center;"><em>Example:</em> *.yourdomainexample.com</p>
+</td><td style="width: 10.9526%; text-align: center;">Overridden Host</td><td style="width: 14.2857%; text-align: center;">global</td><td style="width: 14.2857%; text-align: center;">true</td><td style="width: 14.2857%; text-align: center;">false</td><td style="width: 14.2857%; text-align: center;">false</td><td style="width: 14.2857%; text-align: center;">true</td></tr></tbody></table>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>mid_cert_check_policy_list.do</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>300</order>
+        <parent display_value="Security Configuration">839f26181bae9110e06d520b234bcbdb</parent>
+        <parents>839f26181bae9110e06d520b234bcbdb,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>true</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-19 12:46:18</sys_created_on>
+        <sys_id>73b3012c1b4ab9106e76da03b24bcb1a</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>Trusted Certificate Verification</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_73b3012c1b4ab9106e76da03b24bcb1a</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-19 12:52:45</sys_updated_on>
+        <table/>
+        <title>Trusted Certificate Verification</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=73b3012c1b4ab9106e76da03b24bcb1a"/>
+</record_update>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="fa421a1c1bced110e06d520b234bcbb7" extends="x_tesgh_veeam_app_event_object" label="Session" max_length="40" name="x_tesgh_veeam_app_session" type="collection">
+        <element label="Backup Job ID" max_length="40" name="backup_job_id" type="string"/>
+        <element label="Creation Time" max_length="40" name="creation_time" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="glide_date_time"/>
+        <element label="End Time" max_length="40" name="end_time" type="string"/>
+        <element label="ID" max_length="100" name="id" type="string"/>
+        <element label="Name" max_length="100" name="name" type="string"/>
+        <element label="Progress Percent" max_length="100" name="progress_percent" type="string"/>
+        <element attributes="json_view" label="Result" max_length="1000" name="result" type="string"/>
+        <element label="Result Message" max_length="1000" name="result_message" type="string"/>
+        <element choice="1" label="Result Status" max_length="40" name="result_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Success" sequence="10" value="Success"/>
+                <element inactive_on_update="false" label="Warning" sequence="20" value="Warning"/>
+                <element inactive_on_update="false" label="Failed" sequence="30" value="Failed"/>
+            </choice>
+        </element>
+        <element label="RITM" max_length="32" name="ritm" reference="sc_req_item" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="glide_date_time"/>
+        <element label="State" max_length="100" name="state" type="string"/>
+        <element label="Type" max_length="100" name="type" type="string"/>
+        <index name="index">
+            <element name="id"/>
+        </index>
+        <index name="index2">
+            <element name="ritm"/>
+        </index>
+    </element>
+</database>

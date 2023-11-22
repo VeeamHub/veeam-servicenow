@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_objectid" label="objectId" language="en" table="x_tesgh_veeam_app_import_backup_objects">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_objectid</element>
+            <help/>
+            <hint/>
+            <label>objectId</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_import_backup_objects</name>
+            <plural>objectIds</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-11-04 08:45:53</sys_created_on>
+            <sys_id>547cbac81b4fdd10e06d520b234bcb0b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>objectId</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_documentation_x_tesgh_veeam_app_import_backup_objects_u_objectid_en</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-11-04 08:45:53</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

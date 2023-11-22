@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas">
+    <sys_grid_canvas action="INSERT_OR_UPDATE">
+        <legacy_page display_value="PA Veeam Homepage - New Tab">5bc13aee937131109d0b398efaba10a8</legacy_page>
+        <name>PA Veeam Homepage - New Tab</name>
+        <sys_class_name>sys_grid_canvas</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-13 15:28:02</sys_created_on>
+        <sys_id>d7c13aee937131109d0b398efaba10a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>PA Veeam Homepage - New Tab</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_grid_canvas_d7c13aee937131109d0b398efaba10a9</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-13 15:28:02</sys_updated_on>
+    </sys_grid_canvas>
+</record_update>

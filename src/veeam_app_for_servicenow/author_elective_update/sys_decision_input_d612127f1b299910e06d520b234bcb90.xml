@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_decision_input">
+    <sys_decision_input action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.decision_table.data.DecisionTableVariableMapper</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_event_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>Event ID</label>
+        <mandatory>false</mandatory>
+        <max_length>32</max_length>
+        <model display_value="Veeam Event - Sub Flow">99af06bb1b299910e06d520b234bcb6d</model>
+        <model_id>99af06bb1b299910e06d520b234bcb6d</model_id>
+        <model_table>sys_decision</model_table>
+        <name>var__m_sys_decision_input_99af06bb1b299910e06d520b234bcb6d</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="x_tesgh_veeam_app_veeam_event">x_tesgh_veeam_app_veeam_event</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_decision_input</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 07:44:21</sys_created_on>
+        <sys_id>d612127f1b299910e06d520b234bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event ID</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_decision_input_d612127f1b299910e06d520b234bcb90</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:44:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_decision_input>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_decision_input_d612127f1b299910e06d520b234bcb90</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_decision_input"&gt;&lt;sys_decision_input action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;element_mapping_provider=com.glide.decision_table.data.DecisionTableVariableMapper&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_event_id&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="Reference"&gt;reference&lt;/internal_type&gt;&lt;label&gt;Event ID&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;32&lt;/max_length&gt;&lt;model display_value="Veeam Event - Sub Flow"&gt;99af06bb1b299910e06d520b234bcb6d&lt;/model&gt;&lt;model_id&gt;99af06bb1b299910e06d520b234bcb6d&lt;/model_id&gt;&lt;model_table&gt;sys_decision&lt;/model_table&gt;&lt;name&gt;var__m_sys_decision_input_99af06bb1b299910e06d520b234bcb6d&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;100&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference display_value="" name="x_tesgh_veeam_app_veeam_event"&gt;x_tesgh_veeam_app_veeam_event&lt;/reference&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_decision_input&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-09-02 07:44:21&lt;/sys_created_on&gt;&lt;sys_id&gt;d612127f1b299910e06d520b234bcb90&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Event ID&lt;/sys_name&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_decision_input_d612127f1b299910e06d520b234bcb90&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-09-02 07:44:21&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_decision_input&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1601859982</payload_hash>
+        <record_name>Event ID</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 07:44:21</sys_created_on>
+        <sys_id>5032927f1b299910e06d520b234bcb3b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182fd286d7f0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:44:21</sys_updated_on>
+        <type>Decision Input</type>
+        <update_guid>1832927fdd299910aafe61697b586e3a</update_guid>
+        <update_guid_history>1832927fdd299910aafe61697b586e3a:1601859982,1832927f84299910e106ada01df8d036:-1061219172,9032927fe52999105348f1d40f196632:1601859982</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-16 07:53:40</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_input">sys_decision_input</sys_db_object>
+        <sys_id>0e5cf72c592c4469ab91c362eb19b031</sys_id>
+        <sys_metadata>d612127f1b299910e06d520b234bcb90</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Event ID</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_decision_input_d612127f1b299910e06d520b234bcb90</sys_update_name>
+        <sys_update_version display_value="sys_decision_input_d612127f1b299910e06d520b234bcb90">5032927f1b299910e06d520b234bcb3b</sys_update_version>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-16 07:53:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

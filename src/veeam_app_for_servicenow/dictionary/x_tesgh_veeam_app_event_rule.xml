@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="30f39a9c1bced110e06d520b234bcb76" label="Event Rule" max_length="40" name="x_tesgh_veeam_app_event_rule" type="collection">
+        <element label="Assignment Group" max_length="32" name="assignment_group" reference="sys_user_group" type="reference"/>
+        <element label="Service" max_length="32" name="business_service" reference="cmdb_ci_service" type="reference"/>
+        <element choice="1" choice_field="category" choice_table="incident" default="inquiry" label="Category" max_length="40" name="category" type="string">
+            <choice/>
+        </element>
+        <element choice="1" label="Decision" max_length="40" name="decision" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Create Incident" sequence="100" value="incident"/>
+                <element inactive_on_update="false" label="Create Request" sequence="200" value="task"/>
+            </choice>
+        </element>
+        <element label="Additional description" max_length="4000" name="description" type="string"/>
+        <element choice="1" choice_field="event" choice_table="x_tesgh_veeam_app_event" label="Event" mandatory="true" max_length="40" name="event" type="string">
+            <choice/>
+        </element>
+        <element label="Event Object" max_length="32" name="event_object" reference="x_tesgh_veeam_app_event_object" reference_floats="true" type="glide_list"/>
+        <element choice="3" choice_field="impact" choice_table="task" default="3" label="Impact" max_length="40" name="impact" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element choice="1" choice_field="subcategory" choice_table="incident" dependent="category" dependent_on_field="category" label="Subcategory" max_length="40" name="subcategory" type="string" use_dependent_field="true">
+            <choice/>
+        </element>
+        <element choice="3" choice_field="urgency" choice_table="task" default="3" label="Urgency" max_length="40" name="urgency" type="choice">
+            <choice/>
+        </element>
+        <index name="index">
+            <element name="assignment_group"/>
+        </index>
+        <index name="index2">
+            <element name="business_service"/>
+        </index>
+        <index name="index3">
+            <element name="event_object"/>
+        </index>
+    </element>
+</database>

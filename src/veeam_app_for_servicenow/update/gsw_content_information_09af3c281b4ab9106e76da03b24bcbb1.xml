@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Set up a new password for Veeam Integration Account.</p>
+<ol style="list-style-position: inside;"><li>Open Veeam Integration Account in the User table;</li><li>Click to the &#34;<strong>Set Password</strong>&#34; button;</li><li>Generate the new password and <strong>copy </strong>it to the clipboard.</li></ol>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>sys_user.do?sys_id=0577c2331b299910e06d520b234bcb97</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>100</order>
+        <parent display_value="Security Configuration">839f26181bae9110e06d520b234bcbdb</parent>
+        <parents>839f26181bae9110e06d520b234bcbdb,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>false</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-19 12:22:18</sys_created_on>
+        <sys_id>09af3c281b4ab9106e76da03b24bcbb1</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Veeam Integration Account Password</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_09af3c281b4ab9106e76da03b24bcbb1</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-19 12:25:21</sys_updated_on>
+        <table/>
+        <title>Veeam Integration Account Password</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=09af3c281b4ab9106e76da03b24bcbb1"/>
+</record_update>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_tesgh_veeam_app_veeam_event</description>
+        <name>x_tesgh_veeam_app_veeam_event</name>
+        <operation display_value="write">write</operation>
+        <script/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 07:18:16</sys_created_on>
+        <sys_id>2a3c06f71b299910e06d520b234bcb71</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app_veeam_event</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_security_acl_2a3c06f71b299910e06d520b234bcb71</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:18:16</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_security_acl_2a3c06f71b299910e06d520b234bcb71</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_tesgh_veeam_app_veeam_event</description><name>x_tesgh_veeam_app_veeam_event</name><operation display_value="write">write</operation><script/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-09-02 07:18:16</sys_created_on><sys_id>2a3c06f71b299910e06d520b234bcb71</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_tesgh_veeam_app_veeam_event</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_security_acl_2a3c06f71b299910e06d520b234bcb71</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-09-02 07:18:16</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>-661541409</payload_hash>
+        <record_name>x_tesgh_veeam_app_veeam_event</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-02 07:18:16</sys_created_on>
+        <sys_id>a63c06f71b299910e06d520b234bcb8e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182fd108e2b0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-02 07:18:16</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>ee3c06f781299910f3d33b1ba8ba008d</update_guid>
+        <update_guid_history>ee3c06f781299910f3d33b1ba8ba008d:-661541409</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-16 07:53:37</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>1069b1d80e9f4f428c31820a68c11b24</sys_id>
+        <sys_metadata>2a3c06f71b299910e06d520b234bcb71</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app_veeam_event</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent display_value="">663c06f71b299910e06d520b234bcb98</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_security_acl_2a3c06f71b299910e06d520b234bcb71</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_2a3c06f71b299910e06d520b234bcb71">a63c06f71b299910e06d520b234bcb8e</sys_update_version>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-16 07:53:37</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

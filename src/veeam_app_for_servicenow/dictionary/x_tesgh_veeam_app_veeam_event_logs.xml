@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Veeam Event Logs" max_length="40" name="x_tesgh_veeam_app_veeam_event_logs" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=CategoryNumber" label="CategoryNumber" max_length="40" name="u_categorynumber" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Container" label="Container" max_length="40" name="u_container" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=EntryType" label="EntryType" max_length="40" name="u_entrytype" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=EventID" label="EventID" max_length="40" name="u_eventid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Index" label="Index" max_length="40" name="u_index" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=InstanceId" label="InstanceId" max_length="40" name="u_instanceid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=MachineName" label="MachineName" max_length="40" name="u_machinename" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Message" label="Message" max_length="74" name="u_message" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Site" label="Site" max_length="40" name="u_site" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Source" label="Source" max_length="40" name="u_source" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=TimeGenerated" label="TimeGenerated" max_length="40" name="u_timegenerated" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=TimeWritten" label="TimeWritten" max_length="40" name="u_timewritten" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=UserName" label="UserName" max_length="40" name="u_username" type="string"/>
+    </element>
+</database>

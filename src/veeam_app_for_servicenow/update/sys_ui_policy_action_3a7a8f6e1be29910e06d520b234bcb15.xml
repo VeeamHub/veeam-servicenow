@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>keep_weekly_backups_for</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-18 07:41:36</sys_created_on>
+        <sys_id>3a7a8f6e1be29910e06d520b234bcb15</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>keep_weekly_backups_for</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ui_policy_action_3a7a8f6e1be29910e06d520b234bcb15</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-23 11:02:58</sys_updated_on>
+        <table>x_tesgh_veeam_app_backup_job_template</table>
+        <ui_policy display_value="If Keep weekly full backups is selected">85678b6a1be29910e06d520b234bcb40</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_tabs">
+    <pa_tabs action="INSERT_OR_UPDATE">
+        <canvas_page display_value="PA Veeam Homepage - New Tab">d7c13aee937131109d0b398efaba10a9</canvas_page>
+        <name>Veeam Homepage - New Tab</name>
+        <page display_value="PA Veeam Homepage - New Tab">5bc13aee937131109d0b398efaba10a8</page>
+        <sys_class_name>pa_tabs</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-13 15:28:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>13c13aee937131109d0b398efaba10ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Veeam Homepage - New Tab</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>pa_tabs_13c13aee937131109d0b398efaba10ac</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-13 15:28:02</sys_updated_on>
+    </pa_tabs>
+</record_update>

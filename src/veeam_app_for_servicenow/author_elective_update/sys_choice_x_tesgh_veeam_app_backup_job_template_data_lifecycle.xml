@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="data_lifecycle" table="x_tesgh_veeam_app_backup_job_template" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>data_lifecycle</element>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:21:14</sys_created_on>
+            <sys_id>1e064b2a1be29910e06d520b234bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>data_lifecycle</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_choice_x_tesgh_veeam_app_backup_job_template_data_lifecycle</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:21:14</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>data_lifecycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Days</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:21:14</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4af58fe21be29910e06d520b234bcb13</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:22:05</sys_updated_on>
+            <value>days</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>data_lifecycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Months</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:21:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1a06c3a21be29910e06d520b234bcba9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:22:07</sys_updated_on>
+            <value>months</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>data_lifecycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Years</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:21:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b06c7e61be29910e06d520b234bcb95</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:22:08</sys_updated_on>
+            <value>years</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>data_lifecycle</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_backup_job_template</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-10-18 07:21:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1f0607a21be29910e06d520b234bcb49</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-10-18 07:22:10</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

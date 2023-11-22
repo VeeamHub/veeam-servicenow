@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<p>Set up Assignment groups to handle automated Requests and manual Requests and Incidents. </p>
+<ol style="list-style-position: inside;"><li>Open the <strong>&#34;Preferences&#34;</strong> Module;</li><li>Add the Assignment group <strong>sysIDs </strong>for automated Requests and manual Requests and Incidents.</li></ol>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents/>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier/>
+        <end_point>system_properties_ui.do?sysparm_title=Veeam%20Preferences&amp;sysparm_category=Veeam</end_point>
+        <end_point_open_mode>1</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>100</order>
+        <parent display_value="Additional Configurations">ac005b871b5d3d106e76da03b24bcb4e</parent>
+        <parents>ac005b871b5d3d106e76da03b24bcb4e,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>false</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-23 09:57:24</sys_created_on>
+        <sys_id>04d245b91b02fd106e76da03b24bcb94</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Assignment Groups Set Up</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_04d245b91b02fd106e76da03b24bcb94</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-23 09:57:24</sys_updated_on>
+        <table/>
+        <title>Assignment Groups Set Up</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=04d245b91b02fd106e76da03b24bcb94"/>
+</record_update>

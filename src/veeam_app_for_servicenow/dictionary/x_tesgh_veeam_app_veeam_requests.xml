@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Veeam Requests" max_length="40" name="x_tesgh_veeam_app_veeam_requests" sizeclass="5" type="collection">
+        <element label="Requested Item" max_length="32" name="requested_item" reference="sc_req_item" type="reference"/>
+        <element label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Virtual Machine" max_length="32" name="virtual_machine" reference="x_tesgh_veeam_app_virtual_machine" type="reference"/>
+        <index name="index">
+            <element name="virtual_machine"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+        <index name="index3">
+            <element name="requested_item"/>
+        </index>
+    </element>
+</database>

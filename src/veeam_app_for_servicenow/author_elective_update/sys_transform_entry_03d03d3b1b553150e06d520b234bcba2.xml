@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_entry">
+    <sys_transform_entry action="DELETE">
+        <choice_action>create</choice_action>
+        <coalesce>false</coalesce>
+        <coalesce_case_sensitive>false</coalesce_case_sensitive>
+        <coalesce_empty_fields>false</coalesce_empty_fields>
+        <date_format>yyyy-MM-dd HH:mm:ss</date_format>
+        <map display_value="TM Veeam Sessions">121da1521b86151063fd6243604bcbc0</map>
+        <reference_value_field/>
+        <source_field>[Script]</source_field>
+        <source_script><![CDATA[answer = (function transformEntry(source) {
+
+    /*var endTime = source.u_endtime;
+
+    var endIndex = endTime.lastIndexOf('-');
+    var endUtcIndex = endTime.substring(endIndex+1, endIndex+3);
+
+    var gtEnd = new GlideTime();
+    gtEnd.setValue(endUtcIndex + ":00:00");
+
+    var gdtEnd = new GlideDateTime(endTime.replace('T', ' '));
+
+    return gdtEnd.add(gtEnd);*/
+	
+	return new GlideDateTime('2023-12-12 12:12:12');
+	
+})(source);]]></source_script>
+        <source_table>x_tesgh_veeam_app_import_veeam_sessions</source_table>
+        <sys_class_name>sys_transform_entry</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-22 11:26:59</sys_created_on>
+        <sys_id>03d03d3b1b553150e06d520b234bcba2</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>[Script]</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_transform_entry_03d03d3b1b553150e06d520b234bcba2</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:23:51</sys_updated_on>
+        <target_field>end_date</target_field>
+        <target_table>x_tesgh_veeam_app_session</target_table>
+        <use_source_script>true</use_source_script>
+    </sys_transform_entry>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_transform_entry_03d03d3b1b553150e06d520b234bcba2</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_entry"&gt;&lt;sys_transform_entry action="INSERT_OR_UPDATE"&gt;&lt;choice_action&gt;create&lt;/choice_action&gt;&lt;coalesce&gt;false&lt;/coalesce&gt;&lt;coalesce_case_sensitive&gt;false&lt;/coalesce_case_sensitive&gt;&lt;coalesce_empty_fields&gt;false&lt;/coalesce_empty_fields&gt;&lt;date_format&gt;yyyy-MM-dd HH:mm:ss&lt;/date_format&gt;&lt;map display_value="TM Veeam Sessions"&gt;121da1521b86151063fd6243604bcbc0&lt;/map&gt;&lt;reference_value_field/&gt;&lt;source_field&gt;[Script]&lt;/source_field&gt;&lt;source_script&gt;&lt;![CDATA[answer = (function transformEntry(source) {
+
+    /*var endTime = source.u_endtime;
+
+    var endIndex = endTime.lastIndexOf('-');
+    var endUtcIndex = endTime.substring(endIndex+1, endIndex+3);
+
+    var gtEnd = new GlideTime();
+    gtEnd.setValue(endUtcIndex + ":00:00");
+
+    var gdtEnd = new GlideDateTime(endTime.replace('T', ' '));
+
+    return gdtEnd.add(gtEnd);*/
+	
+	return new GlideDateTime('2023-12-12 12:12:12');
+	
+})(source);]]&gt;&lt;/source_script&gt;&lt;source_table&gt;x_tesgh_veeam_app_import_veeam_sessions&lt;/source_table&gt;&lt;sys_class_name&gt;sys_transform_entry&lt;/sys_class_name&gt;&lt;sys_created_by&gt;pavel.egorov&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-09-22 11:26:59&lt;/sys_created_on&gt;&lt;sys_id&gt;03d03d3b1b553150e06d520b234bcba2&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;[Script]&lt;/sys_name&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_entry_03d03d3b1b553150e06d520b234bcba2&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;pavel.egorov&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-09-22 13:23:51&lt;/sys_updated_on&gt;&lt;target_field&gt;end_date&lt;/target_field&gt;&lt;target_table&gt;x_tesgh_veeam_app_session&lt;/target_table&gt;&lt;use_source_script&gt;true&lt;/use_source_script&gt;&lt;/sys_transform_entry&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-500188979</payload_hash>
+        <record_name>[Script]</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-22 13:23:51</sys_created_on>
+        <sys_id>d3fb8eff1b953150e06d520b234bcbf9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18abd0f9e320000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:23:51</sys_updated_on>
+        <type>Field Map</type>
+        <update_guid>9bfb8efffb95315055cb4661bddd26f8</update_guid>
+        <update_guid_history>9bfb8efffb95315055cb4661bddd26f8:-500188979,260b86ff28953150a30cba1ff910a5a7:-1906113313,0fea42ffe79531509d46d40c497a42e8:1821088531,07c9ce7f4e95315075ed31f33578e9fd:-1906113313,5b317d3ba85531509ff39b8f229395b7:-344058135</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-22 13:24:44</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_entry">sys_transform_entry</sys_db_object>
+        <sys_id>01b15a40593742ee80241d7cd357ba21</sys_id>
+        <sys_metadata>03d03d3b1b553150e06d520b234bcba2</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>[Script]</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_transform_entry_03d03d3b1b553150e06d520b234bcba2</sys_update_name>
+        <sys_update_version display_value="sys_transform_entry_03d03d3b1b553150e06d520b234bcba2">d3fb8eff1b953150e06d520b234bcbf9</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-22 13:24:44</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

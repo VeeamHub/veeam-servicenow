@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="246b4e991b6695106e76da03b24bcb9d" label="Backup Job Template" max_length="40" name="x_tesgh_veeam_app_backup_job_template" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" mandatory="true" max_length="4000" name="description" type="string"/>
+        <element choice="1" label="Frequency" mandatory="true" max_length="100" name="frequency" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Every hour" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="Every 4 hours" sequence="200" value="4"/>
+                <element inactive_on_update="false" label="Every 12 hours" sequence="300" value="12"/>
+                <element inactive_on_update="false" label="Every 24 hours" sequence="400" value="24"/>
+                <element inactive_on_update="false" label="Custom" sequence="500" value="custom"/>
+            </choice>
+        </element>
+        <element label="Frequency Details" max_length="4000" name="frequency_details" type="string"/>
+        <element label="Keep monthly full backups" max_length="40" name="keep_monthly_backups" type="boolean"/>
+        <element label="Keep monthly full backups for (months)" max_length="40" name="keep_monthly_backups_for" type="integer"/>
+        <element label="Keep weekly full backups" max_length="40" name="keep_weekly_backups" type="boolean"/>
+        <element label="Keep weekly full backups for (weeks)" max_length="4" name="keep_weekly_backups_for" type="integer"/>
+        <element label="Keep yearly full backups" max_length="40" name="keep_yearly_backups" type="boolean"/>
+        <element label="Keep yearly full backups for (years)" max_length="4" name="keep_yearly_backups_for" type="integer"/>
+        <element label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Occurrence" mandatory="true" max_length="100" name="occurence" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Daily" sequence="100" value="daily"/>
+                <element inactive_on_update="false" label="Weekdays (M-F)" sequence="200" value="weekdays"/>
+                <element inactive_on_update="false" label="Weekly" sequence="300" value="weekly"/>
+                <element inactive_on_update="false" label="Monthly" sequence="400" value="monthly"/>
+                <element inactive_on_update="false" label="Custom" sequence="500" value="custom"/>
+            </choice>
+        </element>
+        <element label="Occurrence Notes" max_length="4000" name="occurence_notes" type="string"/>
+        <element label="Retention policy (days)" mandatory="true" max_length="4" name="retention" type="string"/>
+        <element label="Veeam Connection" max_length="32" name="veeam_connection" reference="x_tesgh_veeam_app_veeam_connection" type="reference"/>
+        <index name="index">
+            <element name="veeam_connection"/>
+        </index>
+    </element>
+</database>

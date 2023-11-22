@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_atf_step">
+    <sys_atf_step action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copied_from/>
+        <description>Send the outbound REST HTTP request to get an access token from the specified VBR Server</description>
+        <display_name>Send REST Request - Outbound - Veeam Get Access Token</display_name>
+        <inputs/>
+        <mugshots_cache_json/>
+        <notes/>
+        <order>1</order>
+        <step_config display_value="Send REST Request - Outbound - Veeam Get Access Token">3dba7b391be4f510e06d520b234bcba9</step_config>
+        <sys_class_name>sys_atf_step</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-10 11:33:46</sys_created_on>
+        <sys_id>3a6698061b68f510e06d520b234bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send REST Request - Outbound - Veeam Get Access Token</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_atf_step_3a6698061b68f510e06d520b234bcb5c</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-10 11:33:46</sys_updated_on>
+        <table/>
+        <test display_value="Veeam: VBR Connection Verification">a773407f1b94f1106e76da03b24bcb60</test>
+        <timeout/>
+        <warning_message/>
+    </sys_atf_step>
+    <sys_variable_value action="delete_multiple" query="document_key=3a6698061b68f510e06d520b234bcb5c"/>
+</record_update>

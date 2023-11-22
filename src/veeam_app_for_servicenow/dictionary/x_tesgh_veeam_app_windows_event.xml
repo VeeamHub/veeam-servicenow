@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="x_tesgh_veeam_app_event_object" label="Windows Event" max_length="40" name="x_tesgh_veeam_app_windows_event" sizeclass="24" type="collection">
+        <element label="Description" max_length="100" name="description" type="string"/>
+        <element display="true" label="Event ID" max_length="40" name="event_id" type="string"/>
+    </element>
+</database>

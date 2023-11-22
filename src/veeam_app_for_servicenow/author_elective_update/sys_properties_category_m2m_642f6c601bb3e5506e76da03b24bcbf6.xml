@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="DELETE">
+        <category display_value="Veeam">a2ce68601bb3e5506e76da03b24bcb82</category>
+        <order>300</order>
+        <property display_value="x_tesgh_veeam_app.session_timer" name="x_tesgh_veeam_app.session_timer">bea8eaa31b229d106e76da03b24bcb83</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-06-29 14:43:42</sys_created_on>
+        <sys_id>642f6c601bb3e5506e76da03b24bcbf6</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app.session_timer.Veeam</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_642f6c601bb3e5506e76da03b24bcbf6</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-11 11:20:37</sys_updated_on>
+    </sys_properties_category_m2m>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_properties_category_m2m_642f6c601bb3e5506e76da03b24bcbf6</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m"><sys_properties_category_m2m action="INSERT_OR_UPDATE"><category display_value="Veeam">a2ce68601bb3e5506e76da03b24bcb82</category><order>300</order><property display_value="x_tesgh_veeam_app.session_timer" name="x_tesgh_veeam_app.session_timer">bea8eaa31b229d106e76da03b24bcb83</property><sys_class_name>sys_properties_category_m2m</sys_class_name><sys_created_by>pavel.egorov</sys_created_by><sys_created_on>2023-06-29 14:43:42</sys_created_on><sys_id>642f6c601bb3e5506e76da03b24bcbf6</sys_id><sys_mod_count>1</sys_mod_count><sys_name>x_tesgh_veeam_app.session_timer.Veeam</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_properties_category_m2m_642f6c601bb3e5506e76da03b24bcbf6</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-08-11 11:20:37</sys_updated_on></sys_properties_category_m2m></record_update>]]></payload>
+        <payload_hash>365198690</payload_hash>
+        <record_name>x_tesgh_veeam_app.session_timer.Veeam</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-11 11:20:38</sys_created_on>
+        <sys_id>f80d55d61be071106e76da03b24bcb81</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189e453b3730000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-11 11:20:38</sys_updated_on>
+        <type>Category Property</type>
+        <update_guid>fc0d55d606e0711044fd2cc3ac73ee80</update_guid>
+        <update_guid_history>fc0d55d606e0711044fd2cc3ac73ee80:365198690,682f6c6009b3e5500c9e81946ca656f7:-222193053</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-08 10:33:24</sys_created_on>
+        <sys_db_object display_value="" name="sys_properties_category_m2m">sys_properties_category_m2m</sys_db_object>
+        <sys_id>2c9bee5e539940108eab88e3f3610840</sys_id>
+        <sys_metadata>642f6c601bb3e5506e76da03b24bcbf6</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app.session_timer.Veeam</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_properties_category_m2m_642f6c601bb3e5506e76da03b24bcbf6</sys_update_name>
+        <sys_update_version display_value="sys_properties_category_m2m_642f6c601bb3e5506e76da03b24bcbf6">f80d55d61be071106e76da03b24bcb81</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 10:33:24</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

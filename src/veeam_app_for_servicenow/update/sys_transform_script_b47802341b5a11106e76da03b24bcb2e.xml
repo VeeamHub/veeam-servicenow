@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="TM Backup Jobs">fc028ef81b1a11106e76da03b24bcbd1</map>
+        <order>100</order>
+        <script><![CDATA[(function runTransformScript(source, map, log, target /*undefined onStart*/ ) {
+	
+    var grJobMapping = new GlideRecord('x_tesgh_veeam_app_job_mapping');
+    if (grJobMapping.get('job_id', source.u_id)) {
+        grJobMapping.backup_job = target.getUniqueValue();
+        grJobMapping.update();
+    }
+
+    var includesArray = JSON.parse(source.u_virtualmachinesincludes);
+    includesArray.forEach(function(vm) {
+        var grVmInstance = new GlideRecord('cmdb_ci_vmware_instance');
+        grVmInstance.addEncodedQuery('object_id=' + vm.inventoryObject.objectId + '^vcenter_ref.fqdn=' + vm.inventoryObject.hostName);
+		grVmInstance.setLimit(1);
+        grVmInstance.query();
+        if (grVmInstance.next()) {
+            var grVeeamVirtualMachine = new GlideRecord('x_tesgh_veeam_app_virtual_machine');
+            if (grVeeamVirtualMachine.get('virtual_machine', grVmInstance.getUniqueValue())) {
+                grVeeamVirtualMachine.backup_job = target.getUniqueValue();
+                grVeeamVirtualMachine.update();
+            }
+        }
+    });
+
+})(source, map, log, target);]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-30 06:08:44</sys_created_on>
+        <sys_id>b47802341b5a11106e76da03b24bcb2e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_transform_script_b47802341b5a11106e76da03b24bcb2e</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-12 09:20:22</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+</record_update>

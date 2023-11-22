@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties_category_m2m">
+    <sys_properties_category_m2m action="INSERT_OR_UPDATE">
+        <category display_value="Veeam">a2ce68601bb3e5506e76da03b24bcb82</category>
+        <order>300</order>
+        <property display_value="x_tesgh_veeam_app.backup_job_vm_limit" name="x_tesgh_veeam_app.backup_job_vm_limit">e35f5bf11bfe1910e06d520b234bcb51</property>
+        <sys_class_name>sys_properties_category_m2m</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-06-29 14:43:43</sys_created_on>
+        <sys_id>242f6c601bb3e5506e76da03b24bcbf8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app.backup_job_vm_limit.Veeam</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_properties_category_m2m_242f6c601bb3e5506e76da03b24bcbf8</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-08 10:33:29</sys_updated_on>
+    </sys_properties_category_m2m>
+</record_update>

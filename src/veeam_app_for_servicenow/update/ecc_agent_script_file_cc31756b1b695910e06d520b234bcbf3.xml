@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="ecc_agent_script_file">
+    <ecc_agent_script_file action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <checksum/>
+        <description>Holds Veeam Application script files for use by the MID Server</description>
+        <directory>true</directory>
+        <name>VeeamApp</name>
+        <parent display_value="PowerShell">ef89e4fc372001006b882d465abe5d60</parent>
+        <script>$IndexArgument = args[0]&#13;
+$Json = Get-EventLog -LogName "Veeam Backup" | Where-Object {$_.Index-gt $indexArgument} | ConvertTo-Json&#13;
+$Json</script>
+        <script_attachment/>
+        <source/>
+        <sys_class_name>ecc_agent_script_file</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-01 10:42:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cc31756b1b695910e06d520b234bcbf3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>VeeamApp</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>ecc_agent_script_file_cc31756b1b695910e06d520b234bcbf3</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-01 10:42:54</sys_updated_on>
+        <use_attachment>false</use_attachment>
+        <version/>
+    </ecc_agent_script_file>
+</record_update>

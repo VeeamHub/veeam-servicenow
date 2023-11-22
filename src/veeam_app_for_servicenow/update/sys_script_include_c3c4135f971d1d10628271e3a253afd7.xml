@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_tesgh_veeam_app.VeeamAppUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>VeeamAppUtil</name>
+        <script><![CDATA[var VeeamAppUtil = Class.create();
+VeeamAppUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getRESTMessageEndpoint: function(RESTMessageSysId) {
+		if (typeof RESTMessageSysId == 'undefined')	return '';
+
+		var endpoint = '';
+		var RESTMessageGr = new GlideRecord('sys_rest_message');
+		if (RESTMessageGr.get(RESTMessageSysId)) {
+			endpoint = RESTMessageGr.rest_endpoint + '';
+		}
+		
+		return endpoint;
+	},
+
+	getVeeamConnection: function(virtualMachine) {
+		if (typeof virtualMachine == 'undefined') return '';
+
+		var vCenter = '';
+		var veeamConnections = [];
+		
+		var vmWareGr = new GlideRecord('cmdb_ci_vmware_instance');
+		if (vmWareGr.get(virtualMachine)) {
+			vCenter = vmWareGr.vcenter_ref;
+		}
+
+		var connectionGr = new GlideRecord('x_tesgh_veeam_app_veeam_connection');
+		connectionGr.addEncodedQuery('vcenterLIKE' + vCenter);
+		connectionGr.orderByDesc('sys_created_on');
+		connectionGr.query();
+		while (connectionGr.next()) {
+			veeamConnections.push(connectionGr.sys_id);
+		}
+		
+		return veeamConnections.join(',');
+	},
+
+	getVeeamCredentials: function(veeamConnection) {
+		var veeamConnectionGr = new GlideRecord('x_tesgh_veeam_app_veeam_connection');
+		if (veeamConnectionGr.get(veeamConnection)) {
+			var provider = new sn_cc.StandardCredentialsProvider();
+			var credential = provider.getCredentialByID(veeamConnectionGr.credential);
+			var credentials = {
+				'username': credential.getAttribute('user_name'),
+				'password': credential.getAttribute('password'),
+				'baseurl': veeamConnectionGr.connection_url.getDisplayValue(),
+				'midserver': veeamConnectionGr.mid_server.getDisplayValue()
+			};
+			return JSON.stringify(credentials);
+		}
+
+		return '';
+	},
+
+	getVeeamConnectionURL: function(veeamConnection) {
+		var veeamConnectionGr = new GlideRecord('x_tesgh_veeam_app_veeam_connection');
+		if (veeamConnectionGr.get(veeamConnection)) {
+			return veeamConnectionGr.connection_url;
+		}
+		return '';
+	},
+	
+	createVM: function(cmdbCiVmSysID) {
+		var grVM = new GlideRecord('x_tesgh_veeam_app_virtual_machine');
+		
+		if (grVM.get('virtual_machine', cmdbCiVmSysID)) return '';
+		
+		grVM.initialize();
+		grVM.virtual_machine = cmdbCiVmSysID;
+		grVM.active = true;
+		return grVM.insert();
+	},
+	
+	getBackupJobTemplateInfo: function() {
+		var response = {
+			'name': '',
+			'description': '',
+			'frequency': '',
+			'frequency_details': '',
+			'occurence': '',
+			'occurence_notes': '',
+			'retention': '',
+			'keep_weekly_backups': false,
+			'keep_monthly_backups': false,
+			'keep_yearly_backups': false,
+			'keep_weekly_backups_for': '',
+			'keep_monthly_backups_for': '',
+			'keep_yearly_backups_for': '',
+		};
+		
+		var backupJobTemplateId = this.getParameter('sysparm_backup_job_template_id');
+		var grBackupJobTemplate = new GlideRecord('x_tesgh_veeam_app_backup_job_template');
+		if (grBackupJobTemplate.get(backupJobTemplateId)) {
+			response.name = grBackupJobTemplate.getValue('name');
+			response.description = grBackupJobTemplate.getValue('description');
+			
+			response.frequency = grBackupJobTemplate.getDisplayValue('frequency');
+			response.frequency_details = grBackupJobTemplate.getValue('frequency_details');
+			
+			response.occurence = grBackupJobTemplate.getDisplayValue('occurence');
+			response.occurence_notes = grBackupJobTemplate.getValue('occurence_notes');
+			
+			response.retention = grBackupJobTemplate.getValue('retention');
+			
+			response.keep_weekly_backups = grBackupJobTemplate.getValue('keep_weekly_backups');
+			response.keep_weekly_backups_for = grBackupJobTemplate.getValue('keep_weekly_backups_for');
+			
+			response.keep_monthly_backups = grBackupJobTemplate.getValue('keep_monthly_backups');
+			response.keep_monthly_backups_for = grBackupJobTemplate.getValue('keep_monthly_backups_for');
+			
+			response.keep_yearly_backups = grBackupJobTemplate.getValue('keep_yearly_backups');
+			response.keep_yearly_backups_for = grBackupJobTemplate.getValue('keep_yearly_backups_for');			
+		}
+
+		return JSON.stringify(response);
+	},
+
+	type: 'VeeamAppUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-19 13:03:30</sys_created_on>
+        <sys_id>c3c4135f971d1d10628271e3a253afd7</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>VeeamAppUtil</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_script_include_c3c4135f971d1d10628271e3a253afd7</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-06 12:20:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

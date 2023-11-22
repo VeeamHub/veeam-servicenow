@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_tesgh_veeam_app.backup_object_user" name="x_tesgh_veeam_app.backup_object_user">032dbec81b4fdd10e06d520b234bcb82</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-04 08:49:05</sys_created_on>
+        <sys_id>cf2dbec81b4fdd10e06d520b234bcb83</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>032dbec81b4fdd10e06d520b234bcb82</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_embedded_help_role_cf2dbec81b4fdd10e06d520b234bcb83</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-04 08:49:05</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

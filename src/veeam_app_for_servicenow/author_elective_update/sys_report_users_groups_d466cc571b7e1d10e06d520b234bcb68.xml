@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups">
+    <sys_report_users_groups action="DELETE">
+        <group_id/>
+        <report_id display_value="">5066cc571b7e1d10e06d520b234bcb68</report_id>
+        <sys_class_name>sys_report_users_groups</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:35:01</sys_created_on>
+        <sys_id>d466cc571b7e1d10e06d520b234bcb68</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5066cc571b7e1d10e06d520b234bcb68</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_report_users_groups_d466cc571b7e1d10e06d520b234bcb68</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:35:01</sys_updated_on>
+        <user_id display_value="Cristian Girbu">a8195b2d97b30150628271e3a253af47</user_id>
+    </sys_report_users_groups>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_report_users_groups_d466cc571b7e1d10e06d520b234bcb68</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report_users_groups"><sys_report_users_groups action="INSERT_OR_UPDATE"><group_id/><report_id display_value="">5066cc571b7e1d10e06d520b234bcb68</report_id><sys_class_name>sys_report_users_groups</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-11-01 11:35:01</sys_created_on><sys_id>d466cc571b7e1d10e06d520b234bcb68</sys_id><sys_mod_count>0</sys_mod_count><sys_name>5066cc571b7e1d10e06d520b234bcb68</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_report_users_groups_d466cc571b7e1d10e06d520b234bcb68</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-11-01 11:35:01</sys_updated_on><user_id display_value="Cristian Girbu">a8195b2d97b30150628271e3a253af47</user_id></sys_report_users_groups></record_update>]]></payload>
+        <payload_hash>-1386533943</payload_hash>
+        <record_name>5066cc571b7e1d10e06d520b234bcb68</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:35:01</sys_created_on>
+        <sys_id>1466cc571b7e1d10e06d520b234bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18432f92b0f0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:35:01</sys_updated_on>
+        <type>Report Users and Groups</type>
+        <update_guid>5c66cc57527e1d1066816d87b9b0e069</update_guid>
+        <update_guid_history>5c66cc57527e1d1066816d87b9b0e069:-1386533943</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-25 10:11:51</sys_created_on>
+        <sys_db_object display_value="" name="sys_report_users_groups">sys_report_users_groups</sys_db_object>
+        <sys_id>8e6835e096c349c592214b2faf351f41</sys_id>
+        <sys_metadata>d466cc571b7e1d10e06d520b234bcb68</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>5066cc571b7e1d10e06d520b234bcb68</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_report_users_groups_d466cc571b7e1d10e06d520b234bcb68</sys_update_name>
+        <sys_update_version display_value="sys_report_users_groups_d466cc571b7e1d10e06d520b234bcb68">1466cc571b7e1d10e06d520b234bcb6a</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:11:51</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

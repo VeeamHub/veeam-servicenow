@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sc_cat_item_category">
+    <sc_cat_item_category action="INSERT_OR_UPDATE">
+        <sc_cat_item display_value="Request a new Backup Job">1d95c5791bb1551063fd6243604bcb8c</sc_cat_item>
+        <sc_category display_value="Veeam App">9837fa3f1ba99910e06d520b234bcb2e</sc_category>
+        <sys_class_name>sc_cat_item_category</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-09-08 07:18:01</sys_created_on>
+        <sys_id>11b549791bb1551063fd6243604bcb90</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Veeam App.Request new Backup Job</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sc_cat_item_category_11b549791bb1551063fd6243604bcb90</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-09-08 07:18:01</sys_updated_on>
+    </sc_cat_item_category>
+</record_update>

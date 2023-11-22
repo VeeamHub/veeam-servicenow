@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_grid_canvas_pane">
+    <sys_grid_canvas_pane action="INSERT_OR_UPDATE">
+        <grid_canvas display_value="PA Veeam Homepage - New Tab">d7c13aee937131109d0b398efaba10a9</grid_canvas>
+        <height>10</height>
+        <portal_widget display_value="Created 2023-10-13 08:28:30">7de1faee937131109d0b398efaba10a4</portal_widget>
+        <posx>4</posx>
+        <posy>0</posy>
+        <sys_class_name>sys_grid_canvas_pane</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-13 15:28:30</sys_created_on>
+        <sys_id>b9e17eee937131109d0b398efaba1073</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>d7c13aee937131109d0b398efaba10a9</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_grid_canvas_pane_b9e17eee937131109d0b398efaba1073</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-13 15:31:36</sys_updated_on>
+        <width>8</width>
+    </sys_grid_canvas_pane>
+</record_update>

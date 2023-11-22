@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters">
+    <sys_rest_message_fn_parameters action="DELETE">
+        <name>token</name>
+        <rest_message_function display_value="Get VMware vSphere Servers">09cc8f57971d1d10628271e3a253af52</rest_message_function>
+        <sys_class_name>sys_rest_message_fn_parameters</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-19 12:28:22</sys_created_on>
+        <sys_id>98fcc797971d1d10628271e3a253af2e</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>token</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_rest_message_fn_parameters_98fcc797971d1d10628271e3a253af2e</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-04 10:38:28</sys_updated_on>
+        <type>string</type>
+        <value>eyJhbGciOiJSUzUxMiIsImtpZCI6Ijk2RUU1MjFFQjFDQjA2OTNENjVFOUUzNjlBNDAwRDNDOTI3NTcwRDciLCJ0eXAiOiJKV1QifQ.eyJ1bmlxdWVfbmFtZSI6Ik5PVFlPVVJET01BSU4uQ09NXFx0ZWl2YWFkbWluIiwibmJmIjoxNjkxMTQ1MTU3LCJleHAiOjE2OTExNDYwNTcsImlhdCI6MTY5MTE0NTE1NywiYXVkIjoiYWNjZXNzIn0.rhKWu3rHLR5XGlnM-je-jm3vm9cDUN6e3iJ-Ylwv4764J2V86Blb_vudurlsyxYk7IeXTDifT3O4jCtAR2y0OXRMbMU84BomCnTAu6RQvEhu2_WZbhRVh_vHZkdBxPCnM_0w-6EziwfIV4J3sti4pcRd3TIT02y8K_4E3vtS2OVXgd0wvqCRS76Sg-xowmRbpfickeTeARv2AtVmMy_FOV70N9rYDWV_MxYx6eFQ1Er8NS7OGzzTsQ-GJvJ_hymavfsj49CXKOGZJf9rbuATKUPUk4VLSX2xgfptdKictypPTiUESqDvK5rsHtjl-xJyL4O1MU2j197MY5waOEJe_A</value>
+    </sys_rest_message_fn_parameters>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_rest_message_fn_parameters_98fcc797971d1d10628271e3a253af2e</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_rest_message_fn_parameters"><sys_rest_message_fn_parameters action="INSERT_OR_UPDATE"><name>token</name><rest_message_function display_value="Get VMware vSphere Servers">09cc8f57971d1d10628271e3a253af52</rest_message_function><sys_class_name>sys_rest_message_fn_parameters</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-08-19 12:28:22</sys_created_on><sys_id>98fcc797971d1d10628271e3a253af2e</sys_id><sys_mod_count>2</sys_mod_count><sys_name>token</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_rest_message_fn_parameters_98fcc797971d1d10628271e3a253af2e</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-08-04 10:38:28</sys_updated_on><type>string</type><value>eyJhbGciOiJSUzUxMiIsImtpZCI6Ijk2RUU1MjFFQjFDQjA2OTNENjVFOUUzNjlBNDAwRDNDOTI3NTcwRDciLCJ0eXAiOiJKV1QifQ.eyJ1bmlxdWVfbmFtZSI6Ik5PVFlPVVJET01BSU4uQ09NXFx0ZWl2YWFkbWluIiwibmJmIjoxNjkxMTQ1MTU3LCJleHAiOjE2OTExNDYwNTcsImlhdCI6MTY5MTE0NTE1NywiYXVkIjoiYWNjZXNzIn0.rhKWu3rHLR5XGlnM-je-jm3vm9cDUN6e3iJ-Ylwv4764J2V86Blb_vudurlsyxYk7IeXTDifT3O4jCtAR2y0OXRMbMU84BomCnTAu6RQvEhu2_WZbhRVh_vHZkdBxPCnM_0w-6EziwfIV4J3sti4pcRd3TIT02y8K_4E3vtS2OVXgd0wvqCRS76Sg-xowmRbpfickeTeARv2AtVmMy_FOV70N9rYDWV_MxYx6eFQ1Er8NS7OGzzTsQ-GJvJ_hymavfsj49CXKOGZJf9rbuATKUPUk4VLSX2xgfptdKictypPTiUESqDvK5rsHtjl-xJyL4O1MU2j197MY5waOEJe_A</value></sys_rest_message_fn_parameters></record_update>]]></payload>
+        <payload_hash>-1359755824</payload_hash>
+        <record_name>token</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>current</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-04 10:38:28</sys_created_on>
+        <sys_id>0f3095001b247110e06d520b234bcb6a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>189c02095eb0000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-04 10:38:28</sys_updated_on>
+        <type>Variable Substitutions</type>
+        <update_guid>433095006a2471106f7e46dc3004606a</update_guid>
+        <update_guid_history>433095006a2471106f7e46dc3004606a:-1359755824,75fc4397271d1d10ffeae95280ff1d24:1224370586,58fcc797de1d1d100c9d68a2e5fd022f:199369290</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-10-23 10:11:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_rest_message_fn_parameters">sys_rest_message_fn_parameters</sys_db_object>
+        <sys_id>23e5a6022fca43f6a9310a4f3be023a4</sys_id>
+        <sys_metadata>98fcc797971d1d10628271e3a253af2e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>token</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_rest_message_fn_parameters_98fcc797971d1d10628271e3a253af2e</sys_update_name>
+        <sys_update_version display_value="sys_rest_message_fn_parameters_98fcc797971d1d10628271e3a253af2e">0f3095001b247110e06d520b234bcb6a</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-23 10:11:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

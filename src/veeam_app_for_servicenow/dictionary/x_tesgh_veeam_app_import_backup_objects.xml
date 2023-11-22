@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Import Backup Objects" max_length="40" name="x_tesgh_veeam_app_import_backup_objects" sizeclass="0" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=id" label="id" max_length="40" name="u_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=name" label="name" max_length="40" name="u_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=objectId" label="objectId" max_length="40" name="u_objectid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=path" label="path" max_length="40" name="u_path" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=platformId" label="platformId" max_length="40" name="u_platformid" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=platformName" label="platformName" max_length="40" name="u_platformname" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=restorePointsCount" label="restorePointsCount" max_length="40" name="u_restorepointscount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=type" label="type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=viType" label="viType" max_length="40" name="u_vitype" type="string"/>
+    </element>
+</database>

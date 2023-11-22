@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards">
+    <pa_dashboards action="DELETE">
+        <active>true</active>
+        <breakdown_source/>
+        <color/>
+        <disable_multiple_element>false</disable_multiple_element>
+        <group/>
+        <groups/>
+        <is_breakdown>false</is_breakdown>
+        <managed_breakdown/>
+        <managed_publisher/>
+        <name>My Veeam</name>
+        <no_tabs>false</no_tabs>
+        <order/>
+        <owner display_value="Veeam App">da2520661bf3011063fd6243604bcba3</owner>
+        <restrict_to_roles/>
+        <role_override>true</role_override>
+        <roles/>
+        <should_migrate_permissions>false</should_migrate_permissions>
+        <sys_class_name>pa_dashboards</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:12:51</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>314140531b7e1d10e06d520b234bcb61</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>My Veeam</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>pa_dashboards_314140531b7e1d10e06d520b234bcb61</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:10:25</sys_updated_on>
+        <users/>
+        <visible_to>2</visible_to>
+    </pa_dashboards>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>pa_dashboards_314140531b7e1d10e06d520b234bcb61</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="pa_dashboards"><pa_dashboards action="INSERT_OR_UPDATE"><active>true</active><breakdown_source/><color/><disable_multiple_element>false</disable_multiple_element><group/><groups/><is_breakdown>false</is_breakdown><managed_breakdown/><managed_publisher/><name>My Veeam</name><no_tabs>false</no_tabs><order/><owner display_value="Veeam App">da2520661bf3011063fd6243604bcba3</owner><restrict_to_roles/><role_override>true</role_override><roles/><should_migrate_permissions>false</should_migrate_permissions><sys_class_name>pa_dashboards</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-11-01 11:12:51</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>314140531b7e1d10e06d520b234bcb61</sys_id><sys_mod_count>4</sys_mod_count><sys_name>My Veeam</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>pa_dashboards_314140531b7e1d10e06d520b234bcb61</sys_update_name><sys_updated_by>pavel.egorov</sys_updated_by><sys_updated_on>2023-09-21 16:10:25</sys_updated_on><users/><visible_to>2</visible_to></pa_dashboards></record_update>]]></payload>
+        <payload_hash>-844799196</payload_hash>
+        <record_name>My Veeam</record_name>
+        <reverted_from/>
+        <source>ce14f4771b6b25506e76da03b24bcb34</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-21 16:10:25</sys_created_on>
+        <sys_id>2188696b1b59bd106e76da03b24bcba2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18ab881c0370000001</sys_recorded_at>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-21 16:10:25</sys_updated_on>
+        <type>Dashboard</type>
+        <update_guid>e588696bf859bd10ce16af72d3a060a1</update_guid>
+        <update_guid_history>e588696bf859bd10ce16af72d3a060a1:-844799196,5588696b3559bd10c6afe0022ee8b7b7:-2031834936,818825ab6959bd10af53f3d683270c37:-844799196,544037d40dbfa5500ee804e262e2e680:1251081480,37414053787e1d10b17f4611536082f8:1525458206</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="My Veeam">99cdbc301ba5f150e06d520b234bcb9a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-09-25 10:16:02</sys_created_on>
+        <sys_db_object display_value="" name="pa_dashboards">pa_dashboards</sys_db_object>
+        <sys_id>18b2a6d8b7484214941c8ddcd23fce89</sys_id>
+        <sys_metadata>314140531b7e1d10e06d520b234bcb61</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>My Veeam</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>pa_dashboards_314140531b7e1d10e06d520b234bcb61</sys_update_name>
+        <sys_update_version display_value="pa_dashboards_314140531b7e1d10e06d520b234bcb61">2188696b1b59bd106e76da03b24bcba2</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-09-25 10:16:02</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

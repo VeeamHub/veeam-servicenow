@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_kmf_crypto_caller_policy">
+    <sys_kmf_crypto_caller_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <approval_type/>
+        <check_script_hash>false</check_script_hash>
+        <crypto_module display_value="com_glide_web_service_consumer_glideencrypter">2ca78142e7222010628a20c343f6a92e</crypto_module>
+        <crypto_spec display_value="com_glide_web_service_consumer_glideencrypter --- Symmetric Key Wrapping/Unwrapping">eca78142e7222010628a20c343f6a930</crypto_spec>
+        <granular_operation/>
+        <impersonation>false</impersonation>
+        <instance_recipient/>
+        <owner>d2e89c1adb5081501b813feb6896194c</owner>
+        <policy_name>AutoGen-scope-x_tesgh_veeam_app-global.com_glide_web_service_consumer_glideencrypter</policy_name>
+        <result>track</result>
+        <script_hash/>
+        <script_table/>
+        <signature_data/>
+        <specify_purpose>false</specify_purpose>
+        <sys_class_name>sys_kmf_crypto_caller_policy</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2022-09-02 10:53:16</sys_created_on>
+        <sys_id>336dbef31be99910e06d520b234bcbe9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AutoGen-scope-x_tesgh_veeam_app-global.com_glide_web_service_consumer_glideencrypter</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_kmf_crypto_caller_policy_336dbef31be99910e06d520b234bcbe9</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2022-09-02 10:53:16</sys_updated_on>
+        <target_role/>
+        <target_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</target_scope>
+        <target_script/>
+        <type>3</type>
+        <used>false</used>
+    </sys_kmf_crypto_caller_policy>
+</record_update>

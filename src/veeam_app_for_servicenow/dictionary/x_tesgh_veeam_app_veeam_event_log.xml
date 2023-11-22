@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Veeam Event Log" max_length="40" name="x_tesgh_veeam_app_veeam_event_log" sizeclass="6211" type="collection">
+        <element label="Configuration Item" max_length="32" name="configuration_item" reference="cmdb_ci" type="reference"/>
+        <element choice="1" label="Entry Type" max_length="40" name="entry_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Error" sequence="100" value="1"/>
+                <element inactive_on_update="false" label="FailureAudit" sequence="200" value="16"/>
+                <element inactive_on_update="false" label="Information" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="SuccessAudit" sequence="400" value="8"/>
+                <element inactive_on_update="false" label="Warning" sequence="500" value="2"/>
+            </choice>
+        </element>
+        <element label="Event ID" max_length="40" name="event_id" type="string"/>
+        <element label="Index" max_length="40" name="index" type="integer"/>
+        <element attributes="json_view=true" label="JSON Payload" max_length="4000" name="json_payload" type="string"/>
+        <element label="Machine Name" max_length="100" name="machine_name" type="string"/>
+        <element label="Message" max_length="200" name="message" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Source" max_length="200" name="source" type="string"/>
+        <element label="Time Generated" max_length="40" name="time_generated" type="glide_date_time"/>
+        <element label="Windows Veeam Event" max_length="32" name="windows_veeam_event" reference="x_tesgh_veeam_app_windows_event" reference_floats="true" type="reference"/>
+        <index name="index">
+            <element name="windows_veeam_event"/>
+        </index>
+        <index name="index2">
+            <element name="configuration_item"/>
+        </index>
+        <index name="index3">
+            <element name="index"/>
+        </index>
+    </element>
+</database>

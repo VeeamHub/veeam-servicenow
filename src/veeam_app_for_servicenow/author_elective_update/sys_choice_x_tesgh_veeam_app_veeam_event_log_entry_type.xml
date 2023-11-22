@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="entry_type" table="x_tesgh_veeam_app_veeam_event_log" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>entry_type</element>
+            <name>x_tesgh_veeam_app_veeam_event_log</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 10:33:26</sys_created_on>
+            <sys_id>1b4f2da71b695910e06d520b234bcbb6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>entry_type</sys_name>
+            <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+            <sys_update_name>sys_choice_x_tesgh_veeam_app_veeam_event_log_entry_type</sys_update_name>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 10:33:26</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entry_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Error</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_veeam_event_log</name>
+            <sequence>100</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 10:33:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>924f69a71b695910e06d520b234bcbac</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 10:34:04</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entry_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>FailureAudit</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_veeam_event_log</name>
+            <sequence>200</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 10:33:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>db4fada71b695910e06d520b234bcbf3</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 10:34:06</sys_updated_on>
+            <value>16</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entry_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Information</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_veeam_event_log</name>
+            <sequence>300</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 10:33:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f85f2da71b695910e06d520b234bcbbf</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 10:34:07</sys_updated_on>
+            <value>4</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entry_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SuccessAudit</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_veeam_event_log</name>
+            <sequence>400</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 10:33:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>786f61e71b695910e06d520b234bcb13</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 10:34:08</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>entry_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Warning</label>
+            <language>en</language>
+            <name>x_tesgh_veeam_app_veeam_event_log</name>
+            <sequence>500</sequence>
+            <synonyms/>
+            <sys_created_by>c.girbu</sys_created_by>
+            <sys_created_on>2022-09-01 10:33:58</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ce6f61e71b695910e06d520b234bcb6a</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>c.girbu</sys_updated_by>
+            <sys_updated_on>2022-09-01 10:34:10</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

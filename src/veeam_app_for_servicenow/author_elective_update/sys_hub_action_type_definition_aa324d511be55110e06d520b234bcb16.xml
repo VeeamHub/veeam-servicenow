@@ -1,0 +1,801 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <ih_action>false</ih_action>
+        <internal_name>check_connectivity_to_veeam_server</internal_name>
+        <label_cache>[]</label_cache>
+        <master_snapshot>53e509d51be55110e06d520b234bcb03</master_snapshot>
+        <name>Check connectivity to Veeam Server</name>
+        <natlang/>
+        <outputs/>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:30:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aa324d511be55110e06d520b234bcb16</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Check connectivity to Veeam Server</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_aa324d511be55110e06d520b234bcb16</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="DELETE" query="documentkey=aa324d511be55110e06d520b234bcb16"/>
+    <sys_variable_value action="DELETE" query="document_key=aa324d511be55110e06d520b234bcb16"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>aa324d511be55110e06d520b234bcb16</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>5be5c5d51be55110e06d520b234bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD8be5c5d5b1e55110eeb8e44088b142be":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD8be5c5d5b1e55110eeb8e44088b142be.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":null,\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"659150d2-d013-4abc-8982-8cdc8586d2fd\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8be5c5d5b1e55110eeb8e44088b142be\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"-1\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">1fe5c5d51be55110e06d520b234bcbc1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>aa324d511be55110e06d520b234bcb16</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>97e5c5d51be55110e06d520b234bcbd2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">dfe5c5d51be55110e06d520b234bcbc9</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16^id=aa324d511be55110e06d520b234bcb16"/>
+    <sys_hub_step_instance action="DELETE" query="action=aa324d511be55110e06d520b234bcb16^sys_idNOT IN62e509151be55110e06d520b234bcbb8"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Check connectivity to Veeam Server">aa324d511be55110e06d520b234bcb16</action>
+        <cid>805f9d01-febb-4d9f-aabc-8edd6bf4b48d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:16</sys_created_on>
+        <sys_id>62e509151be55110e06d520b234bcbb8</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:16</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=62e509151be55110e06d520b234bcbb8"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>62e509151be55110e06d520b234bcbb8</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:16</sys_created_on>
+        <sys_id>2ae5c5d51be55110e06d520b234bcb5b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:16</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>62e509151be55110e06d520b234bcbb8</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:16</sys_created_on>
+        <sys_id>62e5c5d51be55110e06d520b234bcb5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:16</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+// ... code ...
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=62e509151be55110e06d520b234bcbb8"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=62e509151be55110e06d520b234bcbb8"/>
+    <sys_hub_step_ext_output action="DELETE" query="model=62e509151be55110e06d520b234bcbb8"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=62e509151be55110e06d520b234bcbb8"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_62e509151be55110e06d520b234bcbb8"/>
+    <sys_hub_action_input action="DELETE" query="model=aa324d511be55110e06d520b234bcb16"/>
+    <sys_hub_action_output action="DELETE" query="model=aa324d511be55110e06d520b234bcb16^sys_idNOT IN1fe5c5d51be55110e06d520b234bcbc1,dfe5c5d51be55110e06d520b234bcbc9"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD8be5c5d5b1e55110eeb8e44088b142be,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=659150d2-d013-4abc-8982-8cdc8586d2fd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Check connectivity to Veeam Server">aa324d511be55110e06d520b234bcb16</model>
+        <model_id>aa324d511be55110e06d520b234bcb16</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>1fe5c5d51be55110e06d520b234bcbc1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=1fe5c5d51be55110e06d520b234bcbc1"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=1fe5c5d51be55110e06d520b234bcbc1"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fceceb15-92ee-47b0-9ab0-d0079a348f49,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Check connectivity to Veeam Server">aa324d511be55110e06d520b234bcb16</model>
+        <model_id>aa324d511be55110e06d520b234bcb16</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>dfe5c5d51be55110e06d520b234bcbc9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=dfe5c5d51be55110e06d520b234bcbc9"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=dfe5c5d51be55110e06d520b234bcbc9"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=aa324d511be55110e06d520b234bcb16"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=aa324d511be55110e06d520b234bcb16^sys_idNOT IN22e5c5d51be55110e06d520b234bcb60"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Check connectivity to Veeam Server">aa324d511be55110e06d520b234bcb16</action_type_id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:16</sys_created_on>
+        <sys_id>22e5c5d51be55110e06d520b234bcb60</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:16</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=22e5c5d51be55110e06d520b234bcb60"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_aa324d511be55110e06d520b234bcb16"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_aa324d511be55110e06d520b234bcb16"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16^sys_idNOT IN1fe5c5d51be55110e06d520b234bcbcf,9fe5c5d51be55110e06d520b234bcbc8"/>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>1fe5c5d51be55110e06d520b234bcbcf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>9fe5c5d51be55110e06d520b234bcbc8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16"/>
+    <sys_hub_action_plan action="DELETE" query="action_id=aa324d511be55110e06d520b234bcb16"/>
+    <sys_hub_action_type_snapshot action="DELETE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <internal_name>check_connectivity_to_veeam_server</internal_name>
+        <label_cache>[]</label_cache>
+        <master>true</master>
+        <name>Check connectivity to Veeam Server</name>
+        <natlang/>
+        <outputs/>
+        <parent_action display_value="Check connectivity to Veeam Server">aa324d511be55110e06d520b234bcb16</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53e509d51be55110e06d520b234bcb03</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="DELETE" query="documentkey=53e509d51be55110e06d520b234bcb03"/>
+    <sys_variable_value action="DELETE" query="document_key=53e509d51be55110e06d520b234bcb03"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>53e509d51be55110e06d520b234bcb03</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>57e509d51be55110e06d520b234bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD9be509d5cfe55110e9f7a95090d2750f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9be509d5cfe55110e9f7a95090d2750f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"659150d2-d013-4abc-8982-8cdc8586d2fd\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9be509d5cfe55110e9f7a95090d2750f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">dbe509d51be55110e06d520b234bcb11</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>53e509d51be55110e06d520b234bcb03</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>93e509d51be55110e06d520b234bcb1e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">17e509d51be55110e06d520b234bcb16</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03^id=53e509d51be55110e06d520b234bcb03"/>
+    <sys_hub_step_instance action="DELETE" query="action=53e509d51be55110e06d520b234bcb03^sys_idNOT IN17e509d51be55110e06d520b234bcb07"/>
+    <sys_hub_step_instance action="DELETE">
+        <action display_value="Check connectivity to Veeam Server">53e509d51be55110e06d520b234bcb03</action>
+        <cid>805f9d01-febb-4d9f-aabc-8edd6bf4b48d</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>17e509d51be55110e06d520b234bcb07</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="DELETE" query="document_key=17e509d51be55110e06d520b234bcb07"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17e509d51be55110e06d520b234bcb07</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>9fe509d51be55110e06d520b234bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <value>(function execute(inputs, outputs) {
+// ... code ...
+})(inputs, outputs);
+</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_hub_step_instance</document>
+        <document_key>17e509d51be55110e06d520b234bcb07</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:19</sys_created_on>
+        <sys_id>dbe509d51be55110e06d520b234bcb0d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:19</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="DELETE" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=17e509d51be55110e06d520b234bcb07"/>
+    <sys_hub_step_ext_input action="DELETE" query="model=17e509d51be55110e06d520b234bcb07"/>
+    <sys_hub_step_ext_output action="DELETE" query="model=17e509d51be55110e06d520b234bcb07"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=17e509d51be55110e06d520b234bcb07"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_step_ext_output_17e509d51be55110e06d520b234bcb07"/>
+    <sys_hub_action_input action="DELETE" query="model=53e509d51be55110e06d520b234bcb03"/>
+    <sys_hub_action_output action="DELETE" query="model=53e509d51be55110e06d520b234bcb03^sys_idNOT IN17e509d51be55110e06d520b234bcb16,dbe509d51be55110e06d520b234bcb11"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fceceb15-92ee-47b0-9ab0-d0079a348f49,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Check connectivity to Veeam Server">53e509d51be55110e06d520b234bcb03</model>
+        <model_id>53e509d51be55110e06d520b234bcb03</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>17e509d51be55110e06d520b234bcb16</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=17e509d51be55110e06d520b234bcb16"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=17e509d51be55110e06d520b234bcb16"/>
+    <sys_hub_action_output action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FD9be509d5cfe55110e9f7a95090d2750f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=659150d2-d013-4abc-8982-8cdc8586d2fd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Check connectivity to Veeam Server">53e509d51be55110e06d520b234bcb03</model>
+        <model_id>53e509d51be55110e06d520b234bcb03</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>dbe509d51be55110e06d520b234bcb11</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="DELETE" query="action_input=dbe509d51be55110e06d520b234bcb11"/>
+    <sys_hub_input_scripts action="DELETE" query="instance=dbe509d51be55110e06d520b234bcb11"/>
+    <sys_hub_pill_compound action="DELETE" query="attached_to=53e509d51be55110e06d520b234bcb03"/>
+    <sys_hub_action_status_metadata action="DELETE" query="action_type_id=53e509d51be55110e06d520b234bcb03^sys_idNOT IN23e509d51be55110e06d520b234bcb20"/>
+    <sys_hub_action_status_metadata action="DELETE">
+        <action_type_id display_value="Check connectivity to Veeam Server">53e509d51be55110e06d520b234bcb03</action_type_id>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>23e509d51be55110e06d520b234bcb20</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="DELETE" query="action_status_metadata_id=23e509d51be55110e06d520b234bcb20"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_input_53e509d51be55110e06d520b234bcb03"/>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_input_53e509d51be55110e06d520b234bcb03"/>
+    <sys_documentation action="DELETE" query="name=var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03^sys_idNOT IN5be509d51be55110e06d520b234bcb15,5be509d51be55110e06d520b234bcb1b"/>
+    <sys_documentation action="DELETE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>5be509d51be55110e06d520b234bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="DELETE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>5be509d51be55110e06d520b234bcb1b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="DELETE" query="name=var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03"/>
+    <sys_hub_action_type_definition action="DELETE">
+        <sys_id>aa324d511be55110e06d520b234bcb16</sys_id>
+        <latest_snapshot>53e509d51be55110e06d520b234bcb03</latest_snapshot>
+        <compiler_build>glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip</compiler_build>
+    </sys_hub_action_type_definition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_hub_action_type_definition_aa324d511be55110e06d520b234bcb16</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_hub_action_type_definition"&gt;&lt;sys_hub_action_type_definition action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;active&gt;true&lt;/active&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;ih_action&gt;false&lt;/ih_action&gt;&lt;internal_name&gt;check_connectivity_to_veeam_server&lt;/internal_name&gt;&lt;label_cache&gt;[]&lt;/label_cache&gt;&lt;master_snapshot&gt;53e509d51be55110e06d520b234bcb03&lt;/master_snapshot&gt;&lt;name&gt;Check connectivity to Veeam Server&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;state&gt;published&lt;/state&gt;&lt;sys_class_name&gt;sys_hub_action_type_definition&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:30:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;aa324d511be55110e06d520b234bcb16&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Check connectivity to Veeam Server&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_hub_action_type_definition_aa324d511be55110e06d520b234bcb16&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_definition&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;aa324d511be55110e06d520b234bcb16&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;5be5c5d51be55110e06d520b234bcbd2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD8be5c5d5b1e55110eeb8e44088b142be":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD8be5c5d5b1e55110eeb8e44088b142be.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"default_value\":null,\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"659150d2-d013-4abc-8982-8cdc8586d2fd\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD8be5c5d5b1e55110eeb8e44088b142be\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"-1\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;1fe5c5d51be55110e06d520b234bcbc1&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_definition&lt;/document&gt;&lt;document_key&gt;aa324d511be55110e06d520b234bcb16&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;97e5c5d51be55110e06d520b234bcbd2&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;dfe5c5d51be55110e06d520b234bcbc9&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16^id=aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=aa324d511be55110e06d520b234bcb16^sys_idNOT IN62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Check connectivity to Veeam Server"&gt;aa324d511be55110e06d520b234bcb16&lt;/action&gt;&lt;cid&gt;805f9d01-febb-4d9f-aabc-8edd6bf4b48d&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Script step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:16&lt;/sys_created_on&gt;&lt;sys_id&gt;62e509151be55110e06d520b234bcbb8&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:16&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;62e509151be55110e06d520b234bcbb8&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:16&lt;/sys_created_on&gt;&lt;sys_id&gt;2ae5c5d51be55110e06d520b234bcb5b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:16&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;62e509151be55110e06d520b234bcbb8&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:16&lt;/sys_created_on&gt;&lt;sys_id&gt;62e5c5d51be55110e06d520b234bcb5c&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:16&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {
+// ... code ...
+})(inputs, outputs);
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_62e509151be55110e06d520b234bcbb8"/&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=aa324d511be55110e06d520b234bcb16^sys_idNOT IN1fe5c5d51be55110e06d520b234bcbc1,dfe5c5d51be55110e06d520b234bcbc9"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FD8be5c5d5b1e55110eeb8e44088b142be,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=659150d2-d013-4abc-8982-8cdc8586d2fd&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Check connectivity to Veeam Server"&gt;aa324d511be55110e06d520b234bcb16&lt;/model&gt;&lt;model_id&gt;aa324d511be55110e06d520b234bcb16&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;1fe5c5d51be55110e06d520b234bcbc1&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1fe5c5d51be55110e06d520b234bcbc1"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=1fe5c5d51be55110e06d520b234bcbc1"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fceceb15-92ee-47b0-9ab0-d0079a348f49,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Check connectivity to Veeam Server"&gt;aa324d511be55110e06d520b234bcb16&lt;/model&gt;&lt;model_id&gt;aa324d511be55110e06d520b234bcb16&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_definition&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;dfe5c5d51be55110e06d520b234bcbc9&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dfe5c5d51be55110e06d520b234bcbc9"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=dfe5c5d51be55110e06d520b234bcbc9"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=aa324d511be55110e06d520b234bcb16^sys_idNOT IN22e5c5d51be55110e06d520b234bcb60"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Check connectivity to Veeam Server"&gt;aa324d511be55110e06d520b234bcb16&lt;/action_type_id&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:16&lt;/sys_created_on&gt;&lt;sys_id&gt;22e5c5d51be55110e06d520b234bcb60&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:16&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=22e5c5d51be55110e06d520b234bcb60"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16^sys_idNOT IN1fe5c5d51be55110e06d520b234bcbcf,9fe5c5d51be55110e06d520b234bcbc8"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;1fe5c5d51be55110e06d520b234bcbcf&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;9fe5c5d51be55110e06d520b234bcbc8&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_hub_action_plan action="delete_multiple" query="action_id=aa324d511be55110e06d520b234bcb16"/&gt;&lt;sys_hub_action_type_snapshot action="INSERT_OR_UPDATE"&gt;&lt;access&gt;public&lt;/access&gt;&lt;acls/&gt;&lt;action_status/&gt;&lt;action_template/&gt;&lt;annotation/&gt;&lt;callable_by_client_api&gt;false&lt;/callable_by_client_api&gt;&lt;category/&gt;&lt;copied_from/&gt;&lt;copied_from_name/&gt;&lt;description/&gt;&lt;internal_name&gt;check_connectivity_to_veeam_server&lt;/internal_name&gt;&lt;label_cache&gt;[]&lt;/label_cache&gt;&lt;master&gt;true&lt;/master&gt;&lt;name&gt;Check connectivity to Veeam Server&lt;/name&gt;&lt;natlang/&gt;&lt;outputs/&gt;&lt;parent_action display_value="Check connectivity to Veeam Server"&gt;aa324d511be55110e06d520b234bcb16&lt;/parent_action&gt;&lt;sys_class_name&gt;sys_hub_action_type_snapshot&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;53e509d51be55110e06d520b234bcb03&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_overrides/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;system_level&gt;false&lt;/system_level&gt;&lt;type/&gt;&lt;/sys_hub_action_type_snapshot&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;53e509d51be55110e06d520b234bcb03&lt;/document_key&gt;&lt;order&gt;1&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;57e509d51be55110e06d520b234bcb1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;value&gt;{"version":"1.0","complexObjectSchema":{"FlowDesigner:FD9be509d5cfe55110e9f7a95090d2750f":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FD9be509d5cfe55110e9f7a95090d2750f.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"659150d2-d013-4abc-8982-8cdc8586d2fd\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD9be509d5cfe55110e9f7a95090d2750f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}&lt;/value&gt;&lt;variable display_value="Action Status"&gt;dbe509d51be55110e06d520b234bcb11&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_action_type_snapshot&lt;/document&gt;&lt;document_key&gt;53e509d51be55110e06d520b234bcb03&lt;/document_key&gt;&lt;order&gt;2&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;93e509d51be55110e06d520b234bcb1e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;value&gt;0&lt;/value&gt;&lt;variable display_value="Don't Treat as Error"&gt;17e509d51be55110e06d520b234bcb16&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03^id=53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_hub_step_instance action="delete_multiple" query="action=53e509d51be55110e06d520b234bcb03^sys_idNOT IN17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_hub_step_instance action="INSERT_OR_UPDATE"&gt;&lt;action display_value="Check connectivity to Veeam Server"&gt;53e509d51be55110e06d520b234bcb03&lt;/action&gt;&lt;cid&gt;805f9d01-febb-4d9f-aabc-8edd6bf4b48d&lt;/cid&gt;&lt;error_handling_type&gt;1&lt;/error_handling_type&gt;&lt;extended_inputs/&gt;&lt;extended_outputs/&gt;&lt;icon/&gt;&lt;inputs/&gt;&lt;label&gt;Script step&lt;/label&gt;&lt;order&gt;1&lt;/order&gt;&lt;outputs/&gt;&lt;section/&gt;&lt;step_type display_value="Script"&gt;106afb6647032200b4fad7527c9a71e7&lt;/step_type&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;17e509d51be55110e06d520b234bcb07&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;/sys_hub_step_instance&gt;&lt;sys_variable_value action="delete_multiple" query="document_key=17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;17e509d51be55110e06d520b234bcb07&lt;/document_key&gt;&lt;order&gt;600&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;9fe509d51be55110e06d520b234bcb0d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;value&gt;(function execute(inputs, outputs) {
+// ... code ...
+})(inputs, outputs);
+&lt;/value&gt;&lt;variable display_value="Script"&gt;71aa7f6647032200b4fad7527c9a719b&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_variable_value action="INSERT_OR_UPDATE"&gt;&lt;document&gt;sys_hub_step_instance&lt;/document&gt;&lt;document_key&gt;17e509d51be55110e06d520b234bcb07&lt;/document_key&gt;&lt;order&gt;400&lt;/order&gt;&lt;sys_class_name&gt;sys_variable_value&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:19&lt;/sys_created_on&gt;&lt;sys_id&gt;dbe509d51be55110e06d520b234bcb0d&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:19&lt;/sys_updated_on&gt;&lt;value&gt;35aa573fd7802200bdbaee5b5e610375&lt;/value&gt;&lt;variable display_value="MID Application"&gt;f5e56d79b3101300176b051a16a8dce4&lt;/variable&gt;&lt;/sys_variable_value&gt;&lt;sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_hub_step_ext_input action="delete_multiple" query="model=17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_hub_step_ext_output action="delete_multiple" query="model=17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_17e509d51be55110e06d520b234bcb07"/&gt;&lt;sys_hub_action_input action="delete_multiple" query="model=53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_hub_action_output action="delete_multiple" query="model=53e509d51be55110e06d520b234bcb03^sys_idNOT IN17e509d51be55110e06d520b234bcb16,dbe509d51be55110e06d520b234bcb11"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=fceceb15-92ee-47b0-9ab0-d0079a348f49,visible_in_ui=false&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value&gt;true&lt;/default_value&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value=""&gt;boolean&lt;/internal_type&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="Check connectivity to Veeam Server"&gt;53e509d51be55110e06d520b234bcb03&lt;/model&gt;&lt;model_id&gt;53e509d51be55110e06d520b234bcb03&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;2&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;17e509d51be55110e06d520b234bcb16&lt;/sys_id&gt;&lt;sys_mod_count&gt;1&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=17e509d51be55110e06d520b234bcb16"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=17e509d51be55110e06d520b234bcb16"/&gt;&lt;sys_hub_action_output action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;array_denormalized&gt;false&lt;/array_denormalized&gt;&lt;attributes&gt;action_error_output=true,co_type_name=FD9be509d5cfe55110e9f7a95090d2750f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=659150d2-d013-4abc-8982-8cdc8586d2fd&lt;/attributes&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;element_prototype/&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_link/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;65000&lt;/max_length&gt;&lt;model display_value="Check connectivity to Veeam Server"&gt;53e509d51be55110e06d520b234bcb03&lt;/model&gt;&lt;model_id&gt;53e509d51be55110e06d520b234bcb03&lt;/model_id&gt;&lt;model_table&gt;sys_hub_action_type_snapshot&lt;/model_table&gt;&lt;name&gt;var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;1&lt;/order&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;sizeclass/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_hub_action_output&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;dbe509d51be55110e06d520b234bcb11&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package/&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_hub_action_output&gt;&lt;sys_hub_action_input_action_instance action="delete_multiple" query="action_input=dbe509d51be55110e06d520b234bcb11"/&gt;&lt;sys_hub_input_scripts action="delete_multiple" query="instance=dbe509d51be55110e06d520b234bcb11"/&gt;&lt;sys_hub_pill_compound action="delete_multiple" query="attached_to=53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=53e509d51be55110e06d520b234bcb03^sys_idNOT IN23e509d51be55110e06d520b234bcb20"/&gt;&lt;sys_hub_action_status_metadata action="INSERT_OR_UPDATE"&gt;&lt;action_type_id display_value="Check connectivity to Veeam Server"&gt;53e509d51be55110e06d520b234bcb03&lt;/action_type_id&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;23e509d51be55110e06d520b234bcb20&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;/sys_hub_action_status_metadata&gt;&lt;sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=23e509d51be55110e06d520b234bcb20"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03^sys_idNOT IN5be509d51be55110e06d520b234bcb15,5be509d51be55110e06d520b234bcb1b"/&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__action_status__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Action Status&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;5be509d51be55110e06d520b234bcb15&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_documentation action="INSERT_OR_UPDATE"&gt;&lt;element&gt;__dont_treat_as_error__&lt;/element&gt;&lt;help/&gt;&lt;hint/&gt;&lt;label&gt;Don't Treat as Error&lt;/label&gt;&lt;language&gt;en&lt;/language&gt;&lt;name&gt;var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03&lt;/name&gt;&lt;plural/&gt;&lt;sys_class_name&gt;sys_documentation&lt;/sys_class_name&gt;&lt;sys_created_by&gt;c.girbu&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2022-08-25 07:46:20&lt;/sys_created_on&gt;&lt;sys_id&gt;5be509d51be55110e06d520b234bcb1b&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name/&gt;&lt;sys_package display_value="Veeam App" source="x_tesgh_veeam_app"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Veeam App"&gt;d50434871b9dd91063fd6243604bcb7b&lt;/sys_scope&gt;&lt;sys_update_name/&gt;&lt;sys_updated_by&gt;c.girbu&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2022-08-25 07:46:20&lt;/sys_updated_on&gt;&lt;url/&gt;&lt;url_target/&gt;&lt;/sys_documentation&gt;&lt;sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_53e509d51be55110e06d520b234bcb03"/&gt;&lt;sys_hub_action_type_definition action="UPDATE"&gt;&lt;sys_id&gt;aa324d511be55110e06d520b234bcb16&lt;/sys_id&gt;&lt;latest_snapshot&gt;53e509d51be55110e06d520b234bcb03&lt;/latest_snapshot&gt;&lt;compiler_build&gt;glide-sandiego-12-22-2021__patch4a-06-21-2022_07-12-2022_1907.zip&lt;/compiler_build&gt;&lt;/sys_hub_action_type_definition&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1865185689</payload_hash>
+        <record_name>Check connectivity to Veeam Server</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-08-25 07:46:20</sys_created_on>
+        <sys_id>e7e509d51be55110e06d520b234bcb41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>182d3f75faf0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-08-25 07:46:20</sys_updated_on>
+        <type>Action Type</type>
+        <update_guid>efe509d507e551103dc14d332a7b1340</update_guid>
+        <update_guid_history>efe509d507e551103dc14d332a7b1340:1865185689,17e5c5d5a1e55110bf62e43f81c2cfe4:-884534094,22e5c5d5cbe55110033382ed7290f36d:-675023342,aa328515cde55110194d6f2ce44c982b:1977415969</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-08-11 10:54:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_hub_action_type_definition">sys_hub_action_type_definition</sys_db_object>
+        <sys_id>594a6f2fa53a4904aa11a1a76bc91b91</sys_id>
+        <sys_metadata>aa324d511be55110e06d520b234bcb16</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Check connectivity to Veeam Server</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_hub_action_type_definition_aa324d511be55110e06d520b234bcb16</sys_update_name>
+        <sys_update_version display_value="sys_hub_action_type_definition_aa324d511be55110e06d520b234bcb16">e7e509d51be55110e06d520b234bcb41</sys_update_version>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-08-11 10:54:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

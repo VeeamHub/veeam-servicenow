@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="45535e5c1bced110e06d520b234bcb70" label="Session Log" max_length="40" name="x_tesgh_veeam_app_session_log" type="collection">
+        <element label="Description" max_length="200" name="description" type="string"/>
+        <element label="End Date" max_length="40" name="end_date" type="string"/>
+        <element label="ID" max_length="100" name="id" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="RITM" max_length="32" name="ritm" reference="sc_req_item" type="reference"/>
+        <element label="Session" max_length="32" name="session" reference="x_tesgh_veeam_app_session" type="reference"/>
+        <element label="Start Date" max_length="40" name="start_date" type="string"/>
+        <element label="Status" max_length="100" name="status" type="string"/>
+        <element label="Title" max_length="200" name="title" type="string"/>
+        <index name="index">
+            <element name="id"/>
+        </index>
+        <index name="index2">
+            <element name="ritm"/>
+        </index>
+        <index name="index3">
+            <element name="session"/>
+        </index>
+    </element>
+</database>

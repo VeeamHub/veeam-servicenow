@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:36:09</sys_created_on>
+        <sys_id>5696cc571b7e1d10e06d520b234bcbe5</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app_session_log</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_db_view_table_5696cc571b7e1d10e06d520b234bcbe5</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:45:14</sys_updated_on>
+        <table>x_tesgh_veeam_app_session_log</table>
+        <variable_prefix>sl</variable_prefix>
+        <view display_value="x_tesgh_veeam_app_session_veeam_log">dd76c8571b7e1d10e06d520b234bcb5a</view>
+        <where_clause>sl_session = ss</where_clause>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_db_view_table_5696cc571b7e1d10e06d520b234bcbe5</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-11-01 11:36:09</sys_created_on><sys_id>5696cc571b7e1d10e06d520b234bcbe5</sys_id><sys_mod_count>9</sys_mod_count><sys_name>x_tesgh_veeam_app_session_log</sys_name><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_db_view_table_5696cc571b7e1d10e06d520b234bcbe5</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-11-01 11:45:14</sys_updated_on><table>x_tesgh_veeam_app_session_log</table><variable_prefix>sl</variable_prefix><view display_value="x_tesgh_veeam_app_session_veeam_log">dd76c8571b7e1d10e06d520b234bcb5a</view><where_clause>sl_session = ss</where_clause></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>-1826250714</payload_hash>
+        <record_name>x_tesgh_veeam_app_session_log</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:45:14</sys_created_on>
+        <sys_id>cab8801b1b7e1d10e06d520b234bcb4c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>184330285ef0000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:45:14</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>c2b8801ba37e1d10929c4d7657daf64c</update_guid>
+        <update_guid_history>c2b8801ba37e1d10929c4d7657daf64c:-1826250714,9a98001b9a7e1d1022624a2a69a56317:-214146106,7988ccd7f57e1d107033d9353e9ccb3f:-624401400,eb480cd7147e1d1018e9e443ba5ad92b:-1826250714,91e784d7d07e1d108e722d6baf1ba429:-624401400,f7c744d74d7e1d1092dbff6cf22c3301:-214146106,51474c97907e1d1076be9557b22ad241:-1826250714,61370c97777e1d10bfc8dc2b8c6a387f:-214146106,9de60897c77e1d1022c74ac4334f3333:1645201590,49a60497cc7e1d1080801d8f898ebe9a:-624401400</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-11-01 11:45:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>0c8caf45bd4a4246af4f25aaf4ce2484</sys_id>
+        <sys_metadata>5696cc571b7e1d10e06d520b234bcbe5</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_tesgh_veeam_app_session_log</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent display_value="x_tesgh_veeam_app_session_veeam_log">dd76c8571b7e1d10e06d520b234bcb5a</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_5696cc571b7e1d10e06d520b234bcbe5</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_5696cc571b7e1d10e06d520b234bcbe5">cab8801b1b7e1d10e06d520b234bcb4c</sys_update_version>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-11-01 11:45:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

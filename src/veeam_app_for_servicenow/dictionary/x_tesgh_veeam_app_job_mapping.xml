@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Job Mapping" max_length="40" name="x_tesgh_veeam_app_job_mapping" sizeclass="14" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Backup Job" max_length="32" name="backup_job" reference="x_tesgh_veeam_app_backup_job" reference_floats="true" type="reference"/>
+        <element label="Internal ID" max_length="40" name="internal_id" type="string"/>
+        <element label="Job ID" max_length="40" name="job_id" type="string"/>
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element label="Platform ID" max_length="40" name="platform_id" type="string"/>
+        <element label="Platform Name" max_length="40" name="platform_name" type="string"/>
+        <element label="Policy Tag" max_length="40" name="policy_tag" type="string"/>
+        <element label="Repository ID" max_length="40" name="repository_id" type="string"/>
+        <element label="Veeam Connection" mandatory="true" max_length="32" name="veeam_connection" reference="x_tesgh_veeam_app_veeam_connection" type="reference"/>
+        <index name="index">
+            <element name="veeam_connection"/>
+        </index>
+        <index name="index2">
+            <element name="internal_id"/>
+        </index>
+        <index name="index3">
+            <element name="backup_job"/>
+        </index>
+    </element>
+</database>

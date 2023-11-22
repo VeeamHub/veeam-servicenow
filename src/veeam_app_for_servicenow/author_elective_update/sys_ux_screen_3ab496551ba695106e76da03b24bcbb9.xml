@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen">
+    <sys_ux_screen action="DELETE">
+        <active>true</active>
+        <app_config display_value="Veeam App">9173ded11ba695106e76da03b24bcba5</app_config>
+        <description/>
+        <event_mappings>[ ]</event_mappings>
+        <macroponent display_value="List">fab4de151ba695106e76da03b24bcb9f</macroponent>
+        <macroponent_config>{
+  "tinyId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config>
+        <name>List default - 3.0.0 preview.</name>
+        <order>9999</order>
+        <parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent>
+        <required_translations>[ ]</required_translations>
+        <rollback_screen display_value="List default">38b456551ba695106e76da03b24bcb44</rollback_screen>
+        <screen_condition/>
+        <screen_type display_value="List">b4b4de151ba695106e76da03b24bcb51</screen_type>
+        <sys_class_name>sys_ux_screen</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-14 06:33:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3ab496551ba695106e76da03b24bcbb9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>List default - 3.0.0 preview.</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>sys_ux_screen_3ab496551ba695106e76da03b24bcbb9</sys_update_name>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-14 06:33:32</sys_updated_on>
+    </sys_ux_screen>
+    <sys_translated_text action="DELETE" query="documentkey=3ab496551ba695106e76da03b24bcbb9"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</application>
+        <file_path/>
+        <instance_id>d2e89c1adb5081501b813feb6896194c</instance_id>
+        <instance_name>ven05126</instance_name>
+        <name>sys_ux_screen_3ab496551ba695106e76da03b24bcbb9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ux_screen"><sys_ux_screen action="INSERT_OR_UPDATE"><active>true</active><app_config display_value="Veeam App">9173ded11ba695106e76da03b24bcba5</app_config><description/><event_mappings>[ ]</event_mappings><macroponent display_value="List">fab4de151ba695106e76da03b24bcb9f</macroponent><macroponent_config>{
+  "tinyId" : {
+    "type" : "JSON_LITERAL",
+    "value" : ""
+  },
+  "label" : {
+    "type" : "TRANSLATION_LITERAL",
+    "value" : {
+      "code" : null,
+      "message" : "",
+      "comment" : ""
+    }
+  },
+  "bare" : {
+    "type" : "JSON_LITERAL",
+    "value" : true
+  },
+  "scrollable" : {
+    "type" : "JSON_LITERAL",
+    "value" : "y"
+  },
+  "headerLevel" : {
+    "type" : "JSON_LITERAL",
+    "value" : "1"
+  },
+  "headingOnlyVisibleToScreenReaders" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "interceptNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  },
+  "propagateNotifications" : {
+    "type" : "JSON_LITERAL",
+    "value" : false
+  }
+}</macroponent_config><name>List default - 3.0.0 preview.</name><order>9999</order><parent_macroponent display_value="Agent Workspace App Shell">c276387cc331101080d6d3658940ddd2</parent_macroponent><required_translations>[ ]</required_translations><rollback_screen display_value="List default">38b456551ba695106e76da03b24bcb44</rollback_screen><screen_condition/><screen_type display_value="List">b4b4de151ba695106e76da03b24bcb51</screen_type><sys_class_name>sys_ux_screen</sys_class_name><sys_created_by>c.girbu</sys_created_by><sys_created_on>2022-10-14 06:33:25</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>3ab496551ba695106e76da03b24bcbb9</sys_id><sys_mod_count>1</sys_mod_count><sys_name>List default - 3.0.0 preview.</sys_name><sys_overrides/><sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package><sys_policy/><sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope><sys_update_name>sys_ux_screen_3ab496551ba695106e76da03b24bcbb9</sys_update_name><sys_updated_by>c.girbu</sys_updated_by><sys_updated_on>2022-10-14 06:33:32</sys_updated_on></sys_ux_screen><sys_translated_text action="delete_multiple" query="documentkey=3ab496551ba695106e76da03b24bcbb9"/></record_update>]]></payload>
+        <payload_hash>298565129</payload_hash>
+        <record_name>List default - 3.0.0 preview.</record_name>
+        <reverted_from/>
+        <source>453438871b9dd91063fd6243604bcb55</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-14 06:33:32</sys_created_on>
+        <sys_id>e4c41a551ba695106e76da03b24bcb5e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>183d532aef80000001</sys_recorded_at>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-14 06:33:32</sys_updated_on>
+        <type>UX Screen</type>
+        <update_guid>ecc41a5500a695107739c07648a93e5d</update_guid>
+        <update_guid_history>ecc41a5500a695107739c07648a93e5d:298565129,b2b49655dca69510760e1b2844eda6bb:-592994390</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>c.girbu</sys_created_by>
+        <sys_created_on>2022-10-14 06:33:50</sys_created_on>
+        <sys_db_object display_value="" name="sys_ux_screen">sys_ux_screen</sys_db_object>
+        <sys_id>46ceb9cc053a4c08ab868440b68b9b69</sys_id>
+        <sys_metadata>3ab496551ba695106e76da03b24bcbb9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>List default - 3.0.0 preview.</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_scope_delete display_value="">196d163efc0e453a987570f357412d24</sys_scope_delete>
+        <sys_update_name>sys_ux_screen_3ab496551ba695106e76da03b24bcbb9</sys_update_name>
+        <sys_update_version display_value="sys_ux_screen_3ab496551ba695106e76da03b24bcbb9">e4c41a551ba695106e76da03b24bcb5e</sys_update_version>
+        <sys_updated_by>c.girbu</sys_updated_by>
+        <sys_updated_on>2022-10-14 06:33:50</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="gsw_content_information">
+    <gsw_content_information action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <article><![CDATA[<div id="textarea_sizer.gsw_content_information.article">
+<div>Validate the network connection between the MID server and your instance before the MID server is permitted to access automation credentials or execute any outbound ECC probes.</div>
+<div> </div>
+<div>
+<div>
+<ol style="list-style-position: inside;"><li>In the list view, locate the MID Server you just installed and ensure that the <strong>Status </strong>is <strong>Up</strong>;
+<div>    This means that the MID Server is running and communicating with the instance.</div>
+</li><li>Select the check box in the left column next to the MID Server you want to validate;</li><li>In the <strong>Action </strong>choice list, select <strong>Validate</strong>.</li></ol>
+</div>
+</div>
+</div>]]></article>
+        <best_practice_acceptable>false</best_practice_acceptable>
+        <dependent_on_contents>6000f2981bae9110e06d520b234bcb4f</dependent_on_contents>
+        <dependent_on_plugins/>
+        <dependent_on_plugins_ids/>
+        <description/>
+        <embedded_help_qualifier>validate</embedded_help_qualifier>
+        <end_point>ecc_agent_list.do</end_point>
+        <end_point_open_mode>2</end_point_open_mode>
+        <end_point_type>1</end_point_type>
+        <field/>
+        <filter/>
+        <filter_result/>
+        <implicit_dependent_on/>
+        <implicit_plugin_dependencies/>
+        <is_dynamic>false</is_dynamic>
+        <more_info_available>false</more_info_available>
+        <more_info_html/>
+        <order>300</order>
+        <parent display_value="MID Server Configuration">db9e6ed41bae9110e06d520b234bcb51</parent>
+        <parents>db9e6ed41bae9110e06d520b234bcb51,9f3eea181bae9110e06d520b234bcbfc</parents>
+        <plugin_id/>
+        <property_name/>
+        <property_value/>
+        <quick_startable>false</quick_startable>
+        <root_parent display_value="Veeam Application Setup">9f3eea181bae9110e06d520b234bcbfc</root_parent>
+        <skippable>false</skippable>
+        <supports_child_content>false</supports_child_content>
+        <sys_class_name>gsw_content_information</sys_class_name>
+        <sys_created_by>pavel.egorov</sys_created_by>
+        <sys_created_on>2023-07-04 14:07:47</sys_created_on>
+        <sys_id>b5a6d60a1bb32d50e06d520b234bcb9e</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>Validate MID</sys_name>
+        <sys_package display_value="Veeam App" source="x_tesgh_veeam_app">d50434871b9dd91063fd6243604bcb7b</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Veeam App">d50434871b9dd91063fd6243604bcb7b</sys_scope>
+        <sys_update_name>gsw_content_information_b5a6d60a1bb32d50e06d520b234bcb9e</sys_update_name>
+        <sys_updated_by>pavel.egorov</sys_updated_by>
+        <sys_updated_on>2023-10-19 11:38:55</sys_updated_on>
+        <table/>
+        <title>Validate MID</title>
+        <weight>1</weight>
+    </gsw_content_information>
+    <sys_translated_text action="delete_multiple" query="documentkey=b5a6d60a1bb32d50e06d520b234bcb9e"/>
+</record_update>
