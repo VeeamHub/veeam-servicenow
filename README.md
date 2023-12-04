@@ -1,16 +1,6 @@
-# VeeamHub Repository Template
+# Veeam App for ServiceNow
+The Veeam App for ServiceNow is a native ServiceNow application developed and supported by a 3rd party Veeam partner in collaboration with Veeam.  The goal of this project is to eventually provide an official Veeam integration in the ServiceNow marketplace.  The code in this repository represents the current state of this project with basic ca
 
-Here are instructions on how to use this template:
-
-* Navigate to the [main page of this repository](https://github.com/VeeamHub/veeamhub-template)
-* Follow instructions for [creating a repository from a template](https://help.github.com/en/articles/creating-a-repository-from-a-template)
-  * _Repository names **must** have the prefix:_ **veeam-**
-  * Example: _veeam-repo-name_
-* Replace **all** repository-specific links
-  * `issues` link in _README.md_
-  * `create an issue` link in _README.md_
-  * `opening a new issue` link in _CONTRIBUTING.md_
-* Remove the instructions from this section and replace it with information describing this repository.
 
 ## 📗 Documentation
 
