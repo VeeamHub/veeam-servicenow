@@ -26,7 +26,7 @@ Currently the following features are supported:
 All documentation is available in the [docs folder](https://github.com/VeeamHub/veeam-servicenow/tree/main/docs) of this repository.
 
 ## 🤝🏾 Support
-Currently, support is provided via Github and users can leverage [issues](https://github.com/VeeamHub/veeam-servicenow issues/new/choose) to request assistance, report any bugs, or submit any feature requests.
+Currently, support is provided via Github and users can leverage [issues](https://github.com/VeeamHub/veeam-servicenow) to request assistance, report any bugs, or submit any feature requests.
 As this is the initial release, if you are looking for an official evaluation, please reach out to your sales team and they will engage the correct resources directly.
 
 ## 🤔 Questions
